@@ -15,16 +15,13 @@ import getRandomSubarray from '../../../utils/getRandomSubarray';
 import OurTeamMemberCard from './components/OurTeamMemberCard';
 
 const useStyles = makeStyles((theme) => ({
-  container: {
-    position: 'relative',
-    padding: theme.spacing(4, 2),
-    backgroundColor: '#BD8A69',
-    color: 'white',
-  },
   moreButton: {
     margin: theme.spacing(2, 'auto', 0),
     textAlign: 'center',
     display: 'table',
+  },
+  sectionTitle:{
+    margin:theme.spacing(2,0,4,0),
   },
 }));
 
@@ -39,11 +36,11 @@ function LandingOurTeam({ members = [], count = 4, getLandingData }) {
   if (members.length === 0) return <></>;
 
   return (
-    <Container className={classes.container}>
-      <Typography component="h2" variant="h2" gutterBottom align="center">
-        {t('eventTeam')}
+    <>
+      <Typography component="h2" variant="h2" gutterBottom className={classes.sectionTitle}>
+        کیا قراره توی این رویداد همراهمون باشن؟
       </Typography>
-      <Grid container spacing={4} justify="center">
+      <Grid container spacing={4} justify="center" >
         {getRandomSubarray(members, count).map((member, index) => (
           <Grid
             container
@@ -51,8 +48,8 @@ function LandingOurTeam({ members = [], count = 4, getLandingData }) {
             xs={6}
             sm={3}
             key={index}
-            alignItems="flex-start"
-            justify="center">
+            justify="center"
+            >
             <OurTeamMemberCard member={member} />
           </Grid>
         ))}
@@ -67,7 +64,7 @@ function LandingOurTeam({ members = [], count = 4, getLandingData }) {
         to="/our_team">
         {t('seeMore')}
       </Button>
-    </Container>
+      </>
   );
 }
 

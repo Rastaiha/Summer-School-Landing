@@ -13,6 +13,8 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import Footer from '../components/SpecialComponents/Homepage/Footer';
 import WorkshopList from '../components/SpecialComponents/Homepage/WorkshopList';
+import LandingOurTeam from '../components/SpecialComponents/Homepage/LandingOurTeam';
+import FAQ from '../components/SpecialComponents/Homepage/FAQ';
 import questions from './FAQs';
 import workshops from './Workshops';
 
@@ -37,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     top: 0,
     left: 0,
-    background: `url(${process.env.PUBLIC_URL}/background.jpg) no-repeat 50% fixed`,
+    background: `#e3d810 no-repeat 50% fixed`,
     filter: 'blur(4px)',
     webkitFilter: 'blur(4px)',
     opacity: 0.9,
@@ -51,8 +53,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 80,
     lineHeight: '80px',
     fontWeight: 900,
-    color: '#e3d810',
-    textShadow: '-3px 3px #a8a10f',
+    color: 'tomato',
+    textShadow: '-3px 3px #ad2f18',
     textAlign: 'center',
     [theme.breakpoints.down('sm')]: {
       fontSize: 50,
@@ -128,6 +130,23 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionTitle:{
     margin:theme.spacing(2,0,4,0),
+  },
+  FAQSection: {
+    position: 'relative',
+    padding: theme.spacing(4, 2),
+    backgroundColor: KHAKI,
+    color: KHAKIBackText,
+    zIndex: 5,
+  },
+  cubeMelt:{
+    maxWidth:'70%'
+  },
+  teamSection:{
+    position: 'relative',
+    padding: theme.spacing(4, 2),
+    backgroundColor: BLUE,
+    color: BLUEBackText,
+    zIndex: 5,
   }
 }));
 function SummerSchool() {
@@ -153,15 +172,15 @@ function SummerSchool() {
             </Grid>
             <Grid item>
               <Typography component="h2" variant="h2" className={classes.title}>
-                Lorem Ipsum!
+                لورم ایپسوم!
               </Typography>
             </Grid>
           </Grid>
           <Grid item>
             <img
-              src={process.env.PUBLIC_URL + 'scroll.gif'}
+              src={process.env.PUBLIC_URL + 'watermelon.gif'}
               alt="scroll"
-              style={{ width: 20 }}
+              style={{ width: 150 }}
             />
           </Grid>
         </Grid>
@@ -237,7 +256,7 @@ function SummerSchool() {
               <Grid container spacing={2} alignItems="center" justify="center">
                 <Grid item xs={12} sm={4}>
                   <img
-                    src={process.env.PUBLIC_URL + '/edu_student.png'}
+                    src={process.env.PUBLIC_URL + '/watermelon2.gif'}
                     alt=""
                   />
                 </Grid>
@@ -297,6 +316,34 @@ function SummerSchool() {
           خوب قراره تو چه کارگاه‌هایی شرکت کنیم؟
         </Typography>
         <WorkshopList workshops={workshops} />
+      </section>
+      <section className={classes.FAQSection}>
+      <Typography component="h2" variant="h2" gutterBottom className={classes.sectionTitle}>
+          یه سری سوال برام پیش اومده. کجا می‌تونم جوابشون رو پیدا کنم؟
+        </Typography>
+        <Container>
+          <Grid container justify="center" alignItems="center" spacing={2}>
+            <Grid item xs={12} sm={6}>
+              <FAQ questions={questions} />
+            </Grid>
+            <Grid
+              item
+              container
+              xs={12}
+              sm={4}
+              justify="center"
+              alignItems="center">
+              <img
+                className={classes.cubeMelt}
+                src={process.env.PUBLIC_URL + 'cubemelt-melt.gif'}
+                alt=""
+              />
+            </Grid>
+          </Grid>
+        </Container>
+      </section>
+      <section className={classes.teamSection}>
+      <LandingOurTeam />
       </section>
       <Footer />
     </>
