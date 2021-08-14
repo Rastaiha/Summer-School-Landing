@@ -1,0 +1,14 @@
+import Axios from 'axios';
+
+export const baseURL =
+  process.env.NODE_ENV === 'production'
+    ? 'https://workshop.rastaiha.ir'
+    : 'https://workshop.rastaiha.ir';
+
+const baseAxios = Axios.create({
+  baseURL: baseURL + '/api/',
+  timeout: 20000,
+  maxRedirects: 5,
+});
+
+export default baseAxios;
