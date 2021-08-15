@@ -10,8 +10,9 @@ const useStyles = makeStyles((theme) => ({
   container: {
     position: 'relative',
     padding: theme.spacing(2),
-    backgroundColor: '#feceab',
-    maxWidth: '100%'
+    backgroundColor: '#c89c2f',
+    maxWidth: '100%',
+    color:'white'
   },
 }));
 

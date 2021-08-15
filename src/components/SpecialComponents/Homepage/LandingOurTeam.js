@@ -1,6 +1,5 @@
 import {
   Button,
-  Container,
   Grid,
   makeStyles,
   Typography,
@@ -12,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 import { getLandingDataAction } from '../../../redux/slices/landing';
 import getRandomSubarray from '../../../utils/getRandomSubarray';
-import OurTeamMemberCard from './components/OurTeamMemberCard';
+import PersonCard from '../../Cards/PersonCard';
 
 const useStyles = makeStyles((theme) => ({
   moreButton: {
@@ -50,7 +49,9 @@ function LandingOurTeam({ members = [], count = 4, getLandingData }) {
             key={index}
             justify="center"
             >
-            <OurTeamMemberCard member={member} />
+            <PersonCard 
+            person={member}
+             />
           </Grid>
         ))}
       </Grid>

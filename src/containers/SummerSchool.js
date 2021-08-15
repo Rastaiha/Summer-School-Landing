@@ -1,6 +1,5 @@
 import {
   Button,
-  Fab,
   Grid,
   makeStyles,
   Paper,
@@ -9,8 +8,6 @@ import {
 import Container from '@material-ui/core/Container';
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import clsx from 'clsx';
 import Footer from '../components/SpecialComponents/Homepage/Footer';
 import WorkshopList from '../components/SpecialComponents/Homepage/WorkshopList';
 import LandingOurTeam from '../components/SpecialComponents/Homepage/LandingOurTeam';
@@ -18,10 +15,10 @@ import FAQ from '../components/SpecialComponents/Homepage/FAQ';
 import questions from './FAQs';
 import workshops from './Workshops';
 
-const KHAKI = '#feceab';
-const KHAKIBackText = 'rgba(0, 0, 0, 0.87)';
-const BLUE = '#00869e';
-const BLUEBackText = 'white';
+const FirstColor = '#ffc301';
+const FirstColorBackText = 'rgba(0, 0, 0, 0.87)';
+const SecondColor = '#e8332a';
+const SecondColorBackText = 'white';
 const useStyles = makeStyles((theme) => ({
   centerItems: {
     display: 'flex',
@@ -39,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     top: 0,
     left: 0,
-    background: `#e3d810 no-repeat 50% fixed`,
+    background: `#c89c2f no-repeat 50% fixed`,
     filter: 'blur(4px)',
     webkitFilter: 'blur(4px)',
     opacity: 0.9,
@@ -53,8 +50,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 80,
     lineHeight: '80px',
     fontWeight: 900,
-    color: 'tomato',
-    textShadow: '-3px 3px #ad2f18',
+    color: '#e8332a',
+    textShadow: '-2px 2px #bd0d01',
     textAlign: 'center',
     [theme.breakpoints.down('sm')]: {
       fontSize: 50,
@@ -88,15 +85,15 @@ const useStyles = makeStyles((theme) => ({
   eventDescriptionSection: {
     position: 'relative',
     padding: theme.spacing(4, 2),
-    backgroundColor: KHAKI,
-    color: KHAKIBackText,
+    backgroundColor: FirstColor,
+    color: FirstColorBackText,
     zIndex: 5,
   },
   featuresSection: {
     position: 'relative',
     padding: theme.spacing(4, 2),
-    backgroundColor: BLUE,
-    color: BLUEBackText,
+    backgroundColor: SecondColor,
+    color: SecondColorBackText,
     zIndex: 5,
   },
   featuresSectionPaper: {
@@ -108,8 +105,8 @@ const useStyles = makeStyles((theme) => ({
   RastaDescriptionSection: {
     position: 'relative',
     padding: theme.spacing(4, 2),
-    backgroundColor: KHAKI,
-    color: KHAKIBackText,
+    backgroundColor: FirstColor,
+    color: FirstColorBackText,
     zIndex: 5,
   },
   kaftar: {
@@ -124,30 +121,37 @@ const useStyles = makeStyles((theme) => ({
   workshopsSection: {
     position: 'relative',
     padding: theme.spacing(4, 2),
-    backgroundColor: BLUE,
-    color: BLUEBackText,
+    backgroundColor: SecondColor,
+    color: SecondColorBackText,
     zIndex: 5,
   },
-  sectionTitle:{
-    margin:theme.spacing(2,0,4,0),
+  sectionTitle: {
+    margin: theme.spacing(2, 0, 4, 0),
   },
   FAQSection: {
     position: 'relative',
     padding: theme.spacing(4, 2),
-    backgroundColor: KHAKI,
-    color: KHAKIBackText,
+    backgroundColor: FirstColor,
+    color: FirstColorBackText,
     zIndex: 5,
   },
-  cubeMelt:{
-    maxWidth:'70%'
+  cubeMelt: {
+    maxWidth: '70%',
   },
-  teamSection:{
+  timeLineSection: {
     position: 'relative',
     padding: theme.spacing(4, 2),
-    backgroundColor: BLUE,
-    color: BLUEBackText,
+    backgroundColor: SecondColor,
+    color: SecondColorBackText,
     zIndex: 5,
-  }
+  },
+  teamSection: {
+    position: 'relative',
+    padding: theme.spacing(4, 2),
+    backgroundColor: SecondColor,
+    color: SecondColorBackText,
+    zIndex: 5,
+  },
 }));
 function SummerSchool() {
   const classes = useStyles();
@@ -186,11 +190,15 @@ function SummerSchool() {
         </Grid>
       </section>
       <section className={classes.eventDescriptionSection}>
-        <Typography component="h2" variant="h2" gutterBottom  className={classes.sectionTitle}>
+        <Typography
+          component="h2"
+          variant="h2"
+          gutterBottom
+          className={classes.sectionTitle}>
           چه خبره؟
         </Typography>
         <Grid container justify="space-evenly" alignItems="center" spacing={4}>
-          <Grid item container justify="center" spacing={2} xs={12} md={6}>
+          <Grid item container justify="center" order={{ sm: 1, md: 2 }} spacing={2} xs={12} md={6} >
             <Grid item>
               <Typography variant="subtitle1">
                 این رویداد داستانی رو براتون میگه که قراره توش با هم کارهای
@@ -222,13 +230,13 @@ function SummerSchool() {
                   rel="noreferrer"
                   href="https://t.me/rastaihaOnline"
                   className={classes.telegramLink}
-                  style={{ direction: 'ltr'}}>
+                  style={{ direction: 'ltr' }}>
                   {'@RastaihaOnline'}
                 </a>
               </Typography>
             </Grid>
           </Grid>
-          <Grid item xs={12} sm={7} md={5}>
+          <Grid item xs={12} sm={7} md={5} order={{ sm: 2, md: 1 }} className={classes.video}>
             <div className={classes.h_iframe_aparat_embed_frame}>
               <span></span>
               <iframe
@@ -242,7 +250,11 @@ function SummerSchool() {
         </Grid>
       </section>
       <section className={classes.featuresSection}>
-        <Typography component="h2" variant="h2" gutterBottom  className={classes.sectionTitle}>
+        <Typography
+          component="h2"
+          variant="h2"
+          gutterBottom
+          className={classes.sectionTitle}>
           چه کارایی قراره انجام بدیم؟
         </Typography>
         <Grid
@@ -278,7 +290,11 @@ function SummerSchool() {
         </Grid>
       </section>
       <section className={classes.RastaDescriptionSection}>
-        <Typography component="h2" variant="h2" gutterBottom  className={classes.sectionTitle}>
+        <Typography
+          component="h2"
+          variant="h2"
+          gutterBottom
+          className={classes.sectionTitle}>
           رستا چیه؟
         </Typography>
         <Grid container justify="center" alignItems="center" spacing={2}>
@@ -307,18 +323,26 @@ function SummerSchool() {
           variant="contained"
           color="primary"
           className={classes.moreButton}
-          href="https://rastaiha.ir">
+          href="/about_us">
           اطلاعات بیشتر
         </Button>
       </section>
       <section className={classes.workshopsSection}>
-        <Typography component="h2" variant="h2" gutterBottom className={classes.sectionTitle}>
+        <Typography
+          component="h2"
+          variant="h2"
+          gutterBottom
+          className={classes.sectionTitle}>
           خوب قراره تو چه کارگاه‌هایی شرکت کنیم؟
         </Typography>
         <WorkshopList workshops={workshops} />
       </section>
       <section className={classes.FAQSection}>
-      <Typography component="h2" variant="h2" gutterBottom className={classes.sectionTitle}>
+        <Typography
+          component="h2"
+          variant="h2"
+          gutterBottom
+          className={classes.sectionTitle}>
           یه سری سوال برام پیش اومده. کجا می‌تونم جوابشون رو پیدا کنم؟
         </Typography>
         <Container>
@@ -342,8 +366,18 @@ function SummerSchool() {
           </Grid>
         </Container>
       </section>
+      {/* <section className={classes.timeLineSection}>
+        <Typography
+          component="h2"
+          variant="h2"
+          gutterBottom
+          className={classes.sectionTitle}>
+          برنامه زمانی رویداد به چه شکله؟
+        </Typography>
+        <TimeLine />
+      </section> */}
       <section className={classes.teamSection}>
-      <LandingOurTeam />
+        <LandingOurTeam />
       </section>
       <Footer />
     </>
