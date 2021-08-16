@@ -15,7 +15,7 @@ import LandingOurTeam from '../components/SpecialComponents/Homepage/LandingOurT
 import FAQ from '../components/SpecialComponents/Homepage/FAQ';
 import questions from './FAQs';
 import workshops from './Workshops';
-import TimeLine from '../components/TimeLine/TimeLine'
+import TimeLine from '../components/TimeLine/TimeLine';
 
 const FirstColor = '#c89c2f';
 const FirstColorBackText = 'black';
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
   telegramLink: {
     display: 'inline-block',
     marginRight: 10,
-    color: 'inherit'
+    color: 'inherit',
   },
   h_iframe_aparat_embed_frame: {
     position: 'relative',
@@ -138,13 +138,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: FirstColor,
     color: FirstColorBackText,
   },
-  Buttons:{
-    margin:theme.spacing(4,0),
-    direction:'ltr',
+  Buttons: {
+    margin: theme.spacing(4, 0),
+    direction: 'ltr',
   },
-  titleButton:{
-    backgroundColor:"#e8332a",
-    color:"white",
+  titleButton: {
+    backgroundColor: '#e8332a',
+    color: 'white',
   },
 }));
 function SummerSchool() {
@@ -169,7 +169,11 @@ function SummerSchool() {
               </Typography>
             </Grid>
             <Grid item>
-              <ButtonGroup size="large" variant="contained" color="primary" className={classes.Buttons}>
+              <ButtonGroup
+                size="large"
+                variant="contained"
+                color="primary"
+                className={classes.Buttons}>
                 <Button
                   rel="noreferrer"
                   target="_blank"
@@ -181,8 +185,7 @@ function SummerSchool() {
                   rel="noreferrer"
                   target="_blank"
                   href={'http://academy.rastaiha.ir/login'}
-                  className={classes.titleButton}
-                  >
+                  className={classes.titleButton}>
                   ورود
                 </Button>
               </ButtonGroup>
@@ -210,36 +213,52 @@ function SummerSchool() {
           <Grid
             item
             container
-            justify="center"
+            justify="left"
             order={{ sm: 1, md: 2 }}
             spacing={2}
             xs={12}
             md={6}>
             <Grid item>
               <Typography variant="subtitle1">
-                این رویداد داستانی رو براتون میگه که قراره توش با هم کارهای
-                خارق‌العاده‌ای کنیم، در زمان سفر می‌کنیم و تلاش می‌کنیم شهرمون
-                رو نجات بدیم.
+                توی این رویداد قراره که ۵تا کارگاه علمی مختلف رو بگذرونیم و روز
+                آخر هم یه بازی خفن داریم!
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="subtitle1">
-                از ۲۸ اسفند تا ۶ فروردین یه پیش‌رویداد داریم که شما رو با محیط
-                رویداد و سایت و همچنین فضای داستان آشنا می‌کنه و بعدش در ۷، ۸ و
-                ۱۰ فروردین، داستان ما رو به کارگاه‌های علمی می‌بره که مشکلات
-                سفرمون رو حل کنیم.
+                امسال کارگاه‌های علمی‌مون، گشت و گذاری هست در موضوعات علمی مختلف
+                و حتی شاخه‌های بین رشته‌ای؛ از علوم کامپیوتر و فیزیک گرفته تا
+                زیست‌شناسی که به زودی اطلاعات بیشتری درباره‌شون منتشر می‌کنیم :)
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="subtitle1">
-                البته در ۹ فروردین هم قراره یه کم استراحت کنیم و برنامه‌های مفرح
-                داشته باشیم. روز آخر هم که وقت مسابقه و اختتامیه است.
+                نکته‌ی مهم کارگاه‌ها اینه که در بستری که رستا اون رو توسعه داده،
+                اجرا می‌شه. این بستر به نوعی طراحی شده که روحیه‌ی تعاملی و
+                مسئله‌محوری کارگاه‌ها رو در شرایط مجازی هم حفظ کنه.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle1">
+                امسال توی کارگاه‌ها دو بخش مختلف داریم. توی بخش اول شما توی
+                گروه‌های سه نفره و به همراه همیارها محتواهای علمی کارگاه رو
+                می‌گذرونید و در قسمت دوم قراره از چیزهایی که یادگرفتید بیشتر
+                استفاده کنید؛ ممکنه نیاز باشه در نقش دانشمندان یه شرکت نظرات‌تون
+                رو بیان کنید یا با همیارهاتون بازی‌های مرتبط با محتوای علمی
+                کارگاه رو بگذرونید.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle1">
+                به جز کارگاه‌ها که توی چهار روز برگزار می‌شن و بازی انتهایی که
+                در روز پنجم هست، توی رویداد دورهمی و شهربازی هم داریم که به زودی
+                بیشتر درباره‌شون توضیح می‌دیم.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="subtitle1">
                 {
-                  'با ما باشید، دوستاتون رو خبر کنید و اگه سوالی داشتید، یکم پایین‌تر بخش «سوال‌های متداول» رو یه نگاهی بندازید یا به کانال رویداد در تلگرام سر بزنید: '
+                  'برای اطلاع از اخباری که در آینده‌ای نزدیک منتشر می‌شه می‌تونید به کانال تلگراممون مراجعه کنید:'
                 }
                 <a
                   target="_blank"
@@ -262,8 +281,8 @@ function SummerSchool() {
             <div className={classes.h_iframe_aparat_embed_frame}>
               <span></span>
               <iframe
-                title="رستاخیز: مسافر صفر"
-                src="https://www.aparat.com/video/video/embed/videohash/5M9Sp/vt/frame"
+                title="مدرسه تابستانه رستا"
+                src=""
                 allowFullScreen
                 webkitallowfullscreen="true"
                 mozallowfullscreen="true"></iframe>
@@ -296,7 +315,7 @@ function SummerSchool() {
           <Grid item xs={12} sm={3} container justify="center">
             <img
               className={classes.kaftar}
-              src={process.env.PUBLIC_URL + '/originalLogo.png'}
+              src={process.env.PUBLIC_URL + '/logo_yellow.png'}
               alt=""
             />
           </Grid>
