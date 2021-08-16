@@ -9,14 +9,6 @@ const useStyles = makeStyles((theme) => ({
     margin:theme.spacing(2),
     fontWeight:'700'
   },
-  image: (props) => ({
-    backgroundImage: `url(${process.env.PUBLIC_URL}${props.image})`,
-    backgroundSize: 'cover !important',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center',
-    boxShadow: '2px 2px 5px gray',
-    height: 'inherit',
-  }),
   text: {
     overFlowY: 'scroll',
     margin:theme.spacing(2),
@@ -28,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function CardDialogue({ open, handleClose, name, image, description }) {
-  const classes = useStyles({ image });
+  const classes = useStyles();
 
   return (
     <Dialog

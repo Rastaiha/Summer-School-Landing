@@ -1,5 +1,6 @@
 import {
   Button,
+  ButtonGroup,
   Grid,
   makeStyles,
   Paper,
@@ -14,8 +15,9 @@ import LandingOurTeam from '../components/SpecialComponents/Homepage/LandingOurT
 import FAQ from '../components/SpecialComponents/Homepage/FAQ';
 import questions from './FAQs';
 import workshops from './Workshops';
+import TimeLine from '../components/TimeLine/TimeLine'
 
-const FirstColor = '#ffc301';
+const FirstColor = '#c89c2f';
 const FirstColorBackText = 'rgba(0, 0, 0, 0.87)';
 const SecondColor = '#e8332a';
 const SecondColorBackText = 'white';
@@ -36,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     top: 0,
     left: 0,
-    background: `#c89c2f no-repeat 50% fixed`,
+    background: `#ffc301 no-repeat 50% fixed`,
     filter: 'blur(4px)',
     webkitFilter: 'blur(4px)',
     opacity: 0.9,
@@ -82,19 +84,18 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: '57%',
     },
   },
-  eventDescriptionSection: {
+  Section: {
+    padding: theme.spacing(10, 2),
+    zIndex: 5,
     position: 'relative',
-    padding: theme.spacing(4, 2),
+  },
+  eventDescriptionSection: {
     backgroundColor: FirstColor,
     color: FirstColorBackText,
-    zIndex: 5,
   },
   featuresSection: {
-    position: 'relative',
-    padding: theme.spacing(4, 2),
-    backgroundColor: SecondColor,
-    color: SecondColorBackText,
-    zIndex: 5,
+    backgroundColor: FirstColor,
+    color: FirstColorBackText,
   },
   featuresSectionPaper: {
     padding: theme.spacing(2),
@@ -103,11 +104,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   RastaDescriptionSection: {
-    position: 'relative',
-    padding: theme.spacing(4, 2),
-    backgroundColor: FirstColor,
-    color: FirstColorBackText,
-    zIndex: 5,
+    backgroundColor: SecondColor,
+    color: SecondColorBackText,
   },
   kaftar: {
     maxHeight: '30vh',
@@ -119,39 +117,31 @@ const useStyles = makeStyles((theme) => ({
     display: 'table',
   },
   workshopsSection: {
-    position: 'relative',
-    padding: theme.spacing(4, 2),
     backgroundColor: SecondColor,
     color: SecondColorBackText,
-    zIndex: 5,
   },
   sectionTitle: {
     margin: theme.spacing(2, 0, 4, 0),
   },
   FAQSection: {
-    position: 'relative',
-    padding: theme.spacing(4, 2),
     backgroundColor: FirstColor,
     color: FirstColorBackText,
-    zIndex: 5,
   },
   cubeMelt: {
     maxWidth: '70%',
   },
   timeLineSection: {
-    position: 'relative',
-    padding: theme.spacing(4, 2),
     backgroundColor: SecondColor,
     color: SecondColorBackText,
-    zIndex: 5,
   },
   teamSection: {
-    position: 'relative',
-    padding: theme.spacing(4, 2),
-    backgroundColor: SecondColor,
-    color: SecondColorBackText,
-    zIndex: 5,
+    backgroundColor: FirstColor,
+    color: FirstColorBackText,
   },
+  Buttons:{
+    margin:theme.spacing(4,0),
+    direction:'ltr'
+  }
 }));
 function SummerSchool() {
   const classes = useStyles();
@@ -175,9 +165,20 @@ function SummerSchool() {
               </Typography>
             </Grid>
             <Grid item>
-              <Typography component="h2" variant="h2" className={classes.title}>
-                لورم ایپسوم!
-              </Typography>
+              <ButtonGroup size="large" variant="contained" color="primary" className={classes.Buttons}>
+                <Button
+                  rel="noreferrer"
+                  target="_blank"
+                  href={'http://academy.rastaiha.ir/create_accoun'}>
+                  عضویت
+                </Button>
+                <Button
+                  rel="noreferrer"
+                  target="_blank"
+                  href={'http://academy.rastaiha.ir/login'}>
+                  ورود
+                </Button>
+              </ButtonGroup>
             </Grid>
           </Grid>
           <Grid item>
@@ -189,7 +190,8 @@ function SummerSchool() {
           </Grid>
         </Grid>
       </section>
-      <section className={classes.eventDescriptionSection}>
+      <section
+        className={`${classes.eventDescriptionSection} ${classes.Section}`}>
         <Typography
           component="h2"
           variant="h2"
@@ -198,7 +200,14 @@ function SummerSchool() {
           چه خبره؟
         </Typography>
         <Grid container justify="space-evenly" alignItems="center" spacing={4}>
-          <Grid item container justify="center" order={{ sm: 1, md: 2 }} spacing={2} xs={12} md={6} >
+          <Grid
+            item
+            container
+            justify="center"
+            order={{ sm: 1, md: 2 }}
+            spacing={2}
+            xs={12}
+            md={6}>
             <Grid item>
               <Typography variant="subtitle1">
                 این رویداد داستانی رو براتون میگه که قراره توش با هم کارهای
@@ -236,7 +245,13 @@ function SummerSchool() {
               </Typography>
             </Grid>
           </Grid>
-          <Grid item xs={12} sm={7} md={5} order={{ sm: 2, md: 1 }} className={classes.video}>
+          <Grid
+            item
+            xs={12}
+            sm={7}
+            md={5}
+            order={{ sm: 2, md: 1 }}
+            className={classes.video}>
             <div className={classes.h_iframe_aparat_embed_frame}>
               <span></span>
               <iframe
@@ -249,7 +264,46 @@ function SummerSchool() {
           </Grid>
         </Grid>
       </section>
-      <section className={classes.featuresSection}>
+      <section
+        className={`${classes.RastaDescriptionSection} ${classes.Section}`}>
+        <Typography
+          component="h2"
+          variant="h2"
+          gutterBottom
+          className={classes.sectionTitle}>
+          رستا چیه؟
+        </Typography>
+        <Grid container justify="center" alignItems="center" spacing={2}>
+          <Grid item container justify="center" xs={12} sm={9} spacing={2}>
+            <Grid item>
+              <Typography variant="subtitle1">
+                رستا جمعی علمی-ترویجی متشکل از دانشجوهای دانشگاه‌های صنعتی
+                اصفهان، تهران، شریف، اصفهان، بهشتی و ... هست؛ جمعی که در تلاشه
+                تا آموزش تعاملی رو جایگزین آموزش کنکوری و حفظی کنه و با اینکار،
+                علاوه بر یاد دادن محتوای علمی به نحوه‌ای موثرتر، تفکر منطقی و
+                خلاقیتِ بچه‌ها رو تقویت کنه و با نشون دادنِ توانمندی‌های
+                بالقوه‌ی بچه‌ها به خودشون، اعتماد به نفسِ اونهارو افزایش بده.
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={3} container justify="center">
+            <img
+              className={classes.kaftar}
+              src={process.env.PUBLIC_URL + '/originalLogo.png'}
+              alt=""
+            />
+          </Grid>
+        </Grid>
+        <Button
+          target="_blank"
+          variant="contained"
+          color="primary"
+          className={classes.moreButton}
+          href="/about_us">
+          اطلاعات بیشتر
+        </Button>
+      </section>
+      <section className={`${classes.featuresSection} ${classes.Section}`}>
         <Typography
           component="h2"
           variant="h2"
@@ -289,45 +343,7 @@ function SummerSchool() {
           </Grid>
         </Grid>
       </section>
-      <section className={classes.RastaDescriptionSection}>
-        <Typography
-          component="h2"
-          variant="h2"
-          gutterBottom
-          className={classes.sectionTitle}>
-          رستا چیه؟
-        </Typography>
-        <Grid container justify="center" alignItems="center" spacing={2}>
-          <Grid item container justify="center" xs={12} sm={9} spacing={2}>
-            <Grid item>
-              <Typography variant="subtitle1">
-                رستا جمعی علمی-ترویجی متشکل از دانشجوهای دانشگاه‌های صنعتی
-                اصفهان، تهران، شریف، اصفهان، بهشتی و ... هست؛ جمعی که در تلاشه
-                تا آموزش تعاملی رو جایگزین آموزش کنکوری و حفظی کنه و با اینکار،
-                علاوه بر یاد دادن محتوای علمی به نحوه‌ای موثرتر، تفکر منطقی و
-                خلاقیتِ بچه‌ها رو تقویت کنه و با نشون دادنِ توانمندی‌های
-                بالقوه‌ی بچه‌ها به خودشون، اعتماد به نفسِ اونهارو افزایش بده.
-              </Typography>
-            </Grid>
-          </Grid>
-          <Grid item xs={12} sm={3} container justify="center">
-            <img
-              className={classes.kaftar}
-              src={process.env.PUBLIC_URL + '/originalLogo.png'}
-              alt=""
-            />
-          </Grid>
-        </Grid>
-        <Button
-          target="_blank"
-          variant="contained"
-          color="primary"
-          className={classes.moreButton}
-          href="/about_us">
-          اطلاعات بیشتر
-        </Button>
-      </section>
-      <section className={classes.workshopsSection}>
+      <section className={`${classes.workshopsSection} ${classes.Section}`}>
         <Typography
           component="h2"
           variant="h2"
@@ -337,7 +353,7 @@ function SummerSchool() {
         </Typography>
         <WorkshopList workshops={workshops} />
       </section>
-      <section className={classes.FAQSection}>
+      <section className={`${classes.FAQSection} ${classes.Section}`}>
         <Typography
           component="h2"
           variant="h2"
@@ -366,7 +382,7 @@ function SummerSchool() {
           </Grid>
         </Container>
       </section>
-      {/* <section className={classes.timeLineSection}>
+      <section className={`${classes.timeLineSection} ${classes.Section}`}>
         <Typography
           component="h2"
           variant="h2"
@@ -375,8 +391,8 @@ function SummerSchool() {
           برنامه زمانی رویداد به چه شکله؟
         </Typography>
         <TimeLine />
-      </section> */}
-      <section className={classes.teamSection}>
+      </section>
+      <section className={`${classes.teamSection} ${classes.Section}`}>
         <LandingOurTeam />
       </section>
       <Footer />
