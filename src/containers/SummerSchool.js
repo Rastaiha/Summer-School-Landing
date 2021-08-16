@@ -18,7 +18,7 @@ import workshops from './Workshops';
 import TimeLine from '../components/TimeLine/TimeLine'
 
 const FirstColor = '#c89c2f';
-const FirstColorBackText = 'rgba(0, 0, 0, 0.87)';
+const FirstColorBackText = 'black';
 const SecondColor = '#e8332a';
 const SecondColorBackText = 'white';
 const useStyles = makeStyles((theme) => ({
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
   telegramLink: {
     display: 'inline-block',
     marginRight: 10,
-    color: 'rgb(85, 85, 255)',
+    color: 'inherit'
   },
   h_iframe_aparat_embed_frame: {
     position: 'relative',
@@ -140,8 +140,12 @@ const useStyles = makeStyles((theme) => ({
   },
   Buttons:{
     margin:theme.spacing(4,0),
-    direction:'ltr'
-  }
+    direction:'ltr',
+  },
+  titleButton:{
+    backgroundColor:"#e8332a",
+    color:"white",
+  },
 }));
 function SummerSchool() {
   const classes = useStyles();
@@ -169,13 +173,16 @@ function SummerSchool() {
                 <Button
                   rel="noreferrer"
                   target="_blank"
-                  href={'http://academy.rastaiha.ir/create_accoun'}>
+                  href={'http://academy.rastaiha.ir/create_accoun'}
+                  className={classes.titleButton}>
                   عضویت
                 </Button>
                 <Button
                   rel="noreferrer"
                   target="_blank"
-                  href={'http://academy.rastaiha.ir/login'}>
+                  href={'http://academy.rastaiha.ir/login'}
+                  className={classes.titleButton}
+                  >
                   ورود
                 </Button>
               </ButtonGroup>
@@ -297,7 +304,7 @@ function SummerSchool() {
         <Button
           target="_blank"
           variant="contained"
-          color="primary"
+          color="secondary"
           className={classes.moreButton}
           href="/about_us">
           اطلاعات بیشتر

@@ -43,8 +43,8 @@ export const ZeroJourneyer = {
 export const SummerSchool = {
   colors: {
     primary: '#c89c2f',
-    primaryLight: '#dfb144',
-    primaryDark: '#967000',
+    primaryLight: '#ffc400',
+    primaryDark: '#cc9c00',
     secondary: '#ffc301',
     inheritDefault1: '#fefefe',
     inheritDefault2: '#f8f9ff',
@@ -52,7 +52,7 @@ export const SummerSchool = {
     indigo: '#7420ff',
     purple: '#793de6',
     pink: '#fc26a4',
-    red: '#eb1748',
+    red: '#e8332a',
     orange: '#f4772e',
     yellow: '#ffc926',
     green: '#42a922',

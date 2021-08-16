@@ -1,9 +1,8 @@
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
-import ComputerIcon from '@material-ui/icons/Computer';
-import CreditCardIcon from '@material-ui/icons/CreditCard';import CreateIcon from '@material-ui/icons/Create';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import CreditCardIcon from '@material-ui/icons/CreditCard';
 import Timeline from '@material-ui/lab/Timeline';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
@@ -12,12 +11,12 @@ import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import AssignmentIcon from '@material-ui/icons/Assignment';
-import FormatListNumberedRtlIcon from '@material-ui/icons/FormatListNumberedRtl';
-import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
-import StarHalfIcon from '@material-ui/icons/StarHalf';
+import SchoolIcon from '@material-ui/icons/School';
+import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied';
-import React from 'react';
+import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 
+import React from 'react';
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: '6px 16px',
@@ -49,7 +48,6 @@ export default function TimeLine() {
           </Paper>
         </TimelineContent>
       </TimelineItem>
-
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="body2" color="white">
@@ -70,95 +68,110 @@ export default function TimeLine() {
           </Paper>
         </TimelineContent>
       </TimelineItem>
-
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            ۸ الی ۱۰ اسفند
+          <Typography variant="body2" color="white">
+            ۸ شهریور
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="secondary">
-            <CreateIcon />
+            <PlayArrowIcon />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography variant="h6" component="h1">
-              آزمون مرحله اول
+              شروع رویداد
             </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
-
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            {'۱۰ اردیبهشت'}
+          <Typography variant="body2" color="white">
+            ۸ شهریور
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="secondary">
-            <CreateIcon />
+            <SchoolIcon />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography variant="h6" component="h1">
-              آزمون مرحله دوم
+              دورهمی علمی
             </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
-
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            تیر و مرداد ۱۴۰۰
+          <Typography variant="body2" color="white">
+            ۱۰ شهریور
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="secondary">
-            <SupervisorAccountIcon />
+            <SportsEsportsIcon />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography variant="h6" component="h1">
-              جلسات درون سیاره‌ای بین کارسوقمندانِ سابق و تازه‌واردینِ کهکشان
+              شهربازی
             </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
-
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            ۱۳ الی ۱۵ مرداد ۱۴۰۰
+          <Typography variant="body2" color="white">
+            ۱۱ شهریور
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="secondary">
-            <StarHalfIcon />
+            <SchoolIcon />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography variant="h6" component="h1">
-              مرحله‌ی نهایی، جنگ ستارگان!
+              دورهمی علمی
             </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
-
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            تا سال بعد...
+          <Typography variant="body2" color="white">
+            ۱۲ شهریور
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="secondary">
+            <EmojiEventsIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography variant="h6" component="h1">
+              بازی پایانی افسون توتنخ‌عامو
+            </Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography variant="body2" color="white">
+            ۱۲ شهریور
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -169,7 +182,7 @@ export default function TimeLine() {
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography variant="h6" component="h1">
-              دل‌تنگی و دوری :(
+              اختتامیه
             </Typography>
           </Paper>
         </TimelineContent>
