@@ -57,12 +57,13 @@ function LandingOurTeam({ members = [], count = 4, getLandingData }) {
       </Grid>
       <Button
         variant="contained"
-        color="primary"
         className={classes.moreButton}
         component={Link}
         target="_blank"
         rel="noopener"
-        to="/our_team">
+        to="/our_team"
+        style={{backgroundColor:"#e8332a",color:"white"}}
+        >
         {t('seeMore')}
       </Button>
       </>
