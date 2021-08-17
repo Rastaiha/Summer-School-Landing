@@ -36,7 +36,7 @@ function OurTeam({ members = [], getLandingData }) {
               <div className="tab__content" key={team}>
                 <Grid container spacing={2} justify="center">
                   {members
-                    .filter((member) => member.team === team)
+                    .filter((member) => member.Team === team)
                     .map((member, index) => (
                       <Grid
                         container

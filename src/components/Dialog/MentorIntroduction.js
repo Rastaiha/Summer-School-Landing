@@ -9,7 +9,7 @@ import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
   image: (props) => ({
-    background: `url(${props.image})`,
+    background: `url(http://utility.rastaiha.ir${props.image})`,
     backgroundSize: 'cover !important',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
@@ -28,7 +28,7 @@ function MentorIntroduction({
   handleClose,
   person
 }) {
-  const image=person.photo
+  const image=person.Picture
   const classes = useStyles({ image });
 
   return (
@@ -42,12 +42,12 @@ function MentorIntroduction({
         <Grid xs={12} sm={6} container item direction='column' style={{ height: '100%' }} justify='center'>
           <Grid item>
             <Typography gutterBottom component="h3" variant="h4" align="center">
-              {person.name}
+              {person.Name}
             </Typography>
           </Grid >
           <Grid item>
             <Typography component="h4" variant="h6" className={classes.description}>
-              {person.desc}
+              {person.Description}
             </Typography>
           </Grid>
         </Grid>

@@ -14,9 +14,7 @@ export const widgetUrl = 'fsm/widget/';
 
 export const workshopTeamsUrl = 'fsm/workshopplayers/';
 
-export const getLandingDataUrl = `https://res.cloudinary.com/dflcxtpro/raw/upload/v${Math.floor(
-  Math.random() * 10000000
-)}/rasta/landing-zero-v3_d5lbgq.json`;
+export const getLandingDataUrl = `http://utility.rastaiha.ir/people`;
 
 export const goBackwardUrl = 'fsm/gobackward/';
 

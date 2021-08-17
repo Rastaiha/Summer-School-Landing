@@ -40,22 +40,21 @@ const PersonCard = ({
 }) => {
   const classes = useStyles();
   const [isDialogueOpen, setDialogueOpen] = useState(false);
-
   return (
     <>
       <Card className={classes.root}>
         <CardActionArea disabled>
           <CardMedia
             className={classes.media}
-            image={person.photo}
-            title={person.name}
+            image={`http://utility.rastaiha.ir${person.Picture}`}
+            title={person.Name}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              {person.name}
+              {person.Name}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              {person.team}
+              {person.Team}
             </Typography>
           </CardContent>
         </CardActionArea>
