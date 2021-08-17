@@ -177,9 +177,9 @@ function SummerSchool() {
                 <Button
                   rel="noreferrer"
                   target="_blank"
-                  href={'http://academy.rastaiha.ir/create_accoun'}
+                  href={'http://academy.rastaiha.ir/create_account'}
                   className={classes.titleButton}>
-                  عضویت
+                  ثبت‌نام
                 </Button>
                 <Button
                   rel="noreferrer"
@@ -194,7 +194,7 @@ function SummerSchool() {
           <Grid item>
             <img
               src={process.env.PUBLIC_URL + 'watermelon.gif'}
-              alt="scroll"
+              alt=""
               style={{ width: 150 }}
             />
           </Grid>
@@ -282,7 +282,7 @@ function SummerSchool() {
               <span></span>
               <iframe
                 title="مدرسه تابستانه رستا"
-                src=""
+                src="https://www.aparat.com/video/video/embed/videohash/aH08d/vt/frame"
                 allowFullScreen
                 webkitallowfullscreen="true"
                 mozallowfullscreen="true"></iframe>
@@ -357,11 +357,48 @@ function SummerSchool() {
                     کارگاه مجازی
                   </Typography>
                   <Typography variant="subtitle1">
-                    امسال باتوجه به آنلاین بودن رویداد دو دسته کارگاه طراحی
-                    کردیم. در دسته اول منتورها کنارتون حضور دارن و بهتون کمک
-                    میکنن و در دسته دوم سعی کردیم یه سری کارگاه طراحی کنیم که
-                    بدون حضور منتور و به صورت خودآموز و قدم‌به‌قدم، مطالب رو به
-                    شما آموزش بدن.
+                    امسال هم باتوجه به مجازی‌بودن رویداد،
+                    کارگاه‌های مدرسه را به صورت مجازی و بر روی سایتمون آماده کردیم.
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sm={10} md={8} lg={6}>
+            <Paper className={classes.featuresSectionPaper}>
+              <Grid container spacing={2} direction="row-reverse">
+                <Grid item xs={12} sm={4}>
+                  <img src={process.env.PUBLIC_URL + '/edu.png'} alt="" />
+                </Grid>
+                <Grid item xs={12} sm={8}>
+                  <Typography variant="h3" align="center" gutterBottom>
+                    ارتباط با همیار
+                  </Typography>
+                  <Typography variant="subtitle1">
+                    بروبچه‌های تیم طراحی و همیاران کارگاه‌ها، برای آموزش‌ هرچه
+                    بهتر و کمک به شما در این روند، اینجا منتظرند تا هر وقت سوالی
+                    ازشون داشتید یا خواستید چیزی رو باهاشون مطرح کنید، کمکتون
+                    کنند.
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sm={10} md={8} lg={6}>
+            <Paper className={classes.featuresSectionPaper}>
+              <Grid container spacing={2}>
+                <Grid item xs={12} sm={4}>
+                  <img src={process.env.PUBLIC_URL + '/team-work.png'} alt="" />
+                </Grid>
+                <Grid item xs={12} sm={8}>
+                  <Typography variant="h3" align="center" gutterBottom>
+                    کار گروهی
+                  </Typography>
+                  <Typography variant="subtitle1">
+                    در رستا، آموزش بر اساس تعامل در کار گروهی و کار روی مسئله‌های
+                    چالش‌برانگیز، واقعی و نزدیک به دنیای فکری مخاطبینه. هدف
+                    رستا از آموزش مسئله و تعامل‌محور، ایجاد خلاقیت و
+                    یادگیری عمیق دانش‌آموزان است.
                   </Typography>
                 </Grid>
               </Grid>
@@ -375,7 +412,7 @@ function SummerSchool() {
           variant="h2"
           gutterBottom
           className={classes.sectionTitle}>
-          خوب قراره تو چه کارگاه‌هایی شرکت کنیم؟
+          خب قراره تو چه کارگاه‌هایی شرکت کنیم؟
         </Typography>
         <WorkshopList workshops={workshops} />
       </section>
@@ -416,7 +453,13 @@ function SummerSchool() {
           className={classes.sectionTitle}>
           برنامه زمانی رویداد به چه شکله؟
         </Typography>
-        <TimeLine />
+        <Container>
+          <Grid container justify="center" alignItems="center" spacing={2}>
+            <Grid item xs={12} sm={8}>
+              <TimeLine />
+            </Grid>
+          </Grid>
+        </Container>
       </section>
       <section className={`${classes.teamSection} ${classes.Section}`}>
         <LandingOurTeam />

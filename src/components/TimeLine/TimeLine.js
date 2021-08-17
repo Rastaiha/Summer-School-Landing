@@ -30,7 +30,7 @@ export default function TimeLine() {
     <Timeline align="alternate">
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="white">
+          <Typography align='left' variant="body2" color="white">
             ۳۱-۲۶ مرداد
           </Typography>
         </TimelineOppositeContent>
@@ -42,7 +42,7 @@ export default function TimeLine() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
+            <Typography align='center' variant="h6" component="h1">
               ثبت‌نام
             </Typography>
           </Paper>
@@ -50,7 +50,7 @@ export default function TimeLine() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="white">
+          <Typography align='right' variant="body2" color="white">
             ۳-۵ شهریور
           </Typography>
         </TimelineOppositeContent>
@@ -62,7 +62,7 @@ export default function TimeLine() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
+            <Typography align='center' variant="h6" component="h1">
               پرداخت هزینه
             </Typography>
           </Paper>
@@ -70,27 +70,7 @@ export default function TimeLine() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="white">
-            ۸ شهریور
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot color="secondary">
-            <PlayArrowIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              شروع رویداد
-            </Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent>
-          <Typography variant="body2" color="white">
+          <Typography align='left' variant="body2" color="white">
             ۸ شهریور
           </Typography>
         </TimelineOppositeContent>
@@ -102,15 +82,35 @@ export default function TimeLine() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              دورهمی علمی
+            <Typography align='center' variant="h6" component="h1">
+              شروع رویداد - کارگاه اول - دورهمی علمی
             </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="white">
+          <Typography align='right' variant="body2" color="white">
+            ۹ شهریور
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="secondary">
+            <SchoolIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography align='center' variant="h6" component="h1">
+              کارگاه دوم - کارگاه سوم
+            </Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography align='left' variant="body2" color="white">
             ۱۰ شهریور
           </Typography>
         </TimelineOppositeContent>
@@ -122,15 +122,15 @@ export default function TimeLine() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              شهربازی
+            <Typography align='center' variant="h6" component="h1">
+              کارگاه چهارم - شهربازی
             </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="white">
+          <Typography align='right' variant="body2" color="white">
             ۱۱ شهریور
           </Typography>
         </TimelineOppositeContent>
@@ -142,15 +142,15 @@ export default function TimeLine() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              دورهمی علمی
+            <Typography align='center' variant="h6" component="h1">
+              کارگاه پنجم - دورهمی علمی
             </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="white">
+          <Typography align='left' variant="body2" color="white">
             ۱۲ شهریور
           </Typography>
         </TimelineOppositeContent>
@@ -162,17 +162,14 @@ export default function TimeLine() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              بازی پایانی افسون توتنخ‌عامو
+            <Typography align='center' variant="h6" component="h1">
+              بازی پایانی افسون توتنخ‌عامو - اختتامیه
             </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="white">
-            ۱۲ شهریور
-          </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="secondary">
@@ -180,11 +177,6 @@ export default function TimeLine() {
           </TimelineDot>
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              اختتامیه
-            </Typography>
-          </Paper>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
