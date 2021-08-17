@@ -33,7 +33,6 @@ function LandingOurTeam({ members = [], count = 4, getLandingData }) {
   }, []);
 
   if (members.length === 0) return <></>;
-
   return (
     <>
       <Typography component="h2" variant="h2" gutterBottom className={classes.sectionTitle}>
