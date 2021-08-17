@@ -22,10 +22,7 @@ const landingSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: {
-    [getLandingDataAction.fulfilled.toString()]: (
-      state,
-      { payload: { response } }
-    ) => {
+    [getLandingDataAction.fulfilled.toString()]: (state, { payload: { response } }) => {
       state.teams = response.teams;
       state.members = response.members;
       state.workshops = response.workshops;
