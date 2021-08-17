@@ -9,7 +9,7 @@ const initialState = {
 };
 
 export const getLandingDataAction = createAsyncThunkApi(
-  'landing/getData',
+  'landing/getLandingDataAction',
   Apis.GET,
   getLandingDataUrl
 );
