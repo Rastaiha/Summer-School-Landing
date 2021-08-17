@@ -461,9 +461,9 @@ function SummerSchool() {
           </Grid>
         </Container>
       </section>
-      {/* <section className={`${classes.teamSection} ${classes.Section}`}>
+      <section className={`${classes.teamSection} ${classes.Section}`}>
         <LandingOurTeam />
-      </section> */}
+      </section>
       <Footer />
     </>
   );

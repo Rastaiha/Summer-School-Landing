@@ -10,7 +10,7 @@ const Root = () => {
   return (
     <Switch>
       <Route path="/about_us" component={AboutUs} />
-      <Route path="/our_team" component={SummerSchoolLanding} />
+      <Route path="/our_team" component={OurTeam} />
       <Route path="/" component={SummerSchoolLanding} />
     </Switch>
   );
