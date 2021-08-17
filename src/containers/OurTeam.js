@@ -6,19 +6,16 @@ import { connect } from 'react-redux';
 
 import PersonCard from '../components/Cards/PersonCard';
 import { getLandingDataAction } from '../redux/slices/landing';
+import ResponsiveAppBar from '../components/Appbar/ResponsiveAppBar';
 
-const teams = ['کمیته برگزاری', 'فنی', 'برندینگ', 'علمی', 'رسانه', 'مسابقه'];
-
-function OurTeam({ members = [], getLandingData }) {
+function OurTeam({ members = [],teams=[], getLandingData }) {
   useEffect(() => {
     getLandingData();
-    document.getElementById('tab0').checked = true;
   }, []);
-
   return (
     <>
-      {/* <ResponsiveAppBar mode="LANDING" /> */}
-      <Container maxWidth="md" style={{ marginTop: 80 }}>
+      <ResponsiveAppBar mode="LANDING" />
+      <Container maxWidth="md" style={{ marginTop: 160 }}>
         <div className="our-team-page">
           <div className="tab-wrap">
             {teams.map((team, index) => (
@@ -28,6 +25,7 @@ function OurTeam({ members = [], getLandingData }) {
                   id={'tab' + index}
                   name="tabGroup1"
                   className="tab"
+                  defaultChecked = {index===0 ? 'checked' : ""}
                 />
                 <label htmlFor={'tab' + index}>{team}</label>
               </>
@@ -36,7 +34,7 @@ function OurTeam({ members = [], getLandingData }) {
               <div className="tab__content" key={team}>
                 <Grid container spacing={2} justify="center">
                   {members
-                    .filter((member) => member.Team === team)
+                    .filter((member) => member.team.includes(team))
                     .map((member, index) => (
                       <Grid
                         container
@@ -62,6 +60,7 @@ function OurTeam({ members = [], getLandingData }) {
 
 const mapStatesToProps = (state) => ({
   members: state.landing.members,
+  teams: state.landing.teams
 });
 
 export default connect(mapStatesToProps, {

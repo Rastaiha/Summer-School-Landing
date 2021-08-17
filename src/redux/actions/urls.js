@@ -1,7 +1,7 @@
 export const ROOT =
   process.env.NODE_ENV === 'production'
     ? 'https://utility.rastaiha.ir/'
-    : 'https://utility.rastaiha.ir/';
+    : 'http://127.0.0.1:8000';
 
 export const LOGIN = ROOT.concat('auth/token/obtain/');
 export const LOGOUT = ROOT.concat('auth/logout/');

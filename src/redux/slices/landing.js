@@ -6,6 +6,7 @@ import { getLandingDataUrl } from '../constants/urls';
 
 const initialState = {
   members: [],
+  teams:[],
 };
 
 export const getLandingDataAction = createAsyncThunkApi(
