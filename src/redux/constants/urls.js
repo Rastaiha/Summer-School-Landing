@@ -14,7 +14,7 @@ export const widgetUrl = 'fsm/widget/';
 
 export const workshopTeamsUrl = 'fsm/workshopplayers/';
 
-export const getLandingDataUrl = `http://utility.rastaiha.ir/people`;
+export const getLandingDataUrl = 'people/';
 
 export const goBackwardUrl = 'fsm/gobackward/';
 

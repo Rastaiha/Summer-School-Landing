@@ -366,7 +366,7 @@ function SummerSchool() {
           </Grid>
           <Grid item xs={12} sm={10} md={8} lg={6}>
             <Paper className={classes.featuresSectionPaper}>
-              <Grid container spacing={2} direction="row-reverse">
+              <Grid container spacing={2} direction="row-reverse" alignItems='center'>
                 <Grid item xs={12} sm={4}>
                   <img src={process.env.PUBLIC_URL + '/edu.png'} alt="" />
                 </Grid>
@@ -386,7 +386,7 @@ function SummerSchool() {
           </Grid>
           <Grid item xs={12} sm={10} md={8} lg={6}>
             <Paper className={classes.featuresSectionPaper}>
-              <Grid container spacing={2}>
+              <Grid container spacing={2} alignItems='center'>
                 <Grid item xs={12} sm={4}>
                   <img src={process.env.PUBLIC_URL + '/team-work.png'} alt="" />
                 </Grid>
