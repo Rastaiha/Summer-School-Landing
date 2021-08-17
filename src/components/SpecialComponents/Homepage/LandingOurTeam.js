@@ -19,8 +19,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     display: 'table',
   },
-  sectionTitle:{
-    margin:theme.spacing(2,0,4,0),
+  sectionTitle: {
+    margin: theme.spacing(2, 0, 4, 0),
   },
 }));
 
@@ -47,10 +47,10 @@ function LandingOurTeam({ members = [], count = 4, getLandingData }) {
             sm={3}
             key={index}
             justify="center"
-            >
-            <PersonCard 
-            person={member}
-             />
+          >
+            <PersonCard
+              person={member}
+            />
           </Grid>
         ))}
       </Grid>
@@ -61,11 +61,11 @@ function LandingOurTeam({ members = [], count = 4, getLandingData }) {
         target="_blank"
         rel="noopener"
         to="/our_team"
-        style={{backgroundColor:"#e8332a",color:"white"}}
-        >
+        style={{ backgroundColor: "#e8332a", color: "white" }}
+      >
         {t('seeMore')}
       </Button>
-      </>
+    </>
   );
 }
 

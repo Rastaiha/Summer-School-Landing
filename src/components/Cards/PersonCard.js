@@ -38,10 +38,10 @@ const useStyles = makeStyles({
 const PersonCard = ({ person }) => {
   const classes = useStyles();
   const [isDialogueOpen, setDialogueOpen] = useState(false);
-  let position="";
+  let position = "";
   if (person.position) {
-    position=<Typography variant="body2" color="textSecondary" component="p">
-    {person.position}
+    position = <Typography variant="body2" color="textSecondary" component="p">
+      {person.position}
     </Typography>;
   }
   return (
@@ -57,13 +57,13 @@ const PersonCard = ({ person }) => {
             <Typography gutterBottom variant="h5" component="h2">
               {person.name}
             </Typography>
-            {person.team.map((team) => (
+            {/* {person.team.map((team) => (
               <>
                 <Typography variant="body2" color="textSecondary" component="p">
                   {team}
                 </Typography>
               </>
-            ))}
+            ))} */}
             {position}
           </CardContent>
         </CardActionArea>

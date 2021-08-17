@@ -4,18 +4,18 @@ import { Container, Grid } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
+import ResponsiveAppBar from '../components/Appbar/ResponsiveAppBar';
 import PersonCard from '../components/Cards/PersonCard';
 import { getLandingDataAction } from '../redux/slices/landing';
-import ResponsiveAppBar from '../components/Appbar/ResponsiveAppBar';
 
-function OurTeam({ members = [],teams=[], getLandingData }) {
+function OurTeam({ members = [], teams = [], getLandingData }) {
   useEffect(() => {
     getLandingData();
   }, []);
   return (
     <>
       <ResponsiveAppBar mode="LANDING" />
-      <Container maxWidth="md" style={{ marginTop: 160 }}>
+      <Container maxWidth="md" style={{ marginTop: 160, marginBottom: 50 }}>
         <div className="our-team-page">
           <div className="tab-wrap">
             {teams.map((team, index) => (
@@ -25,7 +25,7 @@ function OurTeam({ members = [],teams=[], getLandingData }) {
                   id={'tab' + index}
                   name="tabGroup1"
                   className="tab"
-                  defaultChecked = {index===0 ? 'checked' : ""}
+                  defaultChecked={index === 0 ? 'checked' : ""}
                 />
                 <label htmlFor={'tab' + index}>{team}</label>
               </>
@@ -42,7 +42,7 @@ function OurTeam({ members = [],teams=[], getLandingData }) {
                         key={index}
                         xs={6}
                         sm={4}
-                        md={3}
+                        md={4}
                         alignItems="flex-start"
                         justify="center">
                         <PersonCard person={member} />
