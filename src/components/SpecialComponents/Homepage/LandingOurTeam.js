@@ -43,8 +43,9 @@ function LandingOurTeam({ members = [], count = 4, getLandingData }) {
           <Grid
             container
             item
-            xs={6}
-            sm={3}
+            xs={12}
+            sm={4}
+            md={3}
             key={index}
             justify="center"
           >
