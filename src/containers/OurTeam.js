@@ -40,8 +40,9 @@ function OurTeam({ members = [], teams = [], getLandingData }) {
                         container
                         item
                         key={index}
-                        xs={6}
+                        xs={10}
                         sm={4}
+                        md={3}
                         alignItems="flex-start"
                         justify="center">
                         <PersonCard person={member} />

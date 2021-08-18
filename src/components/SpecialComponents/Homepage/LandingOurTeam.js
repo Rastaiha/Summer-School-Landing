@@ -43,7 +43,7 @@ function LandingOurTeam({ members = [], count = 4, getLandingData }) {
           <Grid
             container
             item
-            xs={12}
+            xs={10}
             sm={4}
             md={3}
             key={index}
