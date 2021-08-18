@@ -39,6 +39,7 @@ const WorkshopCard = ({
   position,
   image,
   description,
+  teaserLink
 }) => {
   const classes = useStyles();
   const [isDialogueOpen, setDialogueOpen] = useState(false);
@@ -70,6 +71,7 @@ const WorkshopCard = ({
         name={name}
         image={image}
         description={description}
+        teaserLink={teaserLink}
         open={isDialogueOpen}
         handleClose={() => { setDialogueOpen(!isDialogueOpen) }}
       />

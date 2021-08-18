@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     webkitFilter: 'blur(4px)',
     opacity: 0.9,
     backgroundSize: 'cover',
-    zIndex: -1,
+    zIndex: -3,
   },
   firstPageContent: {
     height: '100vh',
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '-2px 2px #bd0d01',
     textAlign: 'center',
     [theme.breakpoints.down('sm')]: {
-      fontSize: 50,
+      fontSize: 40,
       lineHeight: '50px',
     },
   },
@@ -146,6 +146,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#e8332a',
     color: 'white',
   },
+  mummy: {
+    position: 'fixed',
+    zIndex: -1,
+    [theme.breakpoints.down('sm')]: {
+      display:'none'
+    }
+  },
 }));
 function SummerSchool() {
   const classes = useStyles();
@@ -155,13 +162,17 @@ function SummerSchool() {
       <section className={classes.titleSection}>
         <div id="back-to-top-anchor"></div>
         <div className={classes.landingBackground} />
+        <img
+          src={process.env.PUBLIC_URL + '/wall.png'}
+          alt=""
+          className={classes.mummy}
+        />
         <Grid
           container
           justify="space-evenly"
           alignItems="center"
           direction="column"
           className={classes.firstPageContent}>
-          <Grid item></Grid>
           <Grid item container alignItems="center" direction="column">
             <Grid item>
               <Typography component="h1" variant="h1" className={classes.title}>
@@ -190,13 +201,13 @@ function SummerSchool() {
                 </Button>
               </ButtonGroup>
             </Grid>
-          </Grid>
-          <Grid item>
-            <img
-              src={process.env.PUBLIC_URL + 'watermelon.gif'}
-              alt=""
-              style={{ width: 150 }}
-            />
+            <Grid item>
+                  <img
+                    src={process.env.PUBLIC_URL + '/scroll.gif'}
+                    alt=""
+                    style={{width:20}}
+                  />
+                </Grid>
           </Grid>
         </Grid>
       </section>
@@ -315,7 +326,7 @@ function SummerSchool() {
           <Grid item xs={12} sm={3} container justify="center">
             <img
               className={classes.kaftar}
-              src={process.env.PUBLIC_URL + '/logo_yellow.png'}
+              src={process.env.PUBLIC_URL + '/originalLogoYellow.png'}
               alt=""
             />
           </Grid>
@@ -348,7 +359,7 @@ function SummerSchool() {
               <Grid container spacing={2} alignItems="center" justify="center">
                 <Grid item xs={12} sm={4}>
                   <img
-                    src={process.env.PUBLIC_URL + '/watermelon2.gif'}
+                    src={process.env.PUBLIC_URL + '/virtualEducation.png'}
                     alt=""
                   />
                 </Grid>
@@ -357,8 +368,8 @@ function SummerSchool() {
                     کارگاه مجازی
                   </Typography>
                   <Typography variant="subtitle1">
-                    امسال هم باتوجه به مجازی‌بودن رویداد،
-                    کارگاه‌های مدرسه را به صورت مجازی و بر روی سایتمون آماده کردیم.
+                    امسال هم باتوجه به مجازی‌بودن رویداد، کارگاه‌های مدرسه را به
+                    صورت مجازی و بر روی سایتمون آماده کردیم.
                   </Typography>
                 </Grid>
               </Grid>
@@ -366,7 +377,11 @@ function SummerSchool() {
           </Grid>
           <Grid item xs={12} sm={10} md={8} lg={6}>
             <Paper className={classes.featuresSectionPaper}>
-              <Grid container spacing={2} direction="row-reverse" alignItems='center'>
+              <Grid
+                container
+                spacing={2}
+                direction="row-reverse"
+                alignItems="center">
                 <Grid item xs={12} sm={4}>
                   <img src={process.env.PUBLIC_URL + '/edu.png'} alt="" />
                 </Grid>
@@ -386,7 +401,7 @@ function SummerSchool() {
           </Grid>
           <Grid item xs={12} sm={10} md={8} lg={6}>
             <Paper className={classes.featuresSectionPaper}>
-              <Grid container spacing={2} alignItems='center'>
+              <Grid container spacing={2} alignItems="center">
                 <Grid item xs={12} sm={4}>
                   <img src={process.env.PUBLIC_URL + '/team-work.png'} alt="" />
                 </Grid>
@@ -395,10 +410,10 @@ function SummerSchool() {
                     کار گروهی
                   </Typography>
                   <Typography variant="subtitle1">
-                    در رستا، آموزش بر اساس تعامل در کار گروهی و کار روی مسئله‌های
-                    چالش‌برانگیز، واقعی و نزدیک به دنیای فکری مخاطبینه. هدف
-                    رستا از آموزش مسئله و تعامل‌محور، ایجاد خلاقیت و
-                    یادگیری عمیق دانش‌آموزان است.
+                    در رستا، آموزش بر اساس تعامل در کار گروهی و کار روی
+                    مسئله‌های چالش‌برانگیز، واقعی و نزدیک به دنیای فکری
+                    مخاطبینه. هدف رستا از آموزش مسئله و تعامل‌محور، ایجاد خلاقیت
+                    و یادگیری عمیق دانش‌آموزان است.
                   </Typography>
                 </Grid>
               </Grid>

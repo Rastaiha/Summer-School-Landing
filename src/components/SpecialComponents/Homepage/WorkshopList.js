@@ -20,6 +20,7 @@ function WorkshopList({ workshops }) {
             image={process.env.PUBLIC_URL + workshop.image}
             name={workshop.name}
             description={workshop.description}
+            teaserLink={workshop.teaserLink}
           />
         </Grid>
       ))}
