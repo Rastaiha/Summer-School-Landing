@@ -15,7 +15,10 @@ import presenters from './RatalkPresenters';
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(5),
-    margin: theme.spacing(3),
+    margin: theme.spacing(3,0),
+    [theme.breakpoints.down('sm')]: {
+      padding: theme.spacing(5,2),
+    }
   },
   container: {
     marginTop: theme.spacing(20),
@@ -95,7 +98,7 @@ function Rastalk() {
                     item
                     key={index}
                     xs={10}
-                    sm={4}
+                    sm={5}
                     md={4}
                     alignItems="flex-start"
                     justify="center">
