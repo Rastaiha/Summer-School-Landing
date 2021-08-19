@@ -157,9 +157,6 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
-  rastalkDescription: {
-    margin: theme.spacing(0, 4),
-  },
 }));
 function SummerSchool() {
   const classes = useStyles();
@@ -447,12 +444,25 @@ function SummerSchool() {
           به نظر می‌یاد کنار کارگاه‌ها یک سری دورهمی هم داریم. تو اون دورهمی‌ها
           چه خبره؟
         </Typography>
-        <Typography variant="subtitle1" className={classes.rastalkDescription}>
-          توی این مدرسه تابستونه دو تا رویداد خیلی جذاب داریم. در اولین دورهمی
-          دکتر تفاق رو در مدل سازی ریاضی کووید-19 همراهی می‌کنیم و در دورهمی
-          بعدی پای صحبت دانشجوهایی می‌شینیم که می‌خوان تجربیاتی که داشتن رو با
-          ما به اشتراک بذارن.
-        </Typography>
+        <Grid container justify="center" alignItems="center" spacing={2}>
+          <Grid item container justify="center" xs={12} sm={9} spacing={2}>
+            <Grid item>
+              <Typography variant="subtitle1">
+                توی این مدرسه تابستونه دو تا دورهمی خیلی جذاب داریم. در اولین
+                دورهمی دکتر تفاق رو در مدل سازی ریاضی کووید-19 همراهی می‌کنیم و
+                در دورهمی بعدی پای صحبت دانشجوهایی می‌شینیم که می‌خوان تجربیاتی
+                که داشتن رو با ما به اشتراک بذارن.
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={3} container justify="center">
+            <img
+              className={classes.kaftar}
+              src={process.env.PUBLIC_URL + '/table.png'}
+              alt=""
+            />
+          </Grid>
+        </Grid>
         <Button
           target="_blank"
           variant="contained"

@@ -34,7 +34,7 @@ function Rastalk() {
       <Container maxWidth="md" className={classes.container}>
         <Paper className={classes.paper}>
           <Typography variant="h1" align="center">
-            دورهمی‌های مدرسه تابستانی
+            دورهمی‌های مدرسه تابستانه‌ رستا
           </Typography>
           <Paper className={classes.paper} elevation={5}>
             <Grid
@@ -73,31 +73,36 @@ function Rastalk() {
               direction="column">
               <Grid item className={classes.item}>
                 <Typography variant="h2" align="center">
-                  دورهمی با دانشجویان
+                  رس‌تاک: دورهمی با دانشجویان
                 </Typography>
               </Grid>
               <Grid item className={classes.item}>
                 <Typography variant="h5" align="h3">
-                  توی این رستاک قراره بیشتر باهم حرف بزنیم. از خودمون بگیم، از
-                  راه‌هایی که رفتیم و راه‌هایی که قراره بریم.<br/> راه من کدوم طرفه؟
+                  توی این رس‌تاک قراره بیشتر باهم حرف بزنیم. از خودمون بگیم، از
+                  راه‌هایی که رفتیم و راه‌هایی که قراره بریم.
+                  <br /> راه من کدوم طرفه؟
                 </Typography>
               </Grid>
-              <Grid container item className={classes.item} spacing={2} justify="center">
-                  {presenters.secondSeminar.map((presenter, index) => (
-                      <Grid
-                        container
-                        item
-                        key={index}
-                        xs={10}
-                        sm={4}
-                        md={4}
-                        alignItems="flex-start"
-                        justify="center"
-                        >
-                        <PersonCard person={presenter} />
-                      </Grid>
-                    ))}
-                </Grid>
+              <Grid
+                container
+                item
+                className={classes.item}
+                spacing={2}
+                justify="center">
+                {presenters.secondSeminar.map((presenter, index) => (
+                  <Grid
+                    container
+                    item
+                    key={index}
+                    xs={10}
+                    sm={4}
+                    md={4}
+                    alignItems="flex-start"
+                    justify="center">
+                    <PersonCard person={presenter} />
+                  </Grid>
+                ))}
+              </Grid>
             </Grid>
           </Paper>
         </Paper>
