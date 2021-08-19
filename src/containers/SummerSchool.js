@@ -49,15 +49,18 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
   },
   title: {
-    fontSize: 80,
+    fontSize: 110,
     lineHeight: '80px',
     fontWeight: 900,
     color: '#e8332a',
     textShadow: '-2px 2px #bd0d01',
     textAlign: 'center',
+    marginBottom:theme.spacing(3),
+    fontFamily:'VIP Cartoon !important',
     [theme.breakpoints.down('sm')]: {
-      fontSize: 40,
+      fontSize: 60,
       lineHeight: '50px',
+      marginBottom:theme.spacing(1),
     },
   },
   telegramLink: {
