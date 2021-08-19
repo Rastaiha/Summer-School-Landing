@@ -63,7 +63,7 @@ const presenters = {
     {
       name: 'حسین فیروز',
       description: 'none',
-      position: 'دانشجوی دکتری علوم کامپیوتر',
+      position: 'دانشجوی علوم کامپیوتر',
       picture: process.env.PUBLIC_URL + '/rastalk/firooz.jpg',
     },
     {
