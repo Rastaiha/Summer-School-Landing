@@ -38,54 +38,64 @@ const useStyles = makeStyles({
 const PersonCard = ({ person }) => {
   const classes = useStyles();
   const [isDialogueOpen, setDialogueOpen] = useState(false);
-  let position = "";
-  if (person.position) {
-    position = <Typography variant="body2" color="textSecondary" component="p">
-      {person.position}
-    </Typography>;
-  }
-  return (
+  let position = '';
+  let introductuion = (
     <>
-      <Card className={classes.root}>
-        <CardActionArea disabled>
-          <CardMedia
-            className={classes.media}
-            image={person.picture}
-            title={person.name}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              {person.name}
-            </Typography>
-            {/* {person.team.map((team) => (
+    <CardActions>
+        <Button
+        fullWidth
+        variant="contained"
+        color="secondary"
+        onClick={() => setDialogueOpen(!isDialogueOpen)}>
+        او کیست؟!
+      </Button>
+    </CardActions>
+    <MentorIntroduction
+      person={person}
+      open={isDialogueOpen}
+      handleClose={() => {
+        setDialogueOpen(!isDialogueOpen);
+      }}
+    />
+    </>
+  );
+  if (person.position) {
+    position = (
+      <Typography variant="body2" color="textSecondary" component="p">
+        {person.position}
+      </Typography>
+    );
+  }
+  if (person.description === 'none'){
+    introductuion="";
+  }
+    return (
+      <>
+        <Card className={classes.root}>
+          <CardActionArea disabled>
+            <CardMedia
+              className={classes.media}
+              image={person.picture}
+              title={person.name}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {person.name}
+              </Typography>
+              {/* {person.team.map((team) => (
               <>
                 <Typography variant="body2" color="textSecondary" component="p">
                   {team}
                 </Typography>
               </>
             ))} */}
-            {position}
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button
-            fullWidth
-            variant="contained"
-            color="secondary"
-            onClick={() => setDialogueOpen(!isDialogueOpen)}>
-            او کیست؟!
-          </Button>
-        </CardActions>
-      </Card>
-      <MentorIntroduction
-        person={person}
-        open={isDialogueOpen}
-        handleClose={() => {
-          setDialogueOpen(!isDialogueOpen);
-        }}
-      />
-    </>
-  );
+              {position}
+            </CardContent>
+          </CardActionArea>
+          {introductuion}
+        </Card>
+      </>
+    );
 };
 
 export default PersonCard;

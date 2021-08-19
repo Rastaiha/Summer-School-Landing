@@ -120,6 +120,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: SecondColor,
     color: SecondColorBackText,
   },
+  rastalkSection: {
+    backgroundColor: SecondColor,
+    color: SecondColorBackText,
+  },
   sectionTitle: {
     margin: theme.spacing(2, 0, 4, 0),
   },
@@ -150,8 +154,11 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     zIndex: -1,
     [theme.breakpoints.down('sm')]: {
-      display:'none'
-    }
+      display: 'none',
+    },
+  },
+  rastalkDescription: {
+    margin: theme.spacing(0, 4),
   },
 }));
 function SummerSchool() {
@@ -202,12 +209,12 @@ function SummerSchool() {
               </ButtonGroup>
             </Grid>
             <Grid item>
-                  <img
-                    src={process.env.PUBLIC_URL + '/scroll.gif'}
-                    alt=""
-                    style={{width:20}}
-                  />
-                </Grid>
+              <img
+                src={process.env.PUBLIC_URL + '/scroll.gif'}
+                alt=""
+                style={{ width: 20 }}
+              />
+            </Grid>
           </Grid>
         </Grid>
       </section>
@@ -430,6 +437,30 @@ function SummerSchool() {
           خب قراره تو چه کارگاه‌هایی شرکت کنیم؟
         </Typography>
         <WorkshopList workshops={workshops} />
+      </section>
+      <section className={`${classes.rastalkSection} ${classes.Section}`}>
+        <Typography
+          component="h2"
+          variant="h2"
+          gutterBottom
+          className={classes.sectionTitle}>
+          به نظر می‌یاد کنار کارگاه‌ها یک سری دورهمی هم داریم. تو اون دورهمی‌ها
+          چه خبره؟
+        </Typography>
+        <Typography variant="subtitle1" className={classes.rastalkDescription}>
+          توی این مدرسه تابستونه دو تا رویداد خیلی جذاب داریم. در اولین دورهمی
+          دکتر تفاق رو در مدل سازی ریاضی کووید-19 همراهی می‌کنیم و در دورهمی
+          بعدی پای صحبت دانشجوهایی می‌شینیم که می‌خوان تجربیاتی که داشتن رو با
+          ما به اشتراک بذارن.
+        </Typography>
+        <Button
+          target="_blank"
+          variant="contained"
+          color="secondary"
+          className={classes.moreButton}
+          href="/rastalk">
+          اطلاعات بیشتر
+        </Button>
       </section>
       <section className={`${classes.FAQSection} ${classes.Section}`}>
         <Typography
