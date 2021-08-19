@@ -1,5 +1,4 @@
 import { updateToken } from '../../axios';
-import { mentorInitialState } from '../slices/mentor';
 import createStore from './createStore';
 
 const removeOldJsonData = (delta, data = {}) => {
@@ -16,10 +15,10 @@ const persistedState = localStorage.getItem('rastaState')
 
 removeOldJsonData(108000000, persistedState?.mentor?.teams);
 
-persistedState.mentor = {
-  ...mentorInitialState,
-  ...persistedState.mentor,
-};
+// persistedState.mentor = {
+//   ...mentorInitialState,
+//   ...persistedState.mentor,
+// };
 
 const reduxStore = createStore(persistedState);
 
@@ -32,10 +31,6 @@ reduxStore.subscribe(() => {
         user: state.account.user,
         token: state.account.token,
       },
-      mentor: {
-        teams: state.mentor.teams,
-      },
-      events: state.events,
       Intl: state.Intl,
     })
   );
