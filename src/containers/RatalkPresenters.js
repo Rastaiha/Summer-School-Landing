@@ -78,6 +78,30 @@ const presenters = {
       position: 'دانشجوی مهندسی شیمی',
       picture: process.env.PUBLIC_URL + '/rastalk/nikookar.jpg',
     },
+    {
+      name: 'نیلوفر لطیفیان',
+      description: 'none',
+      position: 'دانشجوی کارشناسی ارشد مهندسی کامپیوتر',
+      picture: process.env.PUBLIC_URL + '/rastalk/latifian.jpg',
+    },
+    {
+      name: 'شهاب کریمی',
+      description: 'none',
+      position: 'دانشجوی مهندسی کامپیوتر',
+      picture: process.env.PUBLIC_URL + '/rastalk/karimi.jpg',
+    },
+    {
+      name: 'مهتاب بیگ وردی',
+      description: 'none',
+      position: 'دانشجوی کارشناسی مهندسی کامپیوتر',
+      picture: process.env.PUBLIC_URL + '/rastalk/bigverdi.jpg',
+    },
+    {
+      name: 'پوریا فاطمی',
+      description: 'none',
+      position: 'دانشجوی مهندسی برق و علوم کامپیوتر',
+      picture: process.env.PUBLIC_URL + '/rastalk/fatemi.jpeg',
+    },
   ],
 };
 export default presenters;
