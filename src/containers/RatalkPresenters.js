@@ -87,7 +87,7 @@ const presenters = {
     {
       name: 'شهاب کریمی',
       description: 'none',
-      position: 'دانشجوی مهندسی کامپیوتر',
+      position: 'دانشجوی کارشناسی ارشد مهندسی کامپیوتر',
       picture: process.env.PUBLIC_URL + '/rastalk/karimi.jpg',
     },
     {
