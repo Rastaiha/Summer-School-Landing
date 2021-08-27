@@ -7,10 +7,11 @@ import {
   Typography,
 } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
-import React from 'react';
+import { React, useState } from 'react';
 import { connect } from 'react-redux';
 import Footer from '../components/SpecialComponents/Homepage/Footer';
 import WorkshopList from '../components/SpecialComponents/Homepage/WorkshopList';
+import VideoDialogue from '../components/SpecialComponents/Homepage/VideoDialogue';
 import LandingOurTeam from '../components/SpecialComponents/Homepage/LandingOurTeam';
 import FAQ from '../components/SpecialComponents/Homepage/FAQ';
 import questions from './FAQs';
@@ -55,12 +56,12 @@ const useStyles = makeStyles((theme) => ({
     color: '#e8332a',
     textShadow: '-2px 2px #bd0d01',
     textAlign: 'center',
-    marginBottom:theme.spacing(3),
-    fontFamily:'VIP Cartoon !important',
+    marginBottom: theme.spacing(3),
+    fontFamily: 'VIP Cartoon !important',
     [theme.breakpoints.down('sm')]: {
       fontSize: 60,
       lineHeight: '50px',
-      marginBottom:theme.spacing(1),
+      marginBottom: theme.spacing(1),
     },
   },
   telegramLink: {
@@ -163,7 +164,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 function SummerSchool() {
   const classes = useStyles();
-
+  const [isVideoDialogueOpen, setVideoDialogueOpen] = useState(false);
   return (
     <>
       <section className={classes.titleSection}>
@@ -209,14 +210,31 @@ function SummerSchool() {
               </ButtonGroup>
             </Grid>
             <Grid item>
+              <Button
+                onClick={() => setVideoDialogueOpen(!isVideoDialogueOpen)}
+                className={classes.titleButton}>
+                آموزش تکمیل ثبت‌نام
+              </Button>
+            </Grid>
+            <Grid item>
               <img
                 src={process.env.PUBLIC_URL + '/scroll.gif'}
                 alt=""
-                style={{ width: 20 }}
+                style={{ width: 20, margin: 20 }}
               />
             </Grid>
           </Grid>
         </Grid>
+        <VideoDialogue
+          name={'آموزش تکمیل ثبت‌نام'}
+          teaserLink={
+            'https://www.aparat.com/video/video/embed/videohash/kGcbs/vt/frame'
+          }
+          open={isVideoDialogueOpen}
+          handleClose={() => {
+            setVideoDialogueOpen(!isVideoDialogueOpen);
+          }}
+        />
       </section>
       <section
         className={`${classes.eventDescriptionSection} ${classes.Section}`}>
