@@ -152,6 +152,9 @@ const useStyles = makeStyles((theme) => ({
   titleButton: {
     backgroundColor: '#e8332a',
     color: 'white',
+    '&:hover': {
+      backgroundColor: '#d01f16',
+    },
   },
   mummy: {
     position: 'fixed',
@@ -179,7 +182,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 function SummerSchool() {
   const classes = useStyles();
-  const [isVideoDialogueOpen, setVideoDialogueOpen] = useState(false);
   return (
     <>
       <section className={classes.titleSection}>
@@ -207,49 +209,39 @@ function SummerSchool() {
                 size="large"
                 variant="contained"
                 color="primary"
+                orientation="vertical"
                 className={classes.Buttons}>
-                <Button
-                  rel="noreferrer"
-                  target="_blank"
-                  href={'http://academy.rastaiha.ir/create_account'}
-                  className={classes.titleButton}>
-                  ثبت‌نام
-                </Button>
                 <Button
                   rel="noreferrer"
                   target="_blank"
                   href={'http://academy.rastaiha.ir/login'}
                   className={classes.titleButton}>
-                  ورود
+                  ورود به پلتفرم برگزاری کارگاه‌ها
+                </Button>
+                <Button
+                  rel="noreferrer"
+                  target="_blank"
+                  href={'https://vc.sharif.edu/ch/rastaiha'}
+                  className={classes.titleButton}>
+                  ورود به اتاق رستا (مراسم افتتاحیه رویداد)
                 </Button>
               </ButtonGroup>
             </Grid>
             <Grid item>
-              <Button
-                onClick={() => setVideoDialogueOpen(!isVideoDialogueOpen)}
-                className={classes.titleButton}>
-                آموزش تکمیل ثبت‌نام
-              </Button>
+              <Typography variant="subtitle2">
+                مراسم افتتاحیه در روز دوشنبه، هشتم شهریور ساعت ۸:۳۵ در اتاق رستا
+                برگزار خواهد شد.
+              </Typography>
             </Grid>
             <Grid item>
               <img
                 src={process.env.PUBLIC_URL + '/scroll.gif'}
                 alt=""
-                style={{ width: 20, margin: 20 }}
+                style={{ width: 20, margin: 35 }}
               />
             </Grid>
           </Grid>
         </Grid>
-        <VideoDialogue
-          name={'آموزش تکمیل ثبت‌نام'}
-          teaserLink={
-            'https://www.aparat.com/video/video/embed/videohash/kGcbs/vt/frame'
-          }
-          open={isVideoDialogueOpen}
-          handleClose={() => {
-            setVideoDialogueOpen(!isVideoDialogueOpen);
-          }}
-        />
       </section>
       <section
         className={`${classes.eventDescriptionSection} ${classes.Section}`}>
