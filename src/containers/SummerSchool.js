@@ -541,19 +541,36 @@ function SummerSchool() {
           برنامه زمانی رویداد به چه شکله؟
         </Typography>
         <Container>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href={process.env.PUBLIC_URL + 'zaman.png'}>
-            <img
-              className={classes.schedule}
-              src={process.env.PUBLIC_URL + 'zaman.png'}
-              alt="Event Schedule"
-            />
-          </a>
-          <Typography variant="subtitle2" className={classes.scheduleGuide}>
-            برای باز کردن عکس به صورت بزرگ روش کلیک کن.
-          </Typography>
+          <Grid container justify="center" alignItems="center" spacing={5}>
+            <Grid item>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={process.env.PUBLIC_URL + 'zaman.png'}>
+                <img
+                  className={classes.schedule}
+                  src={process.env.PUBLIC_URL + 'zaman.png'}
+                  alt="Event Schedule"
+                />
+              </a>
+              <Typography variant="subtitle2" className={classes.scheduleGuide}>
+                برای باز کردن عکس به صورت بزرگ روش کلیک کن.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Button
+                rel="noreferrer"
+                target="_blank"
+                href={
+                  process.env.PUBLIC_URL +
+                  'گروه‌بندی_قطعی_و_زمان‌بندی_رویداد.pdf'
+                }
+                color="secondary"
+                variant="contained">
+                گروه‌بندی قطعی و زمان‌بندی رویداد
+              </Button>
+            </Grid>
+          </Grid>
         </Container>
       </section>
       <section className={`${classes.teamSection} ${classes.Section}`}>
