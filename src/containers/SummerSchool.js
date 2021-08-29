@@ -16,7 +16,6 @@ import LandingOurTeam from '../components/SpecialComponents/Homepage/LandingOurT
 import FAQ from '../components/SpecialComponents/Homepage/FAQ';
 import questions from './FAQs';
 import workshops from './Workshops';
-import TimeLine from '../components/TimeLine/TimeLine';
 
 const FirstColor = '#c89c2f';
 const FirstColorBackText = 'black';
@@ -158,6 +157,22 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     zIndex: -1,
     [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
+  },
+  schedule: {
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '70%',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
+  },
+  scheduleGuide: {
+    fontSize: 14,
+    marginTop: theme.spacing(3),
+    [theme.breakpoints.up('sm')]: {
       display: 'none',
     },
   },
@@ -531,11 +546,19 @@ function SummerSchool() {
           برنامه زمانی رویداد به چه شکله؟
         </Typography>
         <Container>
-          <Grid container justify="center" alignItems="center" spacing={2}>
-            <Grid item xs={12} sm={8}>
-              <TimeLine />
-            </Grid>
-          </Grid>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={process.env.PUBLIC_URL + 'zaman.png'}>
+            <img
+              className={classes.schedule}
+              src={process.env.PUBLIC_URL + 'zaman.png'}
+              alt="Event Schedule"
+            />
+          </a>
+          <Typography variant="subtitle2" className={classes.scheduleGuide}>
+            برای باز کردن عکس به صورت بزرگ روش کلیک کن.
+          </Typography>
         </Container>
       </section>
       <section className={`${classes.teamSection} ${classes.Section}`}>
