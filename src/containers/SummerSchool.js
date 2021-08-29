@@ -228,6 +228,9 @@ function SummerSchool() {
                   className={classes.titleButton}>
                   ورود به اتاق رستا (مراسم افتتاحیه رویداد)
                 </Button>
+                <Button href={'#schedule'} className={classes.titleButton}>
+                  مشاهده زمان‌بندی و گروه‌بندی رویداد
+                </Button>
               </ButtonGroup>
             </Grid>
             <Grid item>
@@ -532,7 +535,9 @@ function SummerSchool() {
           </Grid>
         </Container>
       </section>
-      <section className={`${classes.timeLineSection} ${classes.Section}`}>
+      <section
+        className={`${classes.timeLineSection} ${classes.Section}`}
+        id={'schedule'}>
         <Typography
           component="h2"
           variant="h2"
