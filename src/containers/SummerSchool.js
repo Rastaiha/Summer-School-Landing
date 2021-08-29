@@ -179,6 +179,9 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
+  openingNotice: {
+    margin: theme.spacing(0, 4, 0, 2),
+  },
 }));
 function SummerSchool() {
   const classes = useStyles();
@@ -228,7 +231,7 @@ function SummerSchool() {
               </ButtonGroup>
             </Grid>
             <Grid item>
-              <Typography variant="subtitle2">
+              <Typography variant="subtitle2" className={classes.openingNotice}>
                 مراسم افتتاحیه در روز دوشنبه، هشتم شهریور ساعت ۸:۳۵ در اتاق رستا
                 برگزار خواهد شد.
               </Typography>
