@@ -322,6 +322,21 @@ function SummerSchool() {
                 </a>
               </Typography>
             </Grid>
+            <Grid item>
+              <Typography variant="subtitle1">
+                {
+                  'و همچنین می‌تونید ویژه‌نامه نیم نیم‌خط رو که برای مخاطبان مدرسه تابستانه رستا آماده شده از این لینک دانلود کنید:'
+                }
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={process.env.PUBLIC_URL + 'ویژه‌نامه_نیم_نیم‌خط.pdf'}
+                  className={classes.telegramLink}
+                  style={{ direction: 'ltr' }}>
+                  {'دانلود'}
+                </a>
+              </Typography>
+            </Grid>
           </Grid>
           <Grid
             item
