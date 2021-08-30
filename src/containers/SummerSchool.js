@@ -230,18 +230,18 @@ function SummerSchool() {
                   target="_blank"
                   href={'https://vc.sharif.edu/ch/rastaiha'}
                   className={classes.titleButton}>
-                  ورود به اتاق رستا (دورهمی با دکتر تفاق)
+                  ورود به اتاق رستا
                 </Button>
                 <Button href={'#schedule'} className={classes.titleButton}>
                   مشاهده زمان‌بندی و گروه‌بندی رویداد
                 </Button>
               </ButtonGroup>
             </Grid>
-            <Grid item>
+            {/* <Grid item>
               <Typography variant="subtitle2" className={classes.openingNotice}>
                 دورهمی با دکتر تفاق دوشنبه هشتم شهریور ساعت ۵ تا ۷.
               </Typography>
-            </Grid>
+            </Grid> */}
             <Grid item>
               <img
                 src={process.env.PUBLIC_URL + '/scroll.gif'}
