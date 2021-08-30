@@ -130,6 +130,10 @@ const useStyles = makeStyles((theme) => ({
   sectionTitle: {
     margin: theme.spacing(2, 0, 4, 0),
   },
+  funlandSection: {
+    backgroundColor: FirstColor,
+    color: FirstColorBackText,
+  },
   FAQSection: {
     backgroundColor: FirstColor,
     color: FirstColorBackText,
@@ -468,6 +472,43 @@ function SummerSchool() {
           خب قراره تو چه کارگاه‌هایی شرکت کنیم؟
         </Typography>
         <WorkshopList workshops={workshops} />
+      </section>
+      <section className={`${classes.funlandSection} ${classes.Section}`}>
+        <Typography
+          component="h2"
+          variant="h2"
+          gutterBottom
+          className={classes.sectionTitle}>
+          شهربازی کجاست؟ اونجا چه‌خبره؟
+        </Typography>
+        <Grid container justify="center" alignItems="center" spacing={2}>
+          <Grid item xs={12} sm={3} container justify="center">
+            <img
+              className={classes.kaftar}
+              src={process.env.PUBLIC_URL + '/ferris_wheel.png'}
+              alt=""
+            />
+          </Grid>
+          <Grid item container justify="center" xs={12} sm={9} spacing={2}>
+            <Grid item>
+              <Typography variant="subtitle1">
+                چهارشنبه ۱۷-۲۰ قراره دور هم جمع شیم و بازی کنیم. سه تا بازی اصلی
+                داریم یعنی مافیا و پانتومیم و استوژیت که هرکسی یه دونه رو انتخاب
+                میکنه و در ابتدای شهربازی بازی می کنه. بعد از اون بازیای کوچکتر
+                و مینی گیم داریم. امتیازایی که می گیرید هم در نهایت به دردتون
+                میخوره. خلاصه که بساط جیتسی و میت به راه باشه و حواستون به قطعی
+                برق و میکروفون و تصویرتونم باشه. وعده ما چهارشنبه :)
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Button
+          target="_blank"
+          variant="contained"
+          className={`${classes.moreButton} ${classes.titleButton}`}
+          href={process.env.PUBLIC_URL + 'شهربازی.pdf'}>
+          دانلود بروشور شهر بازی
+        </Button>
       </section>
       <section className={`${classes.rastalkSection} ${classes.Section}`}>
         <Typography
