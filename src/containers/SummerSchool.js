@@ -233,9 +233,14 @@ function SummerSchool() {
                   ورود به اتاق رستا
                 </Button>
                 <Button href={'#schedule'} className={classes.titleButton}>
-                  مشاهده زمان‌بندی و گروه‌بندی رویداد
+                  مشاهده زمان‌بندی و گروه‌بندی رویداد (مهم)
                 </Button>
               </ButtonGroup>
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle2" className={classes.openingNotice}>
+                برنامه زمانی رویداد تغییر کرده! حتما دوباره مطالعه‌ش کنید.
+              </Typography>
             </Grid>
             <Grid item>
               <Typography variant="subtitle2" className={classes.openingNotice}>
@@ -601,7 +606,12 @@ function SummerSchool() {
           برنامه زمانی رویداد به چه شکله؟
         </Typography>
         <Container>
-          <Grid container justify="center" alignItems="center" spacing={5}>
+          <Grid
+            container
+            justify="center"
+            alignItems="center"
+            direction={'column'}
+            spacing={4}>
             <Grid item>
               <a
                 target="_blank"
@@ -613,8 +623,22 @@ function SummerSchool() {
                   alt="Event Schedule"
                 />
               </a>
+            </Grid>
+            <Grid item>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={process.env.PUBLIC_URL + 'teams.png'}>
+                <img
+                  className={classes.schedule}
+                  src={process.env.PUBLIC_URL + 'teams.png'}
+                  alt="Event Teams"
+                />
+              </a>
+            </Grid>
+            <Grid item>
               <Typography variant="subtitle2" className={classes.scheduleGuide}>
-                برای باز کردن عکس به صورت بزرگ روش کلیک کن.
+                برای باز کردن عکس‌ها به صورت بزرگ روشون ضربه بزن.
               </Typography>
             </Grid>
             <Grid item>
