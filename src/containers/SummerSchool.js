@@ -237,11 +237,12 @@ function SummerSchool() {
                 </Button>
               </ButtonGroup>
             </Grid>
-            {/* <Grid item>
+            <Grid item>
               <Typography variant="subtitle2" className={classes.openingNotice}>
-                دورهمی با دکتر تفاق دوشنبه هشتم شهریور ساعت ۵ تا ۷.
+                توجه: برای استراحت بیش‌تر شما عزیزان بخش عصرانه‌ی کارگاه‌های
+                امروز، از ساعت ۲:۵۵ شروع میشه!
               </Typography>
-            </Grid> */}
+            </Grid>
             <Grid item>
               <img
                 src={process.env.PUBLIC_URL + '/scroll.gif'}
