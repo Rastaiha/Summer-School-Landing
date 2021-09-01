@@ -228,23 +228,20 @@ function SummerSchool() {
                 <Button
                   rel="noreferrer"
                   target="_blank"
-                  href={'https://vc.sharif.edu/ch/rastaiha'}
+                  href={
+                    'https://docs.google.com/forms/d/e/1FAIpQLSdknvmzrrOZCTe9nQQlrImfsqJbleDU35oa1Q_dMq-ZIJGfeg/viewform?usp=sf_link'
+                  }
                   className={classes.titleButton}>
-                  ورود به اتاق رستا
+                  فرم انتخاب اولویت کارگاه‌های روز جمعه
                 </Button>
                 <Button href={'#schedule'} className={classes.titleButton}>
-                  مشاهده زمان‌بندی و گروه‌بندی رویداد (مهم)
+                  مشاهده زمان‌بندی و گروه‌بندی رویداد
                 </Button>
               </ButtonGroup>
             </Grid>
             <Grid item>
               <Typography variant="subtitle2" className={classes.openingNotice}>
-                برنامه زمانی رویداد تغییر کرده! حتما دوباره مطالعه‌ش کنید.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="subtitle2" className={classes.openingNotice}>
-                شروع کارگاه‌های عصر روز چهارشبنه از ساعت ۱۵.
+                شروع کارگاه‌های روز پنج‌شنبه از ساعت ٩.
               </Typography>
             </Grid>
             <Grid item>
