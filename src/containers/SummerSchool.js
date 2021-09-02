@@ -241,7 +241,7 @@ function SummerSchool() {
             </Grid>
             <Grid item>
               <Typography variant="subtitle2" className={classes.openingNotice}>
-                شروع کارگاه‌های روز پنج‌شنبه از ساعت ٩.
+                شروع کارگاه‌های عصر روز پنج‌شنبه از ساعت ١٦ .
               </Typography>
             </Grid>
             <Grid item>
