@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import {
   Button,
   ButtonGroup,
@@ -228,20 +229,25 @@ function SummerSchool() {
                 <Button
                   rel="noreferrer"
                   target="_blank"
-                  href={
-                    'https://docs.google.com/forms/d/e/1FAIpQLSdknvmzrrOZCTe9nQQlrImfsqJbleDU35oa1Q_dMq-ZIJGfeg/viewform?usp=sf_link'
-                  }
+                  href={process.env.PUBLIC_URL + '/last-day.pdf'}
                   className={classes.titleButton}>
-                  فرم انتخاب اولویت کارگاه‌های روز جمعه
+                  برنامه‌ی کارگاه‌های جمعه
                 </Button>
-                <Button href={'#schedule'} className={classes.titleButton}>
+                {/* <Button href={'#schedule'} className={classes.titleButton}>
                   مشاهده زمان‌بندی و گروه‌بندی رویداد
-                </Button>
+                </Button> */}
               </ButtonGroup>
             </Grid>
             <Grid item>
-              <Typography variant="subtitle2" className={classes.openingNotice}>
-                                 شروع کارگاه‌های روز جمعه (بخش دوم (انتخابی) کارگاه‌ها) از ساعت ٩ صبح.
+              <Typography variant="subtitle2" align='center' className={classes.openingNotice}>
+                همون‌طور که می‌دونید امروز یعنی ۱۲ شهریور بخش دوم کارگاه‌ها برگزار می‌شه.
+                </Typography>
+              <Typography variant="subtitle2" align='center' className={classes.openingNotice}>
+                توی لیست بالا زمان و ترتیب ورودتون به کارگاه‌ها مشخص شده.
+              </Typography>
+              <Typography variant="subtitle2" align='center' className={classes.openingNotice}>
+                حتما با دقت لیست رو بررسی کنید و.
+                حتما به شناسه‌ی گروهتون توجه کنید.
               </Typography>
             </Grid>
             <Grid item>
