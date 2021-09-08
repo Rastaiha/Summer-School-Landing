@@ -226,28 +226,46 @@ function SummerSchool() {
                   className={classes.titleButton}>
                   ورود به پلتفرم برگزاری کارگاه‌ها
                 </Button>
+                <Button href={'#schedule'} className={classes.titleButton}>
+                  مشاهده گروه‌بندی رویداد
+                </Button>
                 <Button
                   rel="noreferrer"
                   target="_blank"
-                  href={process.env.PUBLIC_URL + '/last-day.pdf'}
+                  href={process.env.PUBLIC_URL + '/team-names.pdf'}
                   className={classes.titleButton}>
-                  برنامه‌ی کارگاه‌های جمعه
+                  اسامی تیم‌ها
                 </Button>
-                {/* <Button href={'#schedule'} className={classes.titleButton}>
-                  مشاهده زمان‌بندی و گروه‌بندی رویداد
-                </Button> */}
               </ButtonGroup>
             </Grid>
             <Grid item>
-              <Typography variant="subtitle2" align='center' className={classes.openingNotice}>
-                همون‌طور که می‌دونید امروز یعنی ۱۲ شهریور بخش دوم کارگاه‌ها برگزار می‌شه.
-                </Typography>
-              <Typography variant="subtitle2" align='center' className={classes.openingNotice}>
-                توی لیست بالا زمان و ترتیب ورودتون به کارگاه‌ها مشخص شده.
+              <Typography
+                variant="subtitle2"
+                align="center"
+                className={classes.openingNotice}>
+                همون‌طور که می‌بینید اسامی تیم های روز مسابقه به صورت یه عبارت
+                از ترکیب یه اسم و یه صفت ساخته شدن و توی پی‌دی‌اف نوشته شدن.
               </Typography>
-              <Typography variant="subtitle2" align='center' className={classes.openingNotice}>
-                حتما با دقت لیست رو بررسی کنید و.
-                حتما به شناسه‌ی گروهتون توجه کنید.
+              <Typography
+                variant="subtitle2"
+                align="center"
+                className={classes.openingNotice}>
+                حالا چالش «نبرد سالاد شیرازی‌ها» چه‌طوریه و کاری که شما باید
+                بکنید چیه؟
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                align="center"
+                className={classes.openingNotice}>
+                اینه که با توجه به اسم‌ گروه‌تون با خلاقیت و ایده‌‌ پردازی
+                خودتون برای اون آواتاری رو طراحی و یا پیدا کنید.
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                align="center"
+                className={classes.openingNotice}>
+                توجه داشته باشید که عکستون تا قبل از روز جمعه آماده باشه تا روز
+                مسابقه بتونید توی سایت آپلودش کنید.
               </Typography>
             </Grid>
             <Grid item>
@@ -627,7 +645,7 @@ function SummerSchool() {
                 />
               </a>
             </Grid>
-            <Grid item>
+            {/* <Grid item>
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -638,7 +656,7 @@ function SummerSchool() {
                   alt="Event Teams"
                 />
               </a>
-            </Grid>
+            </Grid> */}
             <Grid item>
               <Typography variant="subtitle2" className={classes.scheduleGuide}>
                 برای باز کردن عکس‌ها به صورت بزرگ روشون ضربه بزن.
