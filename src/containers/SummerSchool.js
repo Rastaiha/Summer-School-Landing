@@ -222,11 +222,11 @@ function SummerSchool() {
                 <Button
                   rel="noreferrer"
                   target="_blank"
-                  href={'http://academy.rastaiha.ir/login'}
+                  href={'https://tootenkhamoo.rastaiha.ir/'}
                   className={classes.titleButton}>
-                  ورود به پلتفرم برگزاری کارگاه‌ها
+                  ورود به مسابقه
                 </Button>
-                <Button href={'#schedule'} className={classes.titleButton}>
+                {/* <Button href={'#schedule'} className={classes.titleButton}>
                   مشاهده گروه‌بندی رویداد
                 </Button>
                 <Button
@@ -235,7 +235,7 @@ function SummerSchool() {
                   href={process.env.PUBLIC_URL + '/team-names.pdf'}
                   className={classes.titleButton}>
                   اسامی تیم‌ها
-                </Button>
+                </Button> */}
               </ButtonGroup>
             </Grid>
             <Grid item>
