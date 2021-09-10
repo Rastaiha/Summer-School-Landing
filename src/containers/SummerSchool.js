@@ -224,7 +224,7 @@ function SummerSchool() {
                   target="_blank"
                   href={'https://tootenkhamoo.rastaiha.ir/'}
                   className={classes.titleButton}>
-                  گیشه بلیط‌فروشی
+                   ورود به گیشه بلیط‌فروشی
                 </Button>
                 {/* <Button href={'#schedule'} className={classes.titleButton}>
                   مشاهده گروه‌بندی رویداد
