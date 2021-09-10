@@ -243,29 +243,13 @@ function SummerSchool() {
                 variant="subtitle2"
                 align="center"
                 className={classes.openingNotice}>
-                همون‌طور که می‌بینید اسامی تیم های روز مسابقه به صورت یه عبارت
-                از ترکیب یه اسم و یه صفت ساخته شدن و توی پی‌دی‌اف نوشته شدن.
+                  برای شرکت در مسابقه باید وارد موزه بشید.
               </Typography>
               <Typography
                 variant="subtitle2"
                 align="center"
                 className={classes.openingNotice}>
-                حالا چالش «نبرد سالاد شیرازی‌ها» چه‌طوریه و کاری که شما باید
-                بکنید چیه؟
-              </Typography>
-              <Typography
-                variant="subtitle2"
-                align="center"
-                className={classes.openingNotice}>
-                اینه که با توجه به اسم‌ گروه‌تون با خلاقیت و ایده‌‌ پردازی
-                خودتون برای اون آواتاری رو طراحی و یا پیدا کنید.
-              </Typography>
-              <Typography
-                variant="subtitle2"
-                align="center"
-                className={classes.openingNotice}>
-                توجه داشته باشید که عکستون تا قبل از روز جمعه آماده باشه تا روز
-                مسابقه بتونید توی سایت آپلودش کنید.
+                  افسون توتنخ‌عامو توی کدوم یک از این موزه‌هاست؟
               </Typography>
             </Grid>
             <Grid item>
