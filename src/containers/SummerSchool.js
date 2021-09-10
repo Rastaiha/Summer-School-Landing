@@ -222,7 +222,7 @@ function SummerSchool() {
                 <Button
                   rel="noreferrer"
                   target="_blank"
-                  href={'https://tootenkhamoo.rastaiha.ir/'}
+                  href={'https://docs.google.com/presentation/d/e/2PACX-1vRD3G2WUze4kg0eK8rlKnWbebnbYmhPj-zSFezKCmWgR_hMKGhcq7nzWznrnkUlbYKuPoHdvdEZdu9P/pub?start=false&loop=false&delayms=3000'}
                   className={classes.titleButton}>
                    ورود به گیشه بلیط‌فروشی
                 </Button>
