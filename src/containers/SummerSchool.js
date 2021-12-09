@@ -238,7 +238,7 @@ function SummerSchool() {
                 </Button> */}
               </ButtonGroup>
             </Grid>
-            <Grid item>
+            {/* <Grid item>
               <Typography
                 variant="subtitle2"
                 align="center"
@@ -251,7 +251,7 @@ function SummerSchool() {
                 className={classes.openingNotice}>
                   افسون توتنخ‌عامو توی کدوم یک از این موزه‌هاست؟
               </Typography>
-            </Grid>
+            </Grid> */}
             <Grid item>
               <img
                 src={process.env.PUBLIC_URL + '/scroll.gif'}
