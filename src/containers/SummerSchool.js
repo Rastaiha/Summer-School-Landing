@@ -22,6 +22,7 @@ const FirstColor = '#c89c2f';
 const FirstColorBackText = 'black';
 const SecondColor = '#e8332a';
 const SecondColorBackText = 'white';
+
 const useStyles = makeStyles((theme) => ({
   centerItems: {
     display: 'flex',
@@ -222,9 +223,9 @@ function SummerSchool() {
                 <Button
                   rel="noreferrer"
                   target="_blank"
-                  href={'https://academy.rastaiha.ir/'}
+                  href={'https://academy.rastaiha.ir/login/'}
                   className={classes.titleButton}>
-                   دریافت گواهی حضور
+                  دریافت گواهی حضور
                 </Button>
                 {/* <Button href={'#schedule'} className={classes.titleButton}>
                   مشاهده گروه‌بندی رویداد
