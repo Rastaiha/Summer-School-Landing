@@ -222,9 +222,9 @@ function SummerSchool() {
                 <Button
                   rel="noreferrer"
                   target="_blank"
-                  href={'https://tootenkhamoo.rastaiha.ir/'}
+                  href={'https://academy.rastaiha.ir/'}
                   className={classes.titleButton}>
-                   ورود به گیشه بلیط‌فروشی
+                   دریافت گواهی حضور
                 </Button>
                 {/* <Button href={'#schedule'} className={classes.titleButton}>
                   مشاهده گروه‌بندی رویداد
