@@ -1,0 +1,12 @@
+@font-face {
+  font-family: iranyekan;
+  src: url("./iranyekanweblight.woff") format("woff"), url("./iranyekanweblight.woff2") format("woff2");
+  font-weight: 100 900;
+}
+
+* {
+  font-family: iranyekan;
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+}
