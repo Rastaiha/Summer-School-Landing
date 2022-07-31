@@ -4,81 +4,102 @@ import {
   Stack,
   Box,
   Container,
+  SvgIcon,
+  Tooltip,
+  Paper,
+  Chip,
 } from '@mui/material';
 import React from 'react';
 import useWidth from '../utils/UseWidth';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 
-function Landing() {
+const Landing = () => {
   const width = useWidth();
 
   return (
-    <>
+    <Stack sx={{ paddingY: 10, paddingX: 2, minHeight: '100vh' }} direction='column' justifyContent='center'>
       <Box
         sx={(theme) => ({
           height: '100vh',
-          position: 'relative',
-          backgroundColor: '#ffc301',
-          zIndex: -2,
-          [theme.breakpoints.down('md')]: {
-            paddingX: 1,
-          },
-        })}>
-        <img
-          src={process.env.PUBLIC_URL + '/wall.png'}
-          alt=""
-          style={{
-            position: 'fixed',
-            right: 0,
-            zIndex: -1,
-            display: ['xs', 'sm'].includes(width) ? 'none' : 'block',
-          }}
-        />
-        <Stack sx={{ height: '100%' }} alignItems='center' justifyContent='center'>
-          <Typography component="h1" variant="h1"
-            sx={(theme) => ({
-              fontSize: 80,
-              lineHeight: '90px',
-              fontWeight: 1000,
-              color: '#e8332a',
-              textShadow: '-2px 2px 3px #bd0d01',
-              textAlign: 'center',
-              marginBottom: 3,
-              [theme.breakpoints.down('md')]: {
-                fontSize: 60,
-                lineHeight: '70px',
-              },
-            })}>
-            مدرسه‌ی تابستانه رستا
-          </Typography>
-          <Typography component="h1" variant="h1"
-            sx={(theme) => ({
-              fontSize: 50,
+          width: '100vw',
+          position: 'fixed',
+          top: 0,
+          right: 0,
+          backgroundImage: `url(${process.env.PUBLIC_URL}background.jpeg)`,
+          backgroundSize: 'cover !important',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          filter: 'blur(15px)',
+          zIndex: -1,
+        })} />
+
+      <Stack sx={{ height: '100%' }} alignItems='center' justifyContent='center'>
+        <Typography
+          variant="h1"
+          sx={(theme) => ({
+            fontFamily: 'iranyekanwebbold',
+            fontSize: 80,
+            lineHeight: '90px',
+            fontWeight: 1000,
+            color: '#ffffff',
+            textShadow: '0px 0px 4px black',
+            textAlign: 'center',
+            marginBottom: 3,
+            [theme.breakpoints.down('md')]: {
+              fontSize: 60,
+              lineHeight: '70px',
+            },
+          })}>
+          مدرسه تابستانه ۱۴۰۱
+        </Typography>
+
+        <Typography
+          variant="h2"
+          sx={(theme) => ({
+            fontSize: 50,
+            lineHeight: 1,
+            fontWeight: 800,
+            color: '#ffffff',
+            textShadow: '0px 0px 3px black',
+            textAlign: 'center',
+            [theme.breakpoints.down('md')]: {
+              fontSize: 40,
               lineHeight: 1,
-              fontWeight: 800,
-              color: '#e8332a',
-              textAlign: 'center',
-              [theme.breakpoints.down('md')]: {
-                fontSize: 40,
-                lineHeight: 1,
-              },
-            })}>
-            به زودی...
-          </Typography>
+            },
+          })}>
+          به زودی...
+        </Typography>
 
-          <ButtonGroup
-            size="large"
-            variant="contained"
-            color="primary"
-            orientation="vertical"
-            sx={{
-              margin: 4,
-              direction: 'ltr',
-            }}>
+        <Chip sx={{ padding: 1, marginTop: 10, fontSize: 20 }} size='medium' icon={<PhoneEnabledIcon />} variant="filled" label="اطلاعات بیشتر:" />
+        <Chip sx={{ padding: 1, marginTop: 1, fontSize: 20 }} size='medium' variant="filled" label="09909478595" />
 
-          </ButtonGroup >
+
+        <Stack direction={['xs', 'sm'].includes(width) ? 'column' : 'row'} sx={{ paddingTop: 10, }} spacing={2}>
+          <Tooltip title='سازمان ملی پرورش استعدادهای درخشان' arrow>
+            <img
+              src={process.env.PUBLIC_URL + '/sampad-logo.png'}
+              alt=""
+              width={100}
+            />
+          </Tooltip>
+          <Tooltip title='جمع علمی-ترویجی رستا' arrow>
+            <img
+              src={process.env.PUBLIC_URL + '/rasta-logo.png'}
+              alt=""
+              width={100}
+            />
+          </Tooltip>
+          <Tooltip title='دانشگاه صنعتی شریف' arrow>
+            <img
+              src={process.env.PUBLIC_URL + '/sharif-logo.png'}
+              alt=""
+              width={100}
+            />
+          </Tooltip>
         </Stack>
-      </Box>
-    </>
+      </Stack>
+
+    </Stack>
   );
 }
 
