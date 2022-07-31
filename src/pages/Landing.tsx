@@ -8,6 +8,7 @@ import {
   Tooltip,
   Paper,
   Chip,
+  IconButton,
 } from '@mui/material';
 import React from 'react';
 import useWidth from '../utils/UseWidth';
@@ -76,30 +77,36 @@ const Landing = () => {
 
         <Stack direction={['xs', 'sm'].includes(width) ? 'column' : 'row'} sx={{ paddingTop: 10, }} spacing={2}>
           <Tooltip title='سازمان ملی پرورش استعدادهای درخشان' arrow>
-            <img
-              src={process.env.PUBLIC_URL + '/sampad-logo.png'}
-              alt=""
-              width={100}
-            />
+            <IconButton href='https://sampad.gov.ir/'>
+              <img
+                src={process.env.PUBLIC_URL + '/sampad-logo.png'}
+                alt=""
+                width={100}
+              />
+            </IconButton>
           </Tooltip>
           <Tooltip title='جمع علمی-ترویجی رستا' arrow>
-            <img
-              src={process.env.PUBLIC_URL + '/rasta-logo.png'}
-              alt=""
-              width={100}
-            />
+            <IconButton href='https://www.rastaiha.ir/'>
+              <img
+                src={process.env.PUBLIC_URL + '/rasta-logo.png'}
+                alt=""
+                width={100}
+              />
+            </IconButton>
           </Tooltip>
           <Tooltip title='دانشگاه صنعتی شریف' arrow>
-            <img
-              src={process.env.PUBLIC_URL + '/sharif-logo.png'}
-              alt=""
-              width={100}
-            />
+            <IconButton href='https://www.sharif.edu/'>
+              <img
+                src={process.env.PUBLIC_URL + '/sharif-logo.png'}
+                alt=""
+                width={100}
+              />
+            </IconButton>
           </Tooltip>
         </Stack>
       </Stack>
 
-    </Stack>
+    </Stack >
   );
 }
 
