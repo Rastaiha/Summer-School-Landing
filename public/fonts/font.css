@@ -3,6 +3,10 @@
   src: url("./iranyekanweblight.woff") format("woff"), url("./iranyekanweblight.woff2") format("woff2");
   font-weight: 100 900;
 }
+@font-face {
+  font-family: 'CactusCircleDots';
+  src: local('CactusCircleDots'), url(../fonts/CactusCircleDots.ttf) format('ttf');
+}
 
 * {
   font-family: iranyekan;
