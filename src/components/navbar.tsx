@@ -5,54 +5,65 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import { createTheme,ThemeProvider } from "@mui/material";
 import LoginIcon from '@mui/icons-material/Login';
-const pages = ["تیم برگزاری","درباره ما","سوالات متداول", "کارگاه ها", "معرفی رویداد"];
+const pages = [
+  "تیم برگزاری",
+  "درباره ما",
+  "سوالات متداول",
+  "کارگاه ها",
+  "اخبار",
+  "معرفی رویداد",
+];
 
-const Navbar = () => {
+const NavBar = () => {
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
+    null
+  );
 
-  const theme = createTheme({
-    palette: {
-      primary: {
-        main: "#0F2E47"
-      },
-    },
-  });
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
   return (
-    <ThemeProvider theme={theme}>
-      <AppBar position="static" color="primary">
-        <Container
-          maxWidth="xl"
-          sx={{ display: "flex", justifyContent: "center" }}
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "#0F2E47", width: "100vw" }}
+    >
+      <Container
+        maxWidth="xl"
+        sx={{ display: "flex", padding: 0, justifyContent:"center" }}
+      >
+        <Toolbar
+          disableGutters
+          sx={{
+            flexGrow: { xs: 1, md: .6 },
+            justifyContent: { xs: "space-between",md:"space-around",lg:"space-around" },
+          }}
         >
-          <Toolbar disableGutters sx={{ flexGrow: 0.3 }}>
-            <Button
-              variant="outlined"
-              endIcon={<LoginIcon />}
-              sx={{
-                borderRadius: "70px",
-                color: "white",
-                borderColor: "#4A4A4A",
-              }}
-            >
-              ورود و ثبت نام
-            </Button>
-
-            <Box
-              sx={{
-                flexGrow: 1,
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
+          <Box display={"flex"} sx={{ alignItems: "center" }}>
+            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <MenuIcon />
+              </IconButton>
               <Menu
                 id="menu-appbar"
-
+                anchorEl={anchorElNav}
                 anchorOrigin={{
                   vertical: "bottom",
                   horizontal: "left",
@@ -62,70 +73,114 @@ const Navbar = () => {
                   vertical: "top",
                   horizontal: "left",
                 }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
                 sx={{
+                  fontFamily: "IRANSansXRegular",
+                  fontWeight: 700,
                   display: { xs: "block", md: "none" },
-                }} open={false}              >
+                }}
+              >
                 {pages.map((page) => (
-                  <MenuItem key={page} >
-                    <Typography textAlign="center">{page}</Typography>
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography
+                      sx={{ fontFamily: "IRANSansXRegular" }}
+                      textAlign="center"
+                    >
+                      {page}
+                    </Typography>
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
-      
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              {pages.map((page) => (
-                <Button
-                  key={page}
-                  sx={{
-                    my: 2,
-                    color: "white",
-                    display: "block",
-                    fontFamily: "IRANSansX",
-                    fontSize: "16px",
-                    fontWeight: 700,
-                    lineHeight: 1,
-                  }}
-                >
-                  {page}
-                </Button>
-              ))}
-            </Box>
 
-            <Box sx={{ flexGrow: 0, margin: 0 }}>
-              <Tooltip title="جمع علمی-ترویجی رستا" arrow>
-                <IconButton href="https://www.rastaiha.ir/">
-                  <img
-                    src={process.env.PUBLIC_URL + "/key-white.png"}
-                    alt=""
-                    width={40}
-                    height={45}
-                  />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="سازمان ملی پرورش استعدادهای درخشان" arrow>
-                <IconButton href="https://sampad.gov.ir/">
-                  <img
-                    src={process.env.PUBLIC_URL + "/sampad-white.png"}
-                    alt=""
-                    width={70}
-                  />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="دانشگاه صنعتی شریف" arrow>
-                <IconButton href="https://www.sharif.edu/">
-                  <img
-                    src={process.env.PUBLIC_URL + "/sharif-white.png"}
-                    alt=""
-                    width={50}
-                  />
-                </IconButton>
-              </Tooltip>
-            </Box>
-          </Toolbar>
-        </Container>
-      </AppBar>
-    </ThemeProvider>
+            <Button
+              variant="outlined"
+              href="/"
+              startIcon={<LoginIcon />}
+              sx={{
+                display: "flex",
+                fontFamily: "IRANSansXRegular",
+                fontWeight: 700,
+                fontSize: { xs: 11, md: 15 },
+                color: "inherit",
+                textDecoration: "none",
+                borderRadius: "70px",
+                border: 1,
+                borderColor: "#4A4A4A",
+                blockSize: 40,
+              }}
+            >
+              ورود و ثبت نام
+            </Button>
+          </Box>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center",
+            }}
+          >
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  fontFamily: "IRANSansX",
+                  fontSize: "15px",
+                  fontWeight: 700,
+                  lineHeight: 1,
+                }}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
+          <Box sx={{ flexGrow: 0, margin: 0 }}>
+            <Tooltip title="جمع علمی-ترویجی رستا" arrow sx={{ padding: 0 }}>
+              <IconButton href="https://www.rastaiha.ir/">
+                <img
+                  src={process.env.PUBLIC_URL + "/key-white.png"}
+                  alt=""
+                  width={40}
+                  height={45}
+                />
+              </IconButton>
+            </Tooltip>
+            <Tooltip
+              title="سازمان ملی پرورش استعدادهای درخشان"
+              arrow
+              sx={{ padding: 0 }}
+            >
+              <IconButton href="https://sampad.gov.ir/">
+                <img
+                  src={process.env.PUBLIC_URL + "/sampad-white.png"}
+                  alt=""
+                  width={70}
+                />
+              </IconButton>
+            </Tooltip>
+            <Tooltip
+              title="دانشگاه صنعتی شریف"
+              arrow
+              sx={{ padding: 0, paddingLeft: 1 }}
+            >
+              <IconButton href="https://www.sharif.edu/">
+                <img
+                  src={process.env.PUBLIC_URL + "/sharif-white.png"}
+                  alt=""
+                  width={50}
+                />
+              </IconButton>
+            </Tooltip>
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 };
-export default Navbar;
+export default NavBar;
+
