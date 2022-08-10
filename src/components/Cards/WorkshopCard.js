@@ -10,7 +10,7 @@ import {
 import { makeStyles } from "@mui/styles";
 import React, { useState } from "react";
 
-import CardDialogue from "./NewsDialogue";
+import CardDialogue from "./workshopDialogue";
 
 const useStyles = makeStyles({
   root: {
@@ -34,7 +34,7 @@ const useStyles = makeStyles({
   },
 });
 
-const NewsCard = ({ name, position, image, description, teaserLink }) => {
+const WorkshopCard = ({ name, image, description, teaserLink, place }) => {
   const classes = useStyles();
   const [isDialogueOpen, setDialogueOpen] = useState(false);
 
@@ -59,26 +59,17 @@ const NewsCard = ({ name, position, image, description, teaserLink }) => {
             >
               {name}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              {description}
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              sx={{ marginTop: 4 }}
+            >
+              {place}
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions sx={{ backgroundColor: "#D6D5D5" }}>
-          <Typography
-            sx={{
-              backgroundColor: "#042D4E",
-              padding: 1,
-              marginRight: 1,
-              color: "white",
-              fontFamily: "IRANSansX",
-              borderRadius: "5px",
-              borderTopLeftRadius: "20px",
-            }}
-            variant="button"
-          >
-            حضوری
-          </Typography>
+        <CardActions sx={{ backgroundColor: "#D6D5D5",display:"flex",justifyContent:"flex-end" }}>
           <Button
             sx={{
               color: "#042D4E",
@@ -86,7 +77,7 @@ const NewsCard = ({ name, position, image, description, teaserLink }) => {
               borderColor: "#1E5C83",
               borderRadius: "33px",
               fontFamily: "IRANSansX",
-              justifyContent:"center"
+              justifyContent: "center",
             }}
             onClick={() => setDialogueOpen(!isDialogueOpen)}
           >
@@ -108,4 +99,4 @@ const NewsCard = ({ name, position, image, description, teaserLink }) => {
   );
 };
 
-export default NewsCard;
+export default WorkshopCard;

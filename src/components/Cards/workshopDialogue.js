@@ -1,6 +1,6 @@
-import { Dialog, Grid, Typography } from '@mui/material';
-import { makeStyles } from '@mui/styles';
-import React from 'react';
+import { Dialog, Grid, Typography } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -8,32 +8,32 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     margin: theme.spacing(2),
-    fontWeight: '700',
+    fontWeight: "700",
   },
   text: {
-    overFlowY: 'scroll',
+    overFlowY: "scroll",
     margin: theme.spacing(2),
   },
   description: {
     // direction: 'rtl',
-    lineHeight: '1.75',
+    lineHeight: "1.75",
   },
   h_iframe_aparat_embed_frame: {
-    position: 'relative',
-    '& iframe': {
-      position: 'absolute',
+    position: "relative",
+    "& iframe": {
+      position: "absolute",
       top: 0,
       left: 0,
       bottom: 0,
       right: 0,
-      width: '100%',
-      height: '100%',
-      border: 'none',
+      width: "100%",
+      height: "100%",
+      border: "none",
       borderRadius: 8,
     },
-    '& span': {
-      display: 'block',
-      paddingTop: '56%',
+    "& span": {
+      display: "block",
+      paddingTop: "56%",
     },
     margin: theme.spacing(4, 0),
   },
@@ -41,17 +41,18 @@ const useStyles = makeStyles((theme) => ({
 
 function CardDialogue({ open, handleClose, name, teaserLink, description }) {
   const classes = useStyles();
-  let teaserSection = '';
+  let teaserSection = "";
   if (teaserLink) {
     teaserSection = (
       <div className={classes.h_iframe_aparat_embed_frame}>
         <span>
           <iframe
-            title={'تیزر کارگاه' + name}
+            title={"تیزر کارگاه" + name}
             src={teaserLink}
             allowFullScreen
             webkitallowfullscreen="true"
-            mozallowfullscreen="true"></iframe>
+            mozallowfullscreen="true"
+          ></iframe>
         </span>
       </div>
     );
@@ -62,14 +63,31 @@ function CardDialogue({ open, handleClose, name, teaserLink, description }) {
       fullWidth
       open={open}
       onClose={handleClose}
-      style={{ overflow: 'hidden' }}>
-      <section className={classes.container}>
+      style={{ overflow: "hidden" }}
+    >
+      <section
+        className={classes.container}
+        style={{
+          backgroundColor: "#0F2E47",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
         <Typography
           gutterBottom
           variant="h4"
           align="center"
-          className={classes.title}>
-          {'«' + name + '»'}
+          className={classes.title}
+          sx={{
+            color: "#D6D5D5",
+            fontFamily: "IRANSansX",
+            fontWeight: 700,
+            fontSize: "24px",
+            textAlign: "left",
+            marginBottom: 2,
+          }}
+        >
+          {"«" + name + "»"}
         </Typography>
         <div className={classes.text}>
           {description.map((paragraph, index) => (
@@ -78,7 +96,14 @@ function CardDialogue({ open, handleClose, name, teaserLink, description }) {
                 component="h4"
                 variant="h6"
                 gutterBottom
-                className={classes.description}>
+                className={classes.description}
+                sx={{
+                  color: "#D6D5D5",
+                  fontFamily: "IRANSansX",
+                  fontWeight: 400,
+                  textAlign: "left",
+                }}
+              >
                 {paragraph}
               </Typography>
             </Grid>
