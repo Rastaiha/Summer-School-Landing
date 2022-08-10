@@ -30,10 +30,8 @@ const WhatTheFuzz = () => {
       sm={10}
       md={8}
       sx={{
-        // display: "flex",
-        // justifyContent: "center",
-        // flexWrap: "nowrap",
-        margin:"10%",
+        backgroundColor: "yellow",
+        padding: "10%",
       }}
     >
       <Paper
@@ -43,22 +41,46 @@ const WhatTheFuzz = () => {
         <Grid
           container
           spacing={2}
-           alignItems="flex-start"
-           justifyContent="right"
+          alignItems="flex-start"
+          justifyContent="right"
           sx={{
             backgroundColor: "#113754",
             borderRadius: "8px",
-            
           }}
         >
-          <Grid item xs={12} sm={8} sx={{}}>
-            <Typography variant="h2" align="left" marginBottom={3} gutterBottom>
+          <Grid item xs={12} sm={8}>
+            <Typography
+              variant="h2"
+              align="left"
+              marginBottom={3}
+              gutterBottom
+              sx={{
+                color: "#D6D5D5",
+                fontFamily: "IRANSansX",
+                fontWeight: 700,
+                fontSize: "24px",
+              }}
+            >
               {"اینجا چه خبره؟"}
             </Typography>
-            <Typography variant="subtitle1" className={classes.description}>
+            <Typography
+              variant="subtitle1"
+              className={classes.description}
+              sx={{
+                color: "#D6D5D5",
+                fontFamily: "IRANSansX",
+                fontWeight: 400,
+              }}
+            >
               بچه‌های تیم طراحی و همیارها، داخل کارگاه‌ها همراهتون هستند و با
               همراه هم در مسیر یادگیری حرکت می‌کنین، فقط حواستون باشه که سوال‌ها
-              و مشارکت‌ شما داخل کارگاه از مهم‌ترین و واجب‌ترین چیزهاست.
+              و مشارکت‌ شما داخل کارگاه از مهم‌ترین و واجب‌ترین چیزهاست. بچه‌های
+              تیم طراحی و همیارها، داخل کارگاه‌ها همراهتون هستند و با همراه هم
+              در مسیر یادگیری حرکت می‌کنین، فقط حواستون باشه که سوال‌ها و
+              مشارکت‌ شما داخل کارگاه از مهم‌ترین و واجب‌ترین چیزهاست. بچه‌های
+              تیم طراحی و همیارها، داخل کارگاه‌ها همراهتون هستند و با همراه هم
+              در مسیر یادگیری حرکت می‌کنین، فقط حواستون باشه که سوال‌ها و
+              مشارکت‌ شما داخل کارگاه از مهم‌ترین و واجب‌ترین چیزهاست.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>

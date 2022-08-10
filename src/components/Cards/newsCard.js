@@ -87,6 +87,7 @@ const NewsCard = ({ name, position, image, description, teaserLink }) => {
               borderColor: "#1E5C83",
               borderRadius: "33px",
               fontFamily: "IRANSansX",
+              justifyContent:"center"
             }}
             onClick={() => setDialogueOpen(!isDialogueOpen)}
           >

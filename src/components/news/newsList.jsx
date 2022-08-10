@@ -33,11 +33,11 @@ function News() {
         <Typography
           sx={{
             justifyContent: "center",
-            fontFamily: "IRANSansX",
             height: "80px",
             width: "300px",
-            fontSize: "40px",
+            fontFamily: "IRANSansX",
             fontWeight: 700,
+            fontSize: "40px",
             backgroundColor: "#113754",
             color: "#C3C3C3",
             borderColor: "#C3C3C3",
