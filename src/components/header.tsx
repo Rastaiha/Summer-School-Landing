@@ -14,7 +14,7 @@ return (
         height: "100vh",
         width: "100vw",
         position: "absolute",
-        marginTop: 8,
+        marginTop: 8.5,
         top: 0,
         right: 0,
         backgroundImage: {
@@ -23,7 +23,7 @@ return (
         },
         backgroundSize: "cover !important",
         backgroundRepeat: "no-repeat",
-        zIndex: -1,
+        zIndex: 1,
       }}
     />
 
@@ -50,6 +50,7 @@ return (
             lineHeight: "100px",
             width: 200,
           },
+          zIndex:2
         })}
       >
         مدرسه تابستانه ۱۴۰۱

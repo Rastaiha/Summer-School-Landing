@@ -4,13 +4,13 @@
   font-weight: 100 900;
 }
 @font-face {
-  font-family: IRANSansXRegular;
-  src:local('IRANSansXRegular'), url("./IRANSansXRegular.ttf") format("woff");
+  font-family: IRANSansX;
+  src:local('IRANSansXRegular'), url("./IRANSansXRegular.ttf") format("ttf");
   font-weight: 100 900;
 }
 @font-face {
   font-family: 'CactusCircleDots';
-  src: local('CactusCircleDots'), url(../fonts/CactusCircleDots.ttf) format('ttf');
+  src: local('CactusCircleDots'), url("../fonts/CactusCircleDots.ttf") format('ttf');
 }
 
 * {

@@ -7,6 +7,7 @@ import { withStyles } from '@mui/styles';
 import React from 'react';
 
 import questions from './Questions';
+import { BorderRight } from "@mui/icons-material";
 
 const useStyles = makeStyles(() => ({
   text: {
@@ -105,7 +106,10 @@ const FAQ = () => {
         </Typography>
       </AccordionSummary>
       <AccordionDetails
-        sx={{ borderBottom: 2, borderColor: "#D6D5D5", borderRadius: "20px" }}
+        sx={{ 
+          borderBottom: 2, 
+          borderColor: "#D6D5D5",
+           borderRadius: "20px" }}
       >
         <Typography className={classes.text}>{question.answer}</Typography>
       </AccordionDetails>

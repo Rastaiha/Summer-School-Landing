@@ -6,10 +6,9 @@ import According from "./According";
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    padding: theme.spacing(20, 0, 20, 0),
+    
     zIndex: 5,
     position: "relative",
-    background: "#BB914C",
   },
 
   image: {

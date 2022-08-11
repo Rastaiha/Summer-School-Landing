@@ -7,7 +7,6 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(20, 0, 20, 0),
     zIndex: 5,
     position: "relative",
-    background: "brown",
   },
 
   featuresSectionPaper: {

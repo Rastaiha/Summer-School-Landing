@@ -9,8 +9,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(10, 0, 20, 0),
     zIndex: 5,
     position: "relative",
-    //backgroundImage: `url(${process.env.PUBLIC_URL}background lines.png)`,
-    backgroundColor:"green"
+    
   },
   whiteDescription: {
     fontSize: 20,
@@ -51,11 +50,7 @@ function News() {
         >
           اخبار
         </Typography>
-        <Grid
-          container
-          spacing={4}
-          sx={{  }}
-        >
+        <Grid container spacing={4} sx={{}}>
           {news.map((news, index) => (
             <Grid
               key={index}

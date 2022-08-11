@@ -6,11 +6,11 @@ import WorkshopCard from "./../Cards/WorkshopCard";
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    padding: theme.spacing(10, 0, 20, 0),
+    padding: theme.spacing(0, 0, 20, 0),
     zIndex: 5,
     position: "relative",
     //backgroundImage: `url(${process.env.PUBLIC_URL}background lines.png)`,
-    backgroundColor: "green",
+    
   },
   whiteDescription: {
     fontSize: 20,

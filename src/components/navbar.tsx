@@ -36,7 +36,7 @@ const NavBar = () => {
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: "#0F2E47", width: "100vw" }}
+      sx={{ backgroundColor: "#0F2E47", width: "100vw",height:"68px" }}
     >
       <Container
         maxWidth="xl"
@@ -106,7 +106,7 @@ const NavBar = () => {
                 display: "flex",
                 fontFamily: "IRANSansXRegular",
                 fontWeight: 700,
-                fontSize: { xs: 11, md: 15 },
+                fontSize: { xs: 12, md: 15 },
                 color: "inherit",
                 textDecoration: "none",
                 borderRadius: "70px",
@@ -147,7 +147,9 @@ const NavBar = () => {
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 0, margin: 0 }}>
+          <Box
+            sx={{ flexGrow: 0, margin: 0, display: { xs: "none", md: "flex" } }}
+          >
             <Tooltip title="جمع علمی-ترویجی رستا" arrow sx={{ padding: 0 }}>
               <IconButton href="https://www.rastaiha.ir/">
                 <img

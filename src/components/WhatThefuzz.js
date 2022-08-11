@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
   featuresSectionPaper: {
     padding: theme.spacing(0),
     "& img": {
-      width: "100%",
+      width: "100%",maxWidth:400
     },
   },
 
@@ -30,8 +30,8 @@ const WhatTheFuzz = () => {
       sm={10}
       md={8}
       sx={{
-        backgroundColor: "yellow",
-        padding: "10%",
+        paddingLeft: {md: "14%",sm:"10%"},
+        paddingRight: {md: "14%",sm:"10%"},
       }}
     >
       <Paper
