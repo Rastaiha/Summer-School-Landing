@@ -5,6 +5,7 @@ import NewsList from "./../components/news/newsList";
 import WorkshopList from "./../components/workshops/workshopList";
 import WhatTheFuzz from "../components/WhatThefuzz";
 import Steps from "../components/steps";
+import FAQ from "../components/FAQ/index";
 const Landing = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Landing = () => {
       <WhatTheFuzz />
       <Steps />
       <WorkshopList />
+      <FAQ />
     </div>
   );
 };

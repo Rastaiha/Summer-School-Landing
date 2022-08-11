@@ -54,7 +54,7 @@ function News() {
         <Grid
           container
           spacing={4}
-          sx={{ display: "flex", flexWrap: { xs: "wrap", md: "nowrap" } }}
+          sx={{  }}
         >
           {news.map((news, index) => (
             <Grid
@@ -65,13 +65,14 @@ function News() {
               item
               xs={12}
               sm={6}
-              md={4}
+              md={3}
               sx={{ justifyContent: "center" }}
             >
               <NewsCard
                 image={process.env.PUBLIC_URL + news.image}
                 name={news.name}
                 description={news.description}
+                place={news.place}
                 teaserLink={news.teaserLink}
               />
             </Grid>

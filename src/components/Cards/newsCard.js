@@ -34,7 +34,7 @@ const useStyles = makeStyles({
   },
 });
 
-const NewsCard = ({ name, position, image, description, teaserLink }) => {
+const NewsCard = ({ name, place, image, description, teaserLink }) => {
   const classes = useStyles();
   const [isDialogueOpen, setDialogueOpen] = useState(false);
 
@@ -59,7 +59,16 @@ const NewsCard = ({ name, position, image, description, teaserLink }) => {
             >
               {name}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              sx={{
+                fontSize: "16px",
+                fontWeight: 500,
+                fontFamily: "IRANSansX",
+              }}
+            >
               {description}
             </Typography>
           </CardContent>
@@ -74,19 +83,23 @@ const NewsCard = ({ name, position, image, description, teaserLink }) => {
               fontFamily: "IRANSansX",
               borderRadius: "5px",
               borderTopLeftRadius: "20px",
+              fontSize: "16px",
+              fontWeight: 400,
             }}
             variant="button"
           >
-            حضوری
+            {place}
           </Typography>
           <Button
             sx={{
               color: "#042D4E",
               border: 2,
+              fontSize: "16px",
+              fontWeight: 700,
               borderColor: "#1E5C83",
               borderRadius: "33px",
               fontFamily: "IRANSansX",
-              justifyContent:"center"
+              justifyContent: "center",
             }}
             onClick={() => setDialogueOpen(!isDialogueOpen)}
           >

@@ -40,13 +40,17 @@ const NavBar = () => {
     >
       <Container
         maxWidth="xl"
-        sx={{ display: "flex", padding: 0, justifyContent:"center" }}
+        sx={{ display: "flex", padding: 0, justifyContent: "center" }}
       >
         <Toolbar
           disableGutters
           sx={{
-            flexGrow: { xs: 1, md: .6 },
-            justifyContent: { xs: "space-between",md:"space-around",lg:"space-around" },
+            flexGrow: { xs: 1, md: 0.6 },
+            justifyContent: {
+              xs: "space-between",
+              md: "space-around",
+              lg: "space-around",
+            },
           }}
         >
           <Box display={"flex"} sx={{ alignItems: "center" }}>
@@ -109,6 +113,10 @@ const NavBar = () => {
                 border: 1,
                 borderColor: "#4A4A4A",
                 blockSize: 40,
+                "&:hover": {
+                  backgroundColor: "#fff",
+                  color: "#0F2E47",
+                },
               }}
             >
               ورود و ثبت نام

@@ -28,6 +28,8 @@ const useStyles = makeStyles({
   },
   media: {
     height: "280px",
+    margin:"5%",
+    borderRadius:"8px"
   },
   icon: {
     textAlign: "center",
@@ -46,14 +48,14 @@ const WorkshopCard = ({ name, image, description, teaserLink, place }) => {
             className={classes.media}
             image={`${process.env.PUBLIC_URL}${image}`}
           />
-          <CardContent>
+          <CardContent sx={{ padding: "5%" }}>
             <Typography
               gutterBottom
               variant="h5"
               component="h2"
               sx={{
                 fontSize: "24px",
-                fontWeight: 400,
+                fontWeight: 700,
                 fontFamily: "IRANSansX",
               }}
             >
@@ -63,19 +65,35 @@ const WorkshopCard = ({ name, image, description, teaserLink, place }) => {
               variant="body2"
               color="textSecondary"
               component="p"
-              sx={{ marginTop: 4 }}
+              sx={{
+                marginTop: 3,
+                fontSize: "16px",
+                fontWeight: 700,
+                fontFamily: "IRANSansX",
+              }}
             >
               {place}
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions sx={{ backgroundColor: "#D6D5D5",display:"flex",justifyContent:"flex-end" }}>
+        <CardActions
+          sx={{
+            backgroundColor: "#D6D5D5",
+            display: "flex",
+            justifyContent: "flex-end",
+            padding: "5%",
+            paddingBottom:"2%",
+            paddingTop:"0%",
+          }}
+        >
           <Button
             sx={{
               color: "#042D4E",
               border: 2,
               borderColor: "#1E5C83",
               borderRadius: "33px",
+              fontWeight: 700,
+              fontSize: "16px",
               fontFamily: "IRANSansX",
               justifyContent: "center",
             }}
