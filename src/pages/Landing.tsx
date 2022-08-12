@@ -7,6 +7,7 @@ import WhatTheFuzz from "../components/WhatThefuzz";
 import Steps from "../components/steps";
 import FAQ from "../components/FAQ/index";
 import WhoAreWe from "../components/whoAreWe";
+import Footer from "../components/Footer";
 const Landing = () => {
   return (
     <div>
@@ -34,6 +35,7 @@ const Landing = () => {
         <FAQ />
         <WhoAreWe/>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -32,15 +32,28 @@ const NavBar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+  const scrollDown = (ref) => {
+    console.log("fuck");
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: "#0F2E47", width: "100vw",height:"68px" }}
+      sx={{ backgroundColor: "#0F2E47", width: "100vw" }}
     >
       <Container
         maxWidth="xl"
-        sx={{ display: "flex", padding: 0, justifyContent: "center" }}
+        sx={{
+          display: "flex",
+          padding: 0,
+          justifyContent: "center",
+          alignContent: "center",
+          height: "68px",
+        }}
       >
         <Toolbar
           disableGutters
@@ -86,7 +99,7 @@ const NavBar = () => {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <MenuItem key={page} onClick={()=>{scrollDown(page)}}>
                     <Typography
                       sx={{ fontFamily: "IRANSansXRegular" }}
                       textAlign="center"
