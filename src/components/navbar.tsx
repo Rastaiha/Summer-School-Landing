@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import LoginIcon from '@mui/icons-material/Login';
+import LoginIcon from "@mui/icons-material/Login";
 const pages = [
   "تیم برگزاری",
   "درباره ما",
@@ -58,16 +58,15 @@ const NavBar = () => {
         <Toolbar
           disableGutters
           sx={{
-            flexGrow: { xs: 1, md: 0.6 },
-            justifyContent: {
-              xs: "space-between",
-              md: "space-around",
-              lg: "space-around",
-            },
+            flexGrow: { xs: 1, md: 1 },
+            justifyContent: "space-between",
           }}
         >
-          <Box display={"flex"} sx={{ alignItems: "center" }}>
-            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+          <Box
+            display={"flex"}
+            sx={{ alignItems: "center", paddingLeft: { xs: 1, sm: 0, md: 0 } }}
+          >
+            <Box sx={{ display: { xs: "none", md: "none" } }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -95,11 +94,16 @@ const NavBar = () => {
                 sx={{
                   fontFamily: "IRANSansXRegular",
                   fontWeight: 700,
-                  display: { xs: "block", md: "none" },
+                  display: { xs: "none", md: "none" },
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={()=>{scrollDown(page)}}>
+                  <MenuItem
+                    key={page}
+                    onClick={() => {
+                      scrollDown(page);
+                    }}
+                  >
                     <Typography
                       sx={{ fontFamily: "IRANSansXRegular" }}
                       textAlign="center"
@@ -138,7 +142,7 @@ const NavBar = () => {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", md: "none" },
               justifyContent: "center",
             }}
           >
@@ -206,4 +210,3 @@ const NavBar = () => {
   );
 };
 export default NavBar;
-
