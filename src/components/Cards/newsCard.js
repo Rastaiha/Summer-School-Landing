@@ -34,7 +34,7 @@ const useStyles = makeStyles({
   },
 });
 
-const NewsCard = ({ name, place, image, description, teaserLink }) => {
+const NewsCard = ({ name, place, image, description, teaserLink,kholase }) => {
   const classes = useStyles();
   const [isDialogueOpen, setDialogueOpen] = useState(false);
 
@@ -69,7 +69,7 @@ const NewsCard = ({ name, place, image, description, teaserLink }) => {
                 fontFamily: "IRANSansX",
               }}
             >
-              {description}
+              {kholase}
             </Typography>
           </CardContent>
         </CardActionArea>

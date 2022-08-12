@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function NewsDialogue({ open, handleClose, name, teaserLink, description }) {
+function NewsDialogue({ open, handleClose, name, teaserLink, description,image }) {
   const classes = useStyles();
   let teaserSection = "";
   if (teaserLink) {
@@ -72,6 +72,8 @@ function NewsDialogue({ open, handleClose, name, teaserLink, description }) {
           flexDirection: "column",
         }}
       >
+        <img src={process.env.PUBLIC_URL + image} alt="" style={{borderRadius:"8px"}}/>
+        {teaserLink}
         <Typography
           gutterBottom
           variant="h4"
@@ -84,9 +86,11 @@ function NewsDialogue({ open, handleClose, name, teaserLink, description }) {
             fontSize: "24px",
             textAlign: "left",
             marginBottom: 2,
+            marginTop:2,
+            paddingLeft:2
           }}
         >
-          {"«" + name + "»"}
+          {"" + name + ""}
         </Typography>
         <div className={classes.text}>
           {description.map((paragraph, index) => (
@@ -108,7 +112,6 @@ function NewsDialogue({ open, handleClose, name, teaserLink, description }) {
             </Grid>
           ))}
         </div>
-        {teaserSection}
       </section>
     </Dialog>
   );

@@ -69,6 +69,7 @@ function News() {
                 description={news.description}
                 place={news.place}
                 teaserLink={news.teaserLink}
+                kholase={news.kholase}
               />
             </Grid>
           ))}

@@ -85,9 +85,10 @@ function CardDialogue({ open, handleClose, name, teaserLink, description }) {
             fontSize: "24px",
             textAlign: "left",
             marginBottom: 2,
+            paddingLeft:2
           }}
         >
-          {"«" + name + "»"}
+          {"" + name + ""}
         </Typography>
         <div className={classes.text}>
           {description.map((paragraph, index) => (
