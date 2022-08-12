@@ -48,7 +48,7 @@ const WhatTheFuzz = () => {
             padding: "3%",
           }}
         >
-          <Grid item xs={12} sm={8}>
+          <Grid item xs={12} sm={9}>
             <Typography
               variant="h2"
               align="left"
@@ -79,7 +79,7 @@ const WhatTheFuzz = () => {
               بود.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={3} sx={{padding:{xs:"5%",md:"1px",sm:"1px"}}}>
             <img src={process.env.PUBLIC_URL + "/behindWall.png"} alt="" />
           </Grid>
         </Grid>
