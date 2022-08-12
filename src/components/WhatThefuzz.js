@@ -79,7 +79,12 @@ const WhatTheFuzz = () => {
               بود.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={3} sx={{padding:{xs:"5%",md:"1px",sm:"1px"}}}>
+          <Grid
+            item
+            xs={12}
+            sm={3}
+            sx={{ padding: { xs: "5%", md: "1px", sm: "1px" } }}
+          >
             <img src={process.env.PUBLIC_URL + "/behindWall.png"} alt="" />
           </Grid>
         </Grid>

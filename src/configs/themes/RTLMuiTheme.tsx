@@ -1,17 +1,19 @@
-import { createTheme } from '@mui/material/styles';
-import { Workshop } from './MuiVariables';
-import theme from './theme';
-import typography from './typography';
+import { createTheme } from "@mui/material/styles";
+import { Workshop } from "./MuiVariables";
+import theme from "./theme";
+import typography from "./typography";
 
-import iranyekanwebbold from '../fonts/iranyekanwebbold.woff';
-import iranyekanwebbold2 from '../fonts/iranyekanwebbold.woff2';
-import iranyekanweblight from '../fonts/iranyekanweblight.woff';
-import iranyekanweblight2 from '../fonts/iranyekanweblight.woff2';
-import VIPCartoon from '../fonts/VIPCartoon.woff';
-import VIPCartoon2 from '../fonts/VIPCartoon.woff2';
+import iranyekanwebbold from "../fonts/iranyekanwebbold.woff";
+import iranyekanwebbold2 from "../fonts/iranyekanwebbold.woff2";
+import iranyekanweblight from "../fonts/iranyekanweblight.woff";
+import iranyekanweblight2 from "../fonts/iranyekanweblight.woff2";
+import CactusCircleDots from "../fonts/CactusCircleDots.ttf";
+import IRANSansXRegular from "../fonts/IRANSansXRegular.ttf";
+import VIPCartoon from "../fonts/VIPCartoon.woff";
+import VIPCartoon2 from "../fonts/VIPCartoon.woff2";
 
 const RTLMuiTheme = createTheme({
-  direction: 'rtl',
+  direction: "rtl",
   ...theme(Workshop),
   typography,
   components: {
@@ -32,7 +34,19 @@ const RTLMuiTheme = createTheme({
         src: url(${VIPCartoon}) format("woff"), url(${VIPCartoon2}) format("woff2");
         font-weight: 900;
       }
-      `,
+      @font-face {
+        font-family: iranyekanwebbold;
+        src: url(${iranyekanwebbold}) format("woff"), url(${iranyekanwebbold2}) format("woff2");
+        font-weight: 900;
+      }
+      @font-face {
+  font-family: IRANSansX;
+  src:local(${IRANSansXRegular}), url(${IRANSansXRegular}) format("ttf");
+}
+@font-face {
+  font-family: CactusCircleDots;
+  src: local(${CactusCircleDots}), url(${CactusCircleDots}) format('ttf');
+}`,
     },
   },
 });
