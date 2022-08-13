@@ -107,7 +107,7 @@ const NavBar = () => {
 
             <Button
               variant="outlined"
-              href="/"
+              href="https://summerschool.sampad.gov.ir/home/enter"
               startIcon={<LoginIcon />}
               sx={{
                 display: "flex",
