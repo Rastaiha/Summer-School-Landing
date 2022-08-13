@@ -34,7 +34,7 @@ const useStyles = makeStyles({
   },
 });
 
-const NewsCard = ({ name, place, image, description, teaserLink,kholase }) => {
+const NewsCard = ({ name, place, image, description, teaserLink, kholase }) => {
   const classes = useStyles();
   const [isDialogueOpen, setDialogueOpen] = useState(false);
 
@@ -45,8 +45,13 @@ const NewsCard = ({ name, place, image, description, teaserLink,kholase }) => {
           <CardMedia
             className={classes.media}
             image={`${process.env.PUBLIC_URL}${image}`}
+            
           />
-          <CardContent>
+          <CardContent
+            sx={{
+              height: "150px",
+            }}
+          >
             <Typography
               gutterBottom
               variant="h5"

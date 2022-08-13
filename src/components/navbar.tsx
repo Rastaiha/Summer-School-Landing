@@ -32,13 +32,6 @@ const NavBar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  const scrollDown = (ref) => {
-    console.log("fuck");
-    window.scrollTo({
-      top: ref.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <AppBar
@@ -100,9 +93,6 @@ const NavBar = () => {
                 {pages.map((page) => (
                   <MenuItem
                     key={page}
-                    onClick={() => {
-                      scrollDown(page);
-                    }}
                   >
                     <Typography
                       sx={{ fontFamily: "IRANSansXRegular" }}

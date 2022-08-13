@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   description: {
-    textAlign: "center",
+    textAlign: "right",
     textJustify: "inter-word",
   },
 }));
@@ -72,10 +72,14 @@ function Index() {
                 sx={{ backgroundColor: "#113754" }}
               >
                 <Grid item xs={12} sm={4}>
-                  <img src={process.env.PUBLIC_URL + "/step-1.png"} alt="" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/step-1.jpg"}
+                    alt=""
+                    style={{ borderRadius: "8px" }}
+                  />
                 </Grid>
                 <Grid item xs={12} sm={8}>
-                  <Typography
+                  {/* <Typography
                     variant="h2"
                     align="center"
                     gutterBottom
@@ -87,7 +91,7 @@ function Index() {
                     }}
                   >
                     {"کارگاه مجازی"}
-                  </Typography>
+                  </Typography> */}
                   <Typography
                     variant="subtitle1"
                     className={classes.description}
@@ -97,10 +101,9 @@ function Index() {
                       fontWeight: 400,
                     }}
                   >
-                    متاسفانه امسال هم به خاطر شرایط کرونایی، قراره کارگاه‌های
-                    رویداد رو به صورت مجازی داشته باشیم. اما شما از این فرصت
-                    استفاده کنین و با دوست‌هاتون از هر شهر و جای دیگه‌ای که
-                    هستند در رویداد شرکت کنین!
+                    سه روز صمیمی و پرنشاط با طعم یادگیری تعاملی! مدرسه تابستانه
+                    امسال رستا، بخش‌های مختلفی اعم از کارگاه‌های علمی، بازی،
+                    ارائه های علمی و مسابقه‌ی نهایی داره.
                   </Typography>
                 </Grid>
               </Grid>
@@ -118,7 +121,7 @@ function Index() {
                 justifyContent="center"
               >
                 <Grid item xs={12} sm={8}>
-                  <Typography
+                  {/* <Typography
                     variant="h2"
                     align="center"
                     gutterBottom
@@ -130,7 +133,7 @@ function Index() {
                     }}
                   >
                     {"ارتباط با همیار"}
-                  </Typography>
+                  </Typography> */}
                   <Typography
                     variant="subtitle1"
                     className={classes.description}
@@ -138,16 +141,23 @@ function Index() {
                       color: "#D6D5D5",
                       fontFamily: "IRANSansX",
                       fontWeight: 400,
+                      textAlign: "center !important",
                     }}
                   >
-                    بچه‌های تیم طراحی و همیارها، داخل کارگاه‌ها همراهتون هستند و
-                    با همراه هم در مسیر یادگیری حرکت می‌کنین، فقط حواستون باشه
-                    که سوال‌ها و مشارکت‌ شما داخل کارگاه از مهم‌ترین و واجب‌ترین
-                    چیزهاست.
+                    توی رویداد مجازی ۴ تا کارگاه‌ علمی با موضوعات هوش مصنوعی،
+                    کدگذاری و فشرده‌سازی، داده‌کاوی و الگوریتم و توی رویداد
+                    حضوری ۶ تا کارگاه علمی با عنوان‌های هوش مصنوعی، داده‌کاوی،
+                    الگوریتم، سورس کدینگ، مکانیک سیالات و .... داریم. توی
+                    کارگاه‌های علمی قراره به صورت تعاملی موضوعات جالبی رو یاد
+                    بگیریم و با چالش‌های جذابی رو‌ به رو بشیم.
                   </Typography>
                 </Grid>
                 <Grid item xs={12} sm={4}>
-                  <img src={process.env.PUBLIC_URL + "/step-2.png"} alt="" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/step-2.jpg"}
+                    alt=""
+                    style={{ borderRadius: "8px" }}
+                  />
                 </Grid>
               </Grid>
             </Paper>
@@ -164,10 +174,14 @@ function Index() {
                 justifyContent="center"
               >
                 <Grid item xs={12} sm={4}>
-                  <img src={process.env.PUBLIC_URL + "/step-3.png"} alt="" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/step-3.jpg"}
+                    alt=""
+                    style={{ borderRadius: "8px" }}
+                  />
                 </Grid>
                 <Grid item xs={12} sm={8}>
-                  <Typography
+                  {/* <Typography
                     variant="h2"
                     align="center"
                     gutterBottom
@@ -179,7 +193,7 @@ function Index() {
                     }}
                   >
                     {"کار گروهی"}
-                  </Typography>
+                  </Typography> */}
                   <Typography
                     variant="subtitle1"
                     className={classes.description}
@@ -189,11 +203,13 @@ function Index() {
                       fontWeight: 400,
                     }}
                   >
-                    هم توی رستا و هم داناک، آموزش بر اساس تعامل در گروه‌ها و کار
-                    روی مسئله‌های چالش‌برانگیز، واقعی و نزدیک به دنیای فکری
-                    مخاطبینه. هدف ما از آموزش مسائل به شکل تعامل‌محور، ایجاد
-                    خلاقیت و یادگیری عمیق و همچنین تقویت روحیه کار گروهی توی
-                    شماست!{" "}
+                    همچنین در طی هر دو رویداد، ارائه‌های علمی‌ای گفتگومحوری رو
+                    خواهیم داشت که توی اون‌ها، استادهای خوش‌ذوق و توانمند، قراره
+                    برامون صحبت کنن و نگاه تازه‌ای از مسائل مختلف به ما بدن. در
+                    نهایت هم به صورت گروهی توی یک مسابقه‌ی نهایی جذاب،{"\n"}
+                    مهارت‌هامون رو می‌سنجیم و با دید جدیدی که کارگاه‌ها بهمون
+                    دادن و دانسته‌های قبلیمون چالش‌های مسابقه‌ی نهایی رو پشت‌سر
+                    میذاریم.
                   </Typography>
                 </Grid>
               </Grid>
