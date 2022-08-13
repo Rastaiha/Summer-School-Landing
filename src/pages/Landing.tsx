@@ -16,23 +16,14 @@ const Landing = () => {
       <div
         style={{
           zIndex: -1,
-          backgroundImage: `url(${process.env.PUBLIC_URL}background_lines.png)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}background_lines2.png)`,
           backgroundColor: "#0F2E47",
-          backgroundSize: "cover !important",
+          backgroundSize: "cover",
         }}
       >
         <NewsList />
         <WhatTheFuzz />
         <Steps />
-      </div>
-      <div
-        style={{
-          zIndex: -1,
-          backgroundImage: `url(${process.env.PUBLIC_URL}background_lines2.png)`,
-          backgroundColor: "#0F2E47",
-          backgroundSize: "cover !important",
-        }}
-      >
         <WorkshopList />
         <FAQ />
         <WhoAreWe />
