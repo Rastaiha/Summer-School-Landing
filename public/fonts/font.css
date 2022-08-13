@@ -1,16 +1,19 @@
 @font-face {
   font-family: iranyekan;
-  src: url("./iranyekanweblight.woff") format("woff"), url("./iranyekanweblight.woff2") format("woff2");
+  src: url("./iranyekanweblight.woff") format("woff"),
+    url("./iranyekanweblight.woff2") format("woff2");
   font-weight: 100 900;
 }
 @font-face {
   font-family: IRANSansX;
-  src:local('IRANSansXRegular'), url("./IRANSansXRegular.woff") format("woff");
+  src: url("./IRANSansXRegular.woff") format("woff"),
+    url("./IRANSansXRegular.woff2") format("woff2");
   font-weight: 100 900;
 }
 @font-face {
-  font-family: 'CactusCircleDots';
-  src: local('CactusCircleDots'), url("../fonts/CactusCircleDots.woff") format('woff');
+  font-family: "CactusCircleDots";
+  src: url("./CactusCircleDots.woff") format("woff"),
+    url("./CactusCircleDots.woff2") format("woff2");
 }
 
 * {
