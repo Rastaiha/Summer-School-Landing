@@ -7,8 +7,8 @@ import iranyekanwebbold from "../fonts/iranyekanwebbold.woff";
 import iranyekanwebbold2 from "../fonts/iranyekanwebbold.woff2";
 import iranyekanweblight from "../fonts/iranyekanweblight.woff";
 import iranyekanweblight2 from "../fonts/iranyekanweblight.woff2";
-import CactusCircleDots from "../fonts/CactusCircleDots.ttf";
-import IRANSansXRegular from "../fonts/IRANSansXRegular.ttf";
+import CactusCircleDots from "../fonts/CactusCircleDots.woff";
+import IRANSansXRegular from "../fonts/IRANSansXRegular.woff";
 import VIPCartoon from "../fonts/VIPCartoon.woff";
 import VIPCartoon2 from "../fonts/VIPCartoon.woff2";
 
@@ -41,11 +41,11 @@ const RTLMuiTheme = createTheme({
       }
       @font-face {
   font-family: IRANSansX;
-  src:local(${IRANSansXRegular}), url(${IRANSansXRegular}) format("ttf");
+  src:local(${IRANSansXRegular}), url(${IRANSansXRegular}) format("woff");
 }
 @font-face {
   font-family: CactusCircleDots;
-  src: local(${CactusCircleDots}), url(${CactusCircleDots}) format('ttf');
+  src: local(${CactusCircleDots}), url(${CactusCircleDots}) format('woff');
 }`,
     },
   },
