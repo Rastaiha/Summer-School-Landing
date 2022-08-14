@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/navbar";
 import Header from "./../components/header";
 import NewsList from "./../components/news/newsList";
@@ -17,17 +17,19 @@ export const baseURL =
 const Landing = () => {
   const [data, setData] = useState(null);
 
-  fetch(`${baseURL}/data.json`)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("HTTP error " + response.status);
-      }
-      return response.json();
-    })
-    .then(data => {
-      setData(data);
-      console.log(data);
-    })
+  useEffect(() => {
+    fetch(`${baseURL}/data.json`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("HTTP error " + response.status);
+        }
+        return response.json();
+      })
+      .then(data => {
+        setData(data);
+        console.log(data);
+      })
+  }, [])
 
   if (!data) {
     return <></>
@@ -52,7 +54,7 @@ const Landing = () => {
         <FAQ questions={data.FAQ} />
         <WhoAreWe />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
