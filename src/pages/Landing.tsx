@@ -8,7 +8,20 @@ import Steps from "../components/steps";
 import FAQ from "../components/FAQ/index";
 import WhoAreWe from "../components/whoAreWe";
 import Footer from "../components/Footer";
+
 const Landing = () => {
+
+  fetch('https://main.summerschoollanding-7tt.pages.dev/data.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("HTTP error " + response.status);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+    })
+
   return (
     <div>
       <Navbar />
