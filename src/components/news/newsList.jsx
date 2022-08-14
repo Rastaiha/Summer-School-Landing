@@ -1,7 +1,7 @@
 import { Container, Grid, Typography, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
-import news from "./news";
+// import news from "./news";
 import NewsCard from "./../Cards/newsCard";
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(0, 0, 0, 0),
   },
 }));
-function News() {
+function News({news}) {
   const classes = useStyles();
   return (
     <section className={classes.section}>

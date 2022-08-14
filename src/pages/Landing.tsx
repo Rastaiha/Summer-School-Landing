@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/navbar";
 import Header from "./../components/header";
 import NewsList from "./../components/news/newsList";
@@ -9,9 +9,15 @@ import FAQ from "../components/FAQ/index";
 import WhoAreWe from "../components/whoAreWe";
 import Footer from "../components/Footer";
 
-const Landing = () => {
+export const baseURL =
+  process.env.NODE_ENV === 'production'
+    ? 'https://main.summerschoollanding-7tt.pages.dev'
+    : 'http://localhost:3000'
 
-  fetch('https://main.summerschoollanding-7tt.pages.dev/data.json')
+const Landing = () => {
+  const [data, setData] = useState(null);
+
+  fetch(`${baseURL}/data.json`)
     .then(response => {
       if (!response.ok) {
         throw new Error("HTTP error " + response.status);
@@ -19,12 +25,17 @@ const Landing = () => {
       return response.json();
     })
     .then(data => {
+      setData(data);
       console.log(data);
     })
 
+  if (!data) {
+    return <></>
+  }
+
   return (
     <div>
-      <Navbar />
+      <Navbar loginLink={data.loginLink} />
       <Header />
       <div
         style={{
@@ -34,11 +45,11 @@ const Landing = () => {
           backgroundSize: "cover",
         }}
       >
-        <NewsList />
+        <NewsList news={data.news} />
         <WhatTheFuzz />
         <Steps />
-        <WorkshopList />
-        <FAQ />
+        <WorkshopList workshops={data.workshops} />
+        <FAQ questions={data.FAQ} />
         <WhoAreWe />
       </div>
       <Footer />

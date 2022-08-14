@@ -6,17 +6,17 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import { withStyles } from '@mui/styles';
 import React from 'react';
 
-import questions from './Questions';
+// import questions from './Questions';
 import { BorderRight } from "@mui/icons-material";
 
 const useStyles = makeStyles(() => ({
   text: {
     textAlign: 'justify',
     textJustify: 'inter-word',
-            fontFamily: "IRANSansX",
-            fontWeight: 500,
-            fontSize: "16px",
-            color: "#D6D5D5",
+    fontFamily: "IRANSansX",
+    fontWeight: 500,
+    fontSize: "16px",
+    color: "#D6D5D5",
   },
 }));
 
@@ -61,7 +61,7 @@ const AccordionDetails = withStyles((theme) => ({
   },
 }))(MuiAccordionDetails);
 
-const FAQ = () => {
+const FAQ = ({ questions }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -106,10 +106,11 @@ const FAQ = () => {
         </Typography>
       </AccordionSummary>
       <AccordionDetails
-        sx={{ 
-          borderBottom: 2, 
+        sx={{
+          borderBottom: 2,
           borderColor: "#D6D5D5",
-           borderRadius: "20px" }}
+          borderRadius: "20px"
+        }}
       >
         <Typography className={classes.text}>{question.answer}</Typography>
       </AccordionDetails>

@@ -52,7 +52,7 @@ const WhatTheFuzz = () => {
         >
           <Grid item xs={12} sm={9}>
             <Typography
-              variant="h2"
+              variant="h1"
               align="left"
               marginBottom={3}
               gutterBottom
@@ -60,7 +60,7 @@ const WhatTheFuzz = () => {
                 color: "#D6D5D5",
                 fontFamily: "IRANSansX",
                 fontWeight: 700,
-                fontSize: "24px",
+                fontSize: "40px",
               }}
             >
               {"اینجا چه خبره؟"}
@@ -74,7 +74,7 @@ const WhatTheFuzz = () => {
                 fontWeight: 400,
               }}
             >
-              جمع علمی_ترویجی رستا و سازمان استعدادهای درخشان، امسال با دوتا
+              جمع علمی-ترویجی رستا و سازمان استعدادهای درخشان، امسال با دوتا
               مدرسه تابستانه در کنار شما هستن! یک مدرسه تابستانه‌ی مجازی و یک
               مدرسه تابستانه‌‌ی حضوری! در این رویدادهای سه روزه‌ در کنار هم طعم
               یادگیری تعاملی، چالش‌های علمی و کار گروهی رو می‌چشیم و در کنار

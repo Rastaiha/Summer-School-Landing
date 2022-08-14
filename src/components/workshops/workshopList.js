@@ -1,7 +1,7 @@
 import { Container, Grid, Typography, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
-import workshops from "./workshops";
+// import workshops from "./workshops";
 import WorkshopCard from "./../Cards/WorkshopCard";
 
 const useStyles = makeStyles((theme) => ({
@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 5,
     position: "relative",
     //backgroundImage: `url(${process.env.PUBLIC_URL}background lines.png)`,
-    
+
   },
   whiteDescription: {
     fontSize: 20,
@@ -22,7 +22,8 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(0, 0, 0, 0),
   },
 }));
-function News() {
+
+function News({ workshops }) {
   const classes = useStyles();
   return (
     <section className={classes.section}>

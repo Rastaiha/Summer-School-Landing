@@ -49,7 +49,7 @@ function Index() {
             fontSize: "40px",
           }}
         >
-          {"چه چیزهایی در انتظار ما می‌باشد"}
+          {"چه چیزهایی در انتظار ماست؟"}
         </Typography>
         <Grid
           container

@@ -6,7 +6,7 @@ import According from "./According";
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    
+
     zIndex: 5,
     position: "relative",
   },
@@ -18,13 +18,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Index() {
+function Index({ questions }) {
   const classes = useStyles();
   return (
     <section className={classes.section}>
       <Container
         maxWidth="lg"
-        sx={{ display: "flex", alignItems: "center" ,flexDirection:"column"}}
+        sx={{ display: "flex", alignItems: "center", flexDirection: "column" }}
       >
         <Typography
           variant="h1"
@@ -42,8 +42,8 @@ function Index() {
             border: 2,
             marginBottom: 10,
             borderRadius: "30px",
-             alignContent: "center",
-             alignItems: "center",
+            alignContent: "center",
+            alignItems: "center",
             display: "flex",
           }}
         >
@@ -56,7 +56,7 @@ function Index() {
           sx={{ display: "flex", justifyContent: "center" }}
         >
           <Grid item xs={12} md={8}>
-            <According />
+            <According questions={questions} />
           </Grid>
           {/* <Grid item xs={12} md={5} container justifyContent='center'>
             <img

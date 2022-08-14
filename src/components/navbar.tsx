@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import LoginIcon from "@mui/icons-material/Login";
+
 const pages = [
   "تیم برگزاری",
   "درباره ما",
@@ -20,7 +21,9 @@ const pages = [
   "معرفی رویداد",
 ];
 
-const NavBar = () => {
+
+
+const NavBar = ({ loginLink = "https://summerschool.sampad.gov.ir/home/enter" }) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -107,11 +110,10 @@ const NavBar = () => {
 
             <Button
               variant="outlined"
-              href="https://summerschool.sampad.gov.ir/home/enter"
+              href={loginLink}
               startIcon={<LoginIcon />}
               sx={{
                 display: "flex",
-                fontFamily: "IRANSansXRegular",
                 fontWeight: 700,
                 fontSize: { xs: 12, md: 15 },
                 color: "inherit",
@@ -154,7 +156,7 @@ const NavBar = () => {
               </Button>
             ))}
           </Box>
-          <Box
+          {/* <Box
             sx={{ flexGrow: 0, margin: 0, display: { xs: "none", md: "flex" } }}
           >
             <Tooltip title="جمع علمی-ترویجی رستا" arrow sx={{ padding: 0 }}>
@@ -193,7 +195,7 @@ const NavBar = () => {
                 />
               </IconButton>
             </Tooltip>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
