@@ -45,24 +45,21 @@ function Index() {
                   />
                 </IconButton>
               </Tooltip>
-              <Tooltip title="جمع علمی-ترویجی رستا" arrow sx={{ padding: 0 }}>
-                <IconButton disabled href="https://www.rastaiha.ir/">
-                  <img
-                    src={process.env.PUBLIC_URL + "/key-white.png"}
-                    alt=""
-                    height={50}
-                  />
-                </IconButton>
-              </Tooltip>
-              <Tooltip
-                disabled
-                title="دانشگاه صنعتی شریف"
-                arrow>
+              <Tooltip disabled title="دانشگاه صنعتی شریف" arrow sx={{ padding: 1 }}>
                 <IconButton href="https://www.sharif.edu/">
                   <img
                     src={process.env.PUBLIC_URL + "/sharif-white.png"}
                     alt=""
                     width={45}
+                  />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="جمع علمی-ترویجی رستا" arrow sx={{ padding: 1 }}>
+                <IconButton disabled href="https://www.rastaiha.ir/">
+                  <img
+                    src={process.env.PUBLIC_URL + "/key-white.png"}
+                    alt=""
+                    height={50}
                   />
                 </IconButton>
               </Tooltip>
