@@ -7,7 +7,7 @@ import WhatTheFuzz from "../components/WhatThefuzz";
 import Steps from "../components/steps";
 import FAQ from "../components/FAQ/index";
 import WhoAreWe from "../components/whoAreWe";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer2";
 
 export const baseURL =
   process.env.NODE_ENV === 'production'
@@ -54,7 +54,7 @@ const Landing = () => {
         <FAQ questions={data.FAQ} />
         <WhoAreWe />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

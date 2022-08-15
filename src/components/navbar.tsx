@@ -11,6 +11,9 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import LoginIcon from "@mui/icons-material/Login";
+import {
+  Stack,
+} from "@mui/material";
 
 const pages = [
   "تیم برگزاری",
@@ -56,21 +59,25 @@ const NavBar = ({ loginLink = "https://summerschool.sampad.gov.ir/home/enter" })
           sx={{
             flexGrow: { xs: 1, md: 1 },
             justifyContent: "space-between",
-          }}
-        >
-          <Box
-            display={"flex"}
-            sx={{ alignItems: "center", paddingLeft: { xs: 1, sm: 0, md: 0 } }}
-          >
-            <Box sx={{ display: { xs: "none", md: "none" } }}>
+          }}>
+
+          <Stack
+            direction='row'
+            justifyContent='space-between'
+            alignItems='center'
+            sx={{
+              paddingLeft: { xs: 1, sm: 0, md: 0 },
+              width: '100%',
+            }}>
+
+            {/* <Box sx={{ display: { xs: "none", md: "none" } }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
-              >
+                color="inherit">
                 <MenuIcon />
               </IconButton>
               <Menu
@@ -91,22 +98,27 @@ const NavBar = ({ loginLink = "https://summerschool.sampad.gov.ir/home/enter" })
                   fontFamily: "IRANSansXRegular",
                   fontWeight: 700,
                   display: { xs: "none", md: "none" },
-                }}
-              >
+                }}>
                 {pages.map((page) => (
                   <MenuItem
-                    key={page}
-                  >
+                    key={page}>
                     <Typography
                       sx={{ fontFamily: "IRANSansXRegular" }}
-                      textAlign="center"
-                    >
+                      textAlign="center">
                       {page}
                     </Typography>
                   </MenuItem>
                 ))}
               </Menu>
-            </Box>
+            </Box> */}
+
+            <IconButton size='small' disabled>
+              <img
+                src={process.env.PUBLIC_URL + "/sampad-white.png"}
+                alt=""
+                width={75}
+              />
+            </IconButton>
 
             <Button
               variant="outlined"
@@ -126,18 +138,17 @@ const NavBar = ({ loginLink = "https://summerschool.sampad.gov.ir/home/enter" })
                   backgroundColor: "#fff",
                   color: "#0F2E47",
                 },
-              }}
-            >
-              ورود و ثبت نام
+              }}>
+                ثبت‌نام و ورود
             </Button>
-          </Box>
+          </Stack>
+
           <Box
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "none" },
               justifyContent: "center",
-            }}
-          >
+            }}>
             {pages.map((page) => (
               <Button
                 key={page}
