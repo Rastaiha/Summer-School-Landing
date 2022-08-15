@@ -54,21 +54,12 @@ const NavBar = ({ loginLink = "https://summerschool.sampad.gov.ir/home/enter" })
           height: "68px",
         }}
       >
-        <Toolbar
-          disableGutters
-          sx={{
-            flexGrow: { xs: 1, md: 1 },
-            justifyContent: "space-between",
-          }}>
-
+        <Toolbar sx={{ width: '100%' }}>
           <Stack
             direction='row'
             justifyContent='space-between'
             alignItems='center'
-            sx={{
-              paddingLeft: { xs: 1, sm: 0, md: 0 },
-              width: '100%',
-            }}>
+            sx={{ width: '100%' }}>
 
             {/* <Box sx={{ display: { xs: "none", md: "none" } }}>
               <IconButton
@@ -139,7 +130,7 @@ const NavBar = ({ loginLink = "https://summerschool.sampad.gov.ir/home/enter" })
                   color: "#0F2E47",
                 },
               }}>
-                ثبت‌نام و ورود
+              ثبت‌نام و ورود
             </Button>
           </Stack>
 
