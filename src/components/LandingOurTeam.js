@@ -8,8 +8,7 @@ import { useTranslate } from 'react-redux-multilingual/lib/context';
 import { Link } from 'react-router-dom';
 
 import getRandomSubarray from '../../../utils/getRandomSubarray';
-import PersonCard from '../../Cards/PersonCard';
-
+import PersonCard from '../components/Cards/PersonCard';
 
 function OurTeam({ members = [], count = 4 }) {
   const t = useTranslate();

@@ -1,20 +1,12 @@
 import '../Theme/Styles/OurTeam.css';
-
-import { Container, Grid } from '@material-ui/core';
-import React, { useEffect } from 'react';
-import { connect } from 'react-redux';
-
-import ResponsiveAppBar from '../components/Appbar/ResponsiveAppBar';
+import { Container, Grid } from '@mui/material';
+import React from 'react';
 import PersonCard from '../components/Cards/PersonCard';
-import { getLandingDataAction } from '../redux/slices/landing';
 
-function OurTeam({ members = [], teams = [], getLandingData }) {
-  useEffect(() => {
-    getLandingData();
-  }, []);
+function OurTeam({ members = [], teams = [] }) {
+
   return (
     <>
-      <ResponsiveAppBar mode="LANDING" />
       <Container maxWidth="md" style={{ marginTop: 160, marginBottom: 50 }}>
         <div className="our-team-page">
           <div className="tab-wrap">
@@ -58,11 +50,4 @@ function OurTeam({ members = [], teams = [], getLandingData }) {
   );
 }
 
-const mapStatesToProps = (state) => ({
-  members: state.landing.members,
-  teams: state.landing.teams
-});
-
-export default connect(mapStatesToProps, {
-  getLandingData: getLandingDataAction,
-})(OurTeam);
+export default OurTeam;
