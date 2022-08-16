@@ -42,10 +42,11 @@ function OurTeam({ members = [], count = 4 }) {
         >
           {'دست اندر کاران'}
         </Typography>
-        <Grid container spacing={4} justify="center" >
+        <Grid container spacing={4} justifyContent="center" alignItems='center'>
           {getRandomSubarray(members, count).map((member, index) => (
             <Grid
               container item
+              alignItems='center'
               xs={10} sm={4} md={3}
               key={index}
               justify="center">

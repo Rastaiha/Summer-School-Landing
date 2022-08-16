@@ -33,7 +33,7 @@ const Landing = () => {
   }
 
   return (
-    <div>
+    <>
       <Navbar loginLink={data.loginLink} />
       <Header />
       <div
@@ -53,7 +53,7 @@ const Landing = () => {
         <OurTeam members={data.members} />
       </div>
       <Footer2 />
-    </div>
+    </>
   );
 };
 

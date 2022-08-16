@@ -25,6 +25,7 @@ function OurTeam() {
   return (
     <Box
       sx={{
+        paddingY: { xs: 2, sm: 0 },
         zIndex: -1,
         backgroundImage: `url(${process.env.PUBLIC_URL}background_lines2.png)`,
         backgroundColor: "#0F2E47",
@@ -34,9 +35,8 @@ function OurTeam() {
       <Container maxWidth="lg">
         <Stack
           alignItems='center'
-          justifyContent='center'
-          sx={{ minHeight: '100vh' }}
-          spacing={2}>
+          justifyContent='space-evenly'
+          sx={{ height: '100vh' }}>
           <Typography
             variant="h1"
             gutterBottom
@@ -75,7 +75,7 @@ function OurTeam() {
               ))}
               {teams.map((team) => (
                 <div className="tab__content" key={team}>
-                  <Grid container spacing={2} justify="center">
+                  <Grid container spacing={2} justifyContent="flex-start" alignItems='center'>
                     {members
                       .filter((member) => member.team.includes(team))
                       .map((member, index) => (
@@ -83,11 +83,11 @@ function OurTeam() {
                           container
                           item
                           key={index}
-                          xs={10}
-                          sm={4}
+                          xs={12}
+                          sm={6}
                           md={3}
-                          alignItems="flex-start"
-                          justify="center">
+                          alignItems="center"
+                          justifyContent="center">
                           <PersonCard person={member} />
                         </Grid>
                       ))}
@@ -98,7 +98,7 @@ function OurTeam() {
           </div>
         </Stack>
       </Container>
-    </Box>  
+    </Box>
   );
 }
 

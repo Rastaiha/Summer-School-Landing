@@ -57,9 +57,9 @@ function Index() {
               <Tooltip title="جمع علمی-ترویجی رستا" arrow sx={{ padding: 1 }}>
                 <IconButton disabled href="https://www.rastaiha.ir/">
                   <img
-                    src={process.env.PUBLIC_URL + "/key-white.png"}
+                    src={process.env.PUBLIC_URL + "/white-rasta-logo.png"}
                     alt=""
-                    height={50}
+                    height={55}
                   />
                 </IconButton>
               </Tooltip>

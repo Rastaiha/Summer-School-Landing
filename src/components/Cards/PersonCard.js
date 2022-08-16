@@ -55,9 +55,7 @@ const PersonCard = ({ person }) => {
           display: 'flex',
           justifyContent: 'space-between',
           flexDirection: 'column',
-
-
-
+          
           height: '100%',
           width: '100%',
           maxWidth: '20rem',
