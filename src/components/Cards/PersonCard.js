@@ -48,19 +48,30 @@ const PersonCard = ({ person }) => {
     <>
       <Card
         sx={{
-          // height: '100%',
+          fontSize: '1rem',
+          textDecoration: 'none',
+          overflow: 'hidden',
+          transition: 'transform 0.1s ease-in-out',
+          display: 'flex',
+          justifyContent: 'space-between',
+          flexDirection: 'column',
+
+
+
+          height: '100%',
           width: '100%',
           maxWidth: '20rem',
           fontSize: '1rem',
           textDecoration: 'none',
           overflow: 'hidden',
-          boxShadow: '0 0 2rem -1.5rem rgba(0, 0, 0, 0.5)',
+          boxShadow: '0 0 1px 0rem rgba(0, 0, 0, 0.5)',
+          // boxShadow: '0 0 2rem -1.5rem rgba(0, 0, 0, 0.5)',
           transition: 'transform 0.1s ease-in-out',
           '&:hover': {
             transform: 'translateY(-0.2rem) scale(1.02)',
             boxShadow: '0 0.5em 0.5rem -0.5rem rgba(0, 0, 0, 0.5)',
           },
-          background: '#e9e2c6',
+          background: '#eaf6ff',
         }}>
         <CardActionArea disabled>
           <CardMedia

@@ -2,35 +2,17 @@ import {
   Dialog,
   Grid,
   Hidden,
-  makeStyles,
   Typography,
   DialogContent,
 } from '@mui/material';
 import React from 'react';
 
-const useStyles = makeStyles((theme) => ({
-  image: (props) => ({
-    height: '300px',
-    background: `url(${props.image})`,
-    backgroundSize: 'cover !important',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center',
-    boxShadow: '2px 2px 5px gray',
-  }),
-  description: {
-    padding: '10px',
-    align: 'left',
-    textAlign: 'justify',
-  }
-}));
 
 function MentorIntroduction({
   open,
   handleClose,
   person
 }) {
-  const image = person.picture
-  const classes = useStyles({ image });
   return (
     <Dialog maxWidth="sm" fullWidth open={open} onClose={handleClose}>
       <Grid container justify='center' alignItems='center'>
@@ -41,13 +23,29 @@ function MentorIntroduction({
             </Typography>
           </Grid >
           <Grid item>
-            <Typography variant="h6" className={classes.description}>
+            <Typography
+              variant="h6"
+              sx={{
+                padding: '10px',
+                align: 'left',
+                textAlign: 'justify',
+              }}>
               {person.description}
             </Typography>
           </Grid>
         </Grid>
         <Hidden xsDown>
-          <Grid sm={6} item className={classes.image} />
+          <Grid
+            sm={6}
+            item
+            sx={{
+              height: '300px',
+              background: `url(${person.picture})`,
+              backgroundSize: 'cover !important',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center center',
+              boxShadow: '2px 2px 5px gray',
+            }} />
         </Hidden>
       </Grid>
     </Dialog >

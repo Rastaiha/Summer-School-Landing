@@ -8,13 +8,8 @@ import Steps from "../components/steps";
 import FAQ from "../components/FAQ/index";
 import WhoAreWe from "../components/whoAreWe";
 import Footer2 from "../components/Footer2";
-import LandingOurTeam from '../components/LandingOurTeam';
-
-
-export const baseURL =
-  process.env.NODE_ENV === 'production'
-    ? 'https://main.summerschoollanding-7tt.pages.dev'
-    : 'http://localhost:3000'
+import OurTeam from '../components/OurTeam';
+import { baseURL } from "../configs/network/static";
 
 const Landing = () => {
   const [data, setData] = useState(null);
@@ -55,6 +50,7 @@ const Landing = () => {
         <WorkshopList workshops={data.workshops} />
         <FAQ questions={data.FAQ} />
         <WhoAreWe />
+        <OurTeam members={data.members} />
       </div>
       <Footer2 />
     </div>
