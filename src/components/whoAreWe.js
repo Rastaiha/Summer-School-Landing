@@ -83,7 +83,7 @@ const WhoAreWe = () => {
                 <Grid item xs={12} sm={4}>
                   <img
                     style={{ borderRadius: "8px" }}
-                    src={process.env.PUBLIC_URL + "/background.jpeg"}
+                    src={process.env.PUBLIC_URL + "/about_us.jpg"}
                     alt=""
                   />
                 </Grid>
