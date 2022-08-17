@@ -1,24 +1,19 @@
-import {
-  Button,
-  Grid,
-  Typography,
-  Container,
-} from '@mui/material';
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Button, Grid, Typography, Container } from "@mui/material";
+import React from "react";
+import { Link } from "react-router-dom";
 
-import getRandomSubarray from '../utils/getRandomSubarray';
-import PersonCard from './Cards/PersonCard';
+import getRandomSubarray from "../utils/getRandomSubarray";
+import PersonCard from "./Cards/PersonCard";
 
 function OurTeam({ members = [], count = 4 }) {
-
   if (members.length === 0) return <></>;
 
   return (
     <section style={{ paddingBottom: 80 }}>
       <Container
         maxWidth="lg"
-        sx={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
+        sx={{ display: "flex", alignItems: "center", flexDirection: "column" }}
+      >
         <Typography
           variant="h1"
           gutterBottom
@@ -40,16 +35,20 @@ function OurTeam({ members = [], count = 4 }) {
             display: "flex",
           }}
         >
-          {'دست اندر کاران'}
+          {"دست اندر کاران"}
         </Typography>
-        <Grid container spacing={4} justifyContent="center" alignItems='center'>
+        <Grid container spacing={4} justifyContent="center" alignItems="center">
           {getRandomSubarray(members, count).map((member, index) => (
             <Grid
-              container item
-              alignItems='center'
-              xs={10} sm={4} md={3}
+              container
+              item
+              alignItems="center"
+              xs={10}
+              sm={4}
+              md={3}
               key={index}
-              justify="center">
+              justify="center"
+            >
               <PersonCard person={member} />
             </Grid>
           ))}
@@ -57,19 +56,21 @@ function OurTeam({ members = [], count = 4 }) {
         <Button
           variant="contained"
           sx={(theme) => ({
-            margin: theme.spacing(2, 'auto', 0),
-            textAlign: 'center',
-            display: 'table',
+            margin: theme.spacing(2, "auto", 0),
+            textAlign: "center",
+            display: "table",
           })}
           component={Link}
           target="_blank"
           rel="noopener"
-          to="/our-team/">
-          {'مشاهده بیشتر'}
+          to="/our-team/"
+          href="https://summerschool.rastaiha.ir/our-team/"
+        >
+          {"مشاهده بیشتر"}
         </Button>
       </Container>
     </section>
   );
 }
 
-export default OurTeam
+export default OurTeam;
