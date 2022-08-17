@@ -16,7 +16,23 @@
       "description": [],
       "teaserLink": "",
       "kholase": []
-    }
+    },
+     {
+      "name": "زمانبندی مدرسه تابستانه حضوری منتشر شد",
+      "image": "/hozoori2.png", 
+      "place": "حضوری",
+      "description": [],
+      "teaserLink": "",
+      "kholase": []
+    },
+     {
+       "name": "زمانبندی مدرسه تابستانه مجازی منتشر شد",
+       "image": "/majazi2.png",
+       "place": "مجازی",
+       "description": [],
+       "teaserLink": "",
+       "kholase": []
+     }
   ],
   "workshops": [
     {
