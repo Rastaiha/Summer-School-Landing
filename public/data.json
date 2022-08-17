@@ -19,7 +19,7 @@
     },
      {
       "name": "زمانبندی مدرسه تابستانه حضوری منتشر شد",
-      "image": "/hozoori2.png", 
+      "image": "https://main.summerschoollanding-7tt.pages.dev/hozoori2.png", 
       "place": "حضوری",
       "description": [],
       "teaserLink": "",
@@ -27,7 +27,7 @@
     },
      {
        "name": "زمانبندی مدرسه تابستانه مجازی منتشر شد",
-       "image": "/majazi2.png",
+       "image": "https://main.summerschoollanding-7tt.pages.dev/majazi2.png",
        "place": "مجازی",
        "description": [],
        "teaserLink": "",
