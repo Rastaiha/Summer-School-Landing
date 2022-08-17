@@ -119,6 +119,7 @@ const NavBar = ({ loginLink = "https://summerschool.sampad.gov.ir/home/enter" })
                 display: "flex",
                 fontWeight: 700,
                 fontSize: { xs: 12, md: 15 },
+                marginRight: { xs: 1, sm: 0 },
                 color: "inherit",
                 textDecoration: "none",
                 borderRadius: "70px",
@@ -164,7 +165,7 @@ const NavBar = ({ loginLink = "https://summerschool.sampad.gov.ir/home/enter" })
             <Tooltip title="جمع علمی-ترویجی رستا" arrow sx={{ padding: 0 }}>
               <IconButton href="https://www.rastaiha.ir/">
                 <img
-                  src={process.env.PUBLIC_URL + "/key-white.png"}
+                  src={process.env.PUBLIC_URL + "/white-rasta-logo.png"}
                   alt=""
                   width={40}
                   height={45}
