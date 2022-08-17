@@ -1,4 +1,4 @@
-import { Stack, Box, Typography } from "@mui/material";
+import { Stack, Box, Typography, Button } from "@mui/material";
 import React from "react";
 
 const Header = () => {
@@ -55,6 +55,30 @@ const Header = () => {
         >
           مدرسه تابستانه ۱۴۰۱
         </Typography>
+        <Button
+          variant="outlined"
+          href={process.env.PUBLIC_URL + "/shivenameh.pdf"}
+          sx={{
+            display: "flex",
+            fontWeight: 700,
+            fontSize: { xs: 12, md: 15 },
+            marginRight: { xs: 1, sm: 0 },
+            backgroundColor: "#072A40",
+            color: "white",
+            textDecoration: "none",
+            borderRadius: "70px",
+            border: 1,
+            borderColor: "#4A4A4A",
+            blockSize: 40,
+            "&:hover": {
+              backgroundColor: "#fff",
+              color: "#0F2E47",
+            },
+            zIndex: 2,
+          }}
+        >
+          دانلود شیوه نامه
+        </Button>
         <img
           src={process.env.PUBLIC_URL + "/scroll.gif"}
           alt=""
