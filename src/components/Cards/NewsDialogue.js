@@ -1,6 +1,7 @@
 import { Dialog, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
+import FileCard from "./fileCard";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -39,7 +40,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function NewsDialogue({ open, handleClose, name, teaserLink, description,image }) {
+function NewsDialogue({
+  open,
+  handleClose,
+  name,
+  teaserLink,
+  description,
+  image,
+  files,
+}) {
   const classes = useStyles();
   let teaserSection = "";
   if (teaserLink) {
@@ -72,7 +81,11 @@ function NewsDialogue({ open, handleClose, name, teaserLink, description,image }
           flexDirection: "column",
         }}
       >
-        <img src={process.env.PUBLIC_URL + image} alt="" style={{borderRadius:"8px"}}/>
+        <img
+          src={process.env.PUBLIC_URL + image}
+          alt=""
+          style={{ borderRadius: "8px" }}
+        />
         {teaserLink}
         <Typography
           gutterBottom
@@ -86,8 +99,8 @@ function NewsDialogue({ open, handleClose, name, teaserLink, description,image }
             fontSize: "24px",
             textAlign: "left",
             marginBottom: 2,
-            marginTop:2,
-            paddingLeft:2
+            marginTop: 2,
+            paddingLeft: 2,
           }}
         >
           {"" + name + ""}
@@ -111,6 +124,26 @@ function NewsDialogue({ open, handleClose, name, teaserLink, description,image }
               </Typography>
             </Grid>
           ))}
+        </div>
+
+        <div>
+          <Grid container>
+            {files.map((files, index) => (
+              <Grid
+                key={index}
+                container
+                alignItems="center"
+                justify="center"
+                item
+                xs={12}
+                sm={6}
+                md={3}
+                sx={{ justifyContent: "center" }}
+              >
+                {files.link !== "" && <FileCard files={files} />}
+              </Grid>
+            ))}
+          </Grid>
         </div>
       </section>
     </Dialog>

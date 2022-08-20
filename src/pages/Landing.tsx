@@ -41,7 +41,8 @@ const Landing = () => {
           zIndex: -1,
           backgroundImage: `url(${process.env.PUBLIC_URL}background_lines2.png)`,
           backgroundColor: "#0F2E47",
-          backgroundSize: "cover",
+          backgroundSize: " 100% auto",
+          backgroundRepeat: "repeat-y",
         }}
       >
         <NewsList news={data.news} />
