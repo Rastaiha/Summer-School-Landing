@@ -40,7 +40,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function NewsDialogue({ open, handleClose, name, teaserLink, description,image,files }) {
+function NewsDialogue({
+  open,
+  handleClose,
+  name,
+  teaserLink,
+  description,
+  image,
+  files,
+}) {
   const classes = useStyles();
   let teaserSection = "";
   if (teaserLink) {
@@ -119,7 +127,7 @@ function NewsDialogue({ open, handleClose, name, teaserLink, description,image,f
         </div>
 
         <div>
-          <Grid container >
+          <Grid container>
             {files.map((files, index) => (
               <Grid
                 key={index}
@@ -132,11 +140,7 @@ function NewsDialogue({ open, handleClose, name, teaserLink, description,image,f
                 md={3}
                 sx={{ justifyContent: "center" }}
               >
-                
-                <FileCard
-                  files={files}
-                />
-              
+                {files.link !== "" && <FileCard files={files} />}
               </Grid>
             ))}
           </Grid>
