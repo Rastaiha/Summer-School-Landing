@@ -69,6 +69,7 @@ function News({news}) {
                 description={news.description}
                 place={news.place}
                 teaserLink={news.teaserLink}
+                files={news.files}
                 kholase={news.kholase}
               />
             </Grid>
