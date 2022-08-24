@@ -21,7 +21,6 @@ function OurTeam() {
         setTeams(data.teams);
       })
   }, [])
-
   return (
     <Box
       sx={{
