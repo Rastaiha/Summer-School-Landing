@@ -2,6 +2,48 @@
   "loginLink": "https://sum.sampad.gov.ir/home/enter/",
   "news": [
     {
+      "name": "نحوه‌ی ورود به کارگاه‌ها",
+      "image": "",
+      "place": "مجازی",
+      "description": [
+        "💻 وارد پنل کاربریتون در سایت بشید و بعد از طریق لینکی که توی پنل قرار گرفته وارد پلتفرم کاموا بشید.",
+
+        "📟 برای ورود به پلتفرم نیازمند نام کاربری و رمز عبور هستید. ",
+
+        "❕نام کاربری و رمز عبور شما ۸ رقم اول شماره‌ی شناسنامه‌تونه."
+      ],
+      "teaserLink": "",
+      "kholase": ["۱۴۰۱/۰۶/۰۱"],
+      "files": [
+        {
+          "text": "",
+          "link": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "گروه‌بندی و دسته‌بندی شرکت‌کنندگان مدرسه تابستانه‌ی مجازی",
+      "image": "https://main.summerschoollanding-7tt.pages.dev/goroh_maj.jpg",
+      "place": "مجازی",
+      "description": [
+        "🔎 شما می‌تونید در فایل پایین گروه‌بندی و دسته‌بندی‌ رو ببیند.",
+
+        "❗️علاوه بر گروه‌بندی‌، حتما دسته‌‌ی گروه خود را به خاطر بسپارید. ",
+
+        "🌷 ترتیب و نحوه‌ی شرکت در کارگاه‌ها براساس دسته‌بندی مشخص خواهد شد."
+      ],
+      "teaserLink": "",
+      "kholase": ["۱۴۰۱/۰۶/۰۲"],
+      "files": [
+        {
+          "text": "دانلود فایل گروه‌بندی شرکت‌کنندگان",
+          "link": "https://main.summerschoollanding-7tt.pages.dev/gorohbandi.pdf",
+          "image": "https://main.summerschoollanding-7tt.pages.dev/pdf.png"
+        }
+      ]
+    },
+    {
       "name": "افتتاحیه‌ی مدرسه تابستانه‌ی مجازی",
       "image": "https://main.summerschoollanding-7tt.pages.dev/ef_majazi.jpg",
       "place": "مجازی",
