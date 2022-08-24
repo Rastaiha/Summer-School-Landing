@@ -2,6 +2,24 @@
   "loginLink": "https://sum.sampad.gov.ir/home/enter/",
   "news": [
     {
+      "name": "ورود به پلتفرم",
+      "image": "",
+      "place": "مجازی",
+      "description": [
+        "در صورتی که در ورود به پلتفرم برگزاری رویداد به مشکل برخورد کردید به لینک زیر سر بزنید:",
+        "https://vc.sharif.edu/ch/rastaiha"
+      ],
+      "teaserLink": "",
+      "kholase": ["۱۴۰۱/۰۶/۰۲"],
+      "files": [
+        {
+          "text": "",
+          "link": "",
+          "image": ""
+        }
+      ]
+    },
+    {
       "name": "نحوه‌ی ورود به کارگاه‌ها",
       "image": "",
       "place": "مجازی",
