@@ -25,7 +25,12 @@
 .our-team-page .tab:checked:nth-of-type(5) ~ .tab__content:nth-of-type(5),
 .our-team-page .tab:checked:nth-of-type(6) ~ .tab__content:nth-of-type(6),
 .our-team-page .tab:checked:nth-of-type(7) ~ .tab__content:nth-of-type(7),
-.our-team-page .tab:checked:nth-of-type(8) ~ .tab__content:nth-of-type(8) {
+.our-team-page .tab:checked:nth-of-type(8) ~ .tab__content:nth-of-type(8),
+.our-team-page .tab:checked:nth-of-type(9) ~ .tab__content:nth-of-type(9),
+.our-team-page .tab:checked:nth-of-type(10) ~ .tab__content:nth-of-type(10),
+.our-team-page .tab:checked:nth-of-type(11) ~ .tab__content:nth-of-type(11),
+.our-team-page .tab:checked:nth-of-type(12) ~ .tab__content:nth-of-type(12),
+.our-team-page .tab:checked:nth-of-type(13) ~ .tab__content:nth-of-type(13) {
   opacity: 1;
   transition: 0.5s opacity ease-in, 0.8s transform ease;
   position: relative;
