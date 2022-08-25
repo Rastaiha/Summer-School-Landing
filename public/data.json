@@ -455,7 +455,7 @@
     },
     {
       "name": "آرمین نیکخواه",
-      "team": [" برندینگ"],
+      "team": ["برندینگ"],
       "description": " ۱۴۰۱ کنکوری ",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/8.jpg"
     },
@@ -467,7 +467,7 @@
     },
     {
       "name": "پریسا وحیدا",
-      "team": ["بازی ", "برندینگ"],
+      "team": ["بازی", "برندینگ"],
       "description": "ورودی ۱۴۰۰ \r\nمهندسی برق صنعتی اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/10.jpg"
     },
@@ -479,13 +479,13 @@
     },
     {
       "name": "ساجده رفیعی",
-      "team": [" برندینگ"],
+      "team": ["برندینگ"],
       "description": "فارغ التحصیل\r\nحقوق اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/12.jpeg"
     },
     {
       "name": "ریحانه حیدرپور",
-      "team": ["هوش مصنوعی ", "رسانه", "فنی"],
+      "team": ["هوش مصنوعی", "رسانه", "فنی"],
       "description": "مهندسی برق ",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/13.jpg"
     },
@@ -497,13 +497,13 @@
     },
     {
       "name": "تینا توکلی",
-      "team": [" بازی"],
+      "team": ["بازی"],
       "description": "۱۴۰۰ ورودی\r\n میکروبیولوژی",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/15.jpg"
     },
     {
       "name": "محمد برکتین",
-      "team": [" الگوریتم"],
+      "team": ["الگوریتم"],
       "description": " ۱۴۰۱ کنکوری\r\n ",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/16.jpg"
     },
@@ -521,19 +521,19 @@
     },
     {
       "name": "کیمیا عباسی",
-      "team": [" سیالات"],
+      "team": ["سیالات"],
       "description": "فیزیک شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/19.jpg"
     },
     {
       "name": "مینا شامانی",
-      "team": [" سیالات"],
+      "team": ["سیالات"],
       "description": "پلیمر امیرکبیر",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/20.jpg"
     },
     {
       "name": "شقایق جعفری",
-      "team": [" رسانه"],
+      "team": ["رسانه"],
       "description": "معماری اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/21.jpg"
     },
@@ -545,19 +545,19 @@
     },
     {
       "name": "فاطمه نیکوکار",
-      "team": [" انسانی", "کمیته"],
+      "team": ["انسانی", "کمیته برگزاری"],
       "description": "۹۶ ورودی\r\nشیمی صنعتی اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/23.jpg"
     },
     {
       "name": "علی شاه علی ",
-      "team": [" الگوریتم"],
+      "team": ["الگوریتم"],
       "description": "کامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/24.jpg"
     },
     {
       "name": "فاطمه ایوبی",
-      "team": [" سیالات", "انسانی"],
+      "team": ["سیالات", "انسانی"],
       "description": "فیزیک تهران",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/25.jpg"
     },
@@ -575,55 +575,55 @@
     },
     {
       "name": "احمدرضا جان نثاری",
-      "team": [" بازی"],
+      "team": ["بازی"],
       "description": "پزشکی اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/28.jpg"
     },
     {
       "name": "محمدحسین اصفهانیان",
-      "team": [" بازی"],
+      "team": ["بازی"],
       "description": "۹۷ ورودی\r\nریاضی صنعتی اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/29.jpg"
     },
     {
       "name": "امیرحسین براتی",
-      "team": [" بازی"],
+      "team": ["بازی"],
       "description": "کامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/30.jpg"
     },
     {
       "name": "پرهام هوشمند",
-      "team": [" الگوریتم"],
+      "team": ["الگوریتم"],
       "description": "ریاضی شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/31.jpg"
     },
     {
       "name": "طاها داوری",
-      "team": [" بازی"],
+      "team": ["بازی"],
       "description": "کامپیوتر اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/32.jpg"
     },
     {
       "name": "فاطمه عسکری",
-      "team": [" بازی"],
+      "team": ["بازی"],
       "description": "کامپیوتر علم و صنعت",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/33.jpg"
     },
     {
       "name": "هستی کریمی",
-      "team": [" بازی"],
+      "team": ["بازی"],
       "description": "کامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/34.jpg"
     },
     {
       "name": "امیراشکان چاوشی",
-      "team": [" الگوریتم"],
+      "team": ["الگوریتم"],
       "description": "۹۸ ورودی\r\n مهندسی برق ",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/35.jpg"
     },
     {
       "name": "سپهر حرفی ",
-      "team": [" هوش مصنوعی"],
+      "team": ["هوش مصنوعی"],
       "description": "۹۹ ورودی \r\nکامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/36.jpg"
     },
@@ -635,19 +635,19 @@
     },
     {
       "name": "سیده فاطمه احمدزاده",
-      "team": [" کدینگ"],
+      "team": ["کدینگ"],
       "description": "۹۷ ورودی\r\nکامپیوتر امیرکبیر",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/38.jpg"
     },
     {
       "name": "محمدمهدی میرزایی",
-      "team": [" بازی"],
+      "team": ["بازی"],
       "description": "کامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/39.jpg"
     },
     {
       "name": "کوثر فدوی حسینی",
-      "team": [" سیالات", "رسانه"],
+      "team": ["سیالات", "رسانه"],
       "description": "۹۹ ورودی\r\nفیزیک صنعتی اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/40.jpg"
     },
@@ -659,31 +659,31 @@
     },
     {
       "name": "هانیه هاشمی",
-      "team": [" هوش مصنوعی"],
+      "team": ["هوش مصنوعی"],
       "description": "۹۹ ورودی\r\nمعماری هنراصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/42.jpg"
     },
     {
       "name": "علی ثالثی",
-      "team": [" هوش مصنوعی"],
+      "team": ["هوش مصنوعی"],
       "description": "۹۹ ورودی\r\nکامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/43.jpg"
     },
     {
       "name": "علی شریفی",
-      "team": [" هوش مصنوعی"],
+      "team": ["هوش مصنوعی"],
       "description": "۹۸ ورودی\r\nکامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/44.jpg"
     },
     {
       "name": "نیکی هوشمند",
-      "team": [" کدینگ"],
+      "team": ["کدینگ"],
       "description": "۹۹ ورودی\r\nعلوم کامپیوتر امیرکبیر",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/45.jpg"
     },
     {
       "name": "زهرا معراجی",
-      "team": [" برندینگ", "رسانه"],
+      "team": ["برندینگ", "رسانه"],
       "description": "۱۴۰۰ ورودی\r\nبرق تهران مرکز",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/46.jpg"
     },
@@ -695,7 +695,7 @@
     },
     {
       "name": "وحید حیدری",
-      "team": ["سیالات", "کمیته"],
+      "team": ["سیالات", "کمیته برگزاری"],
       "description": "۹۶ ورودی\r\nهوافضا شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/48.jpg"
     },
@@ -731,7 +731,7 @@
     },
     {
       "name": "سونیا سیف",
-      "team": ["سیالات "],
+      "team": ["سیالات"],
       "description": "فیزیک شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/58.jpg"
     },
@@ -749,7 +749,7 @@
     },
     {
       "name": "ریحانه قنبری",
-      "team": ["کمیته"],
+      "team": ["کمیته برگزاری"],
       "description": "فارغ التحصیل فیزیک و دانشجو ارشد انرژی",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/61.jpg"
     },
@@ -779,7 +779,7 @@
     },
     {
       "name": "رستا روغنی",
-      "team": [" داده کاوی"],
+      "team": ["داده کاوی"],
       "description": "",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/66.jpg"
     },
@@ -893,7 +893,7 @@
     },
     {
       "name": "آرمیتا جلالیون",
-      "team": ["کاموا", "الگوریتم"],
+      "team": ["فنی", "الگوریتم"],
       "description": "ورودی ۹۸\r\n علوم کامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/Jalalioon.jpg"
     },

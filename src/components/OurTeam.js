@@ -60,10 +60,10 @@ function OurTeam({ members = [], count = 4 }) {
             textAlign: "center",
             display: "table",
           })}
-          component={Link}
+          //component={Link}
           target="_blank"
           rel="noopener"
-          to="/our-team/"
+          //to="/our-team/"
           href="https://main.summerschoollanding-7tt.pages.dev/our-team"
         >
           {"مشاهده بیشتر"}
