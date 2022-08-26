@@ -1,25 +1,7 @@
 {
   "loginLink": "https://sum.sampad.gov.ir/home/enter/",
   "news": [
-    {
-      "name": "زمان کارگاه‌ تا ساعت ۱۳ تمدید شد",
-      "image": "https://main.summerschoollanding-7tt.pages.dev/tamdid.jpg",
-      "place": "مجازی",
-      "description": [
-        "❗️متاسفانه سامانه برای دقایقی از دسترس خارج شد ولی در حال حاضر مشکل حل شده و می‌تونید کارگاه رو ادامه بدید.",
-
-        "⏰ زمان کارگاه صبح تا ساعت ۱۳ تمدید خواهد شد و زمان بازی نهایی اطلاع داده میشود!"
-      ],
-      "teaserLink": "",
-      "kholase": ["۱۴۰۱/۰۶/۰۴"],
-      "files": [
-        {
-          "text": "",
-          "link": "",
-          "image": ""
-        }
-      ]
-    },
+   
     {
       "name": "برنامه‌ی شهربازی و راهنمای بازی‌ها",
       "image": "https://main.summerschoollanding-7tt.pages.dev/shahrebazi.jpg",
