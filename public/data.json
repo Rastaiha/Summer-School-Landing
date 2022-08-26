@@ -2,6 +2,27 @@
   "loginLink": "https://sum.sampad.gov.ir/home/enter/",
   "news": [
     {
+      "name": "راهنمای مسابقه‌ی نهایی",
+      "image": "https://main.summerschoollanding-7tt.pages.dev/mosabeghe.png",
+      "place": "مجازی",
+      "description": [
+        "🔎 حتما این فایل رو بادقت بخونید. ",
+
+        "📍 ما توی این فایل در مورد قوانین و نکات بازی براتون گفتیم.",
+
+        "🏁 مسابقه‌ ساعت ۱۴:۳۰ شروع می‌شه و تا ۱۷:۳۰ ادامه داره."
+      ],
+      "teaserLink": "",
+      "kholase": ["۱۴۰۱/۰۶/۰۴"],
+      "files": [
+        {
+          "text": "دانلود فایل راهنمای مسابقه نهایی",
+          "link": "https://main.summerschoollanding-7tt.pages.dev/mosabeghe.pdf",
+          "image": "https://main.summerschoollanding-7tt.pages.dev/pdf.png"
+        }
+      ]
+    },
+    {
       "name": "توجه توجه",
       "image": "",
       "place": "مجازی",
