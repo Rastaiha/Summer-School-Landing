@@ -52,7 +52,7 @@
     },
     {
       "name": "مسابقه‌ی نهایی امروز برگزار می‌شه",
-      "image": "",
+      "image": "https://main.summerschoollanding-7tt.pages.dev/game1.jpg",
       "place": "مجازی",
       "description": [
         "⏰ بازه‌ی شرکت شما در این مسابقه، همون‌طور که گفتیم، شناوره و از ۱۱:۰۰ صبح شروع می‌شه.",
@@ -73,7 +73,7 @@
     },
     {
       "name": "مسابقه فردا برگزار خواهد شد",
-      "image": "",
+      "image": "https://main.summerschoollanding-7tt.pages.dev/game1.jpg",
       "place": "مجازی",
       "description": [
         "💻 خیلی متاسفیم که به خاطر بروز مشکل فنی نتونستیم امروز با مسابقه همراهتون باشیم :(",
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "name": "اطلاعیه مهم",
+      "name": "📣 اطلاعیه مهم",
       "image": "https://main.summerschoollanding-7tt.pages.dev/etelaye2.jpg",
       "place": "مجازی",
       "description": [
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "name": "توجه توجه",
+      "name": "📣 اطلاعیه مهم",
       "image": "https://main.summerschoollanding-7tt.pages.dev/etelaye2.jpg",
       "place": "مجازی",
       "description": [
