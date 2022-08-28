@@ -1134,10 +1134,22 @@
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/AmirShahKarami.jpg"
     },
     {
+      "name": "علی نعمتی",
+      "team": ["سیالات"],
+      "description": "ورودی ۹۷ فیزیک شریف",
+      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/nemati.jpg"
+    },
+    {
       "name": "امیررضا محمودزاده",
       "team": ["سیالات"],
       "description": "ورودی ۹۹\r\nفیزیک شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/MahmoodZade.jpg"
+    },
+    {
+      "name": "نرگس خورشیدی",
+      "team": ["سیالات"],
+      "description": "دانشجوی فیزیک دانشگاه شریف",
+      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/khorshidi.jpg"
     },
     {
       "name": "کوثر غلامی",
@@ -1168,6 +1180,12 @@
       "team": ["کدینگ"],
       "description": "ورودی ۱۴۰۰\r\nکامپیوتر صنعتی اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/Danesh.jpg"
+    },
+    {
+      "name": "آیدا صابری",
+      "team": ["کدینگ"],
+      "description": "ورودی ۹۹ رشته ریاضیات و کاربردها دانشگاه شهید بهشتی",
+      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/saberi.jpg"
     },
     {
       "name": "محمد جواد اسلامی بیگدلی",
