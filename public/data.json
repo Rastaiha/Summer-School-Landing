@@ -625,7 +625,7 @@
     },
     {
       "name": "کیمیا میرمقتدایی",
-      "team": ["نظریه‌بازی"],
+      "team": ["مسابقه"],
       "description": "بیوتکنولوژی کاشان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/5.jpg"
     },
@@ -655,7 +655,7 @@
     },
     {
       "name": "پریسا وحیدا",
-      "team": ["نظریه‌بازی", "برندینگ"],
+      "team": ["مسابقه", "برندینگ"],
       "description": "ورودی ۱۴۰۰ \r\nمهندسی برق صنعتی اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/10.jpg"
     },
@@ -685,7 +685,7 @@
     },
     {
       "name": "تینا توکلی",
-      "team": ["نظریه‌بازی"],
+      "team": ["مسابقه"],
       "description": "۱۴۰۰ ورودی\r\n میکروبیولوژی",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/15.jpg"
     },
@@ -733,7 +733,7 @@
     },
     {
       "name": "حسین علی حسینی",
-      "team": ["نظریه‌بازی"],
+      "team": ["مسابقه"],
       "description": "فیزیک شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/22.jpg"
     },
@@ -763,13 +763,13 @@
     },
     {
       "name": "محمدمهدی قنبری گرجی",
-      "team": ["نظریه‌بازی", "الگوریتم"],
+      "team": ["مسابقه", "الگوریتم"],
       "description": "مهندسی برق نوشیروانی",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/27.jpg"
     },
     {
       "name": "احمدرضا جان نثاری",
-      "team": ["نظریه‌بازی"],
+      "team": ["مسابقه"],
       "description": "پزشکی اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/28.jpg"
     },
@@ -781,7 +781,7 @@
     },
     {
       "name": "امیرحسین براتی",
-      "team": ["نظریه‌بازی"],
+      "team": ["مسابقه"],
       "description": "کامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/30.jpg"
     },
@@ -793,13 +793,13 @@
     },
     {
       "name": "طاها داوری",
-      "team": ["نظریه‌بازی"],
+      "team": ["مسابقه"],
       "description": "کامپیوتر اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/32.jpg"
     },
     {
       "name": "فاطمه عسکری",
-      "team": ["نظریه‌بازی"],
+      "team": ["مسابقه"],
       "description": "کامپیوتر علم و صنعت",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/33.jpg"
     },
@@ -835,7 +835,7 @@
     },
     {
       "name": "محمدمهدی میرزایی",
-      "team": ["نظریه‌بازی"],
+      "team": ["مسابقه"],
       "description": "کامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/39.jpg"
     },
@@ -847,7 +847,7 @@
     },
     {
       "name": "نفیسه مقنی زاده",
-      "team": ["نظریه‌بازی", "هوش مصنوعی"],
+      "team": ["مسابقه", "هوش مصنوعی"],
       "description": "۹۹ ورودی\r\n مهندسی برق تهران",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/41.jpg"
     },
@@ -1063,7 +1063,7 @@
     },
     {
       "name": "حنا جمالی",
-      "team": ["نظریه‌بازی", "الگوریتم"],
+      "team": ["مسابقه", "الگوریتم"],
       "description": "علوم مهندسی دانشگاه تهران",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/Jamali.jpg"
     },
@@ -1296,7 +1296,7 @@
     "کدینگ",
     "الگوریتم",
     "سیالات",
-    "نظریه‌بازی",
+    "مسابقه",
     "هوش مصنوعی",
     "فنی",
     "رسانه",
