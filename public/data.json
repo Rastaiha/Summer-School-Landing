@@ -2,6 +2,25 @@
   "loginLink": "https://sum.sampad.gov.ir/home/enter/",
   "news": [
     {
+      "name": "زمان‌بندی مدرسه تابستانه‌ی حضوری",
+      "image": "https://main.summerschoollanding-7tt.pages.dev/zamanHozori.jpg",
+      "place": "حضوری",
+      "description": [
+        "⏳زمان شرکت‌ در برنامه‌های مختلف رویداد در جدول بالا مشخص شده.",
+
+        "⏰ به ساعت شروع دقت کنید و زمان رسیدن به دانشگاه شریف رو تنظیم کنید."
+      ],
+      "teaserLink": "",
+      "kholase": ["۱۴۰۱/۰۶/۰۷"],
+      "files": [
+        {
+          "text": "",
+          "link": "",
+          "image": ""
+        }
+      ]
+    },
+    {
       "name": "گروه‌بندی شرکت‌کنندگان مدرسه تابستانه‌ی حضوری",
       "image": "https://main.summerschoollanding-7tt.pages.dev/hoozori.jpg",
       "place": "حضوری",
@@ -832,6 +851,12 @@
       "team": ["کدینگ"],
       "description": "۹۷ ورودی\r\nکامپیوتر امیرکبیر",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/38.jpg"
+    },
+    {
+      "name": "امین کافی",
+      "team": ["کدینگ"],
+      "description": "ورودی ۰۰ مهندسی مکانیک دانشگاه صنعتی اصفهان",
+      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/kafi.jpg"
     },
     {
       "name": "محمدمهدی میرزایی",
