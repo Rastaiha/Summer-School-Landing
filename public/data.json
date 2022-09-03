@@ -726,6 +726,12 @@
   ],
   "members": [
     {
+      "name": "سید علیرضا هاشمی",
+      "team": ["تیم فنی"],
+      "description": "ورودی ۹۷\r\nمهندسی کامپیوتر",
+      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/Hashemi.jpg"
+    },
+    {
       "name": "محمد مهدی رِییسی",
       "team": ["کدینگ"],
       "description": "ورودی ۱۴۰۰  \r\nکامپیوتر صنعتی اصفهان",
@@ -799,7 +805,7 @@
     },
     {
       "name": "ریحانه حیدرپور",
-      "team": ["هوش مصنوعی", "رسانه", "فنی"],
+      "team": ["هوش مصنوعی", "رسانه", "تیم فنی"],
       "description": "مهندسی برق ",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/13.jpg"
     },
@@ -860,7 +866,7 @@
     {
       "name": "حسین علی حسینی",
       "team": ["مسابقه"],
-      "description": "فیزیک شریف",
+      "description": "ورودی ۹۹ مهندسی کامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/22.jpg"
     },
     {
@@ -889,12 +895,18 @@
     },
     {
       "name": "محمدمهدی قنبری گرجی",
-      "team": ["مسابقه", "الگوریتم"],
+      "team": ["الگوریتم"],
       "description": "مهندسی برق نوشیروانی",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/27.jpg"
     },
     {
       "name": "احمدرضا جان نثاری",
+      "team": ["مسابقه"],
+      "description": "پزشکی اصفهان",
+      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/28.jpg"
+    },
+    {
+      "name": "",
       "team": ["مسابقه"],
       "description": "پزشکی اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/28.jpg"
@@ -964,12 +976,6 @@
       "team": ["کدینگ"],
       "description": "ورودی ۰۰ مهندسی مکانیک دانشگاه صنعتی اصفهان",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/kafi.jpg"
-    },
-    {
-      "name": "محمدمهدی میرزایی",
-      "team": ["مسابقه"],
-      "description": "کامپیوتر شریف",
-      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/39.jpg"
     },
     {
       "name": "کوثر فدوی حسینی",
@@ -1084,6 +1090,18 @@
       "team": ["کمیته برگزاری"],
       "description": "فارغ التحصیل فیزیک و دانشجو ارشد انرژی",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/61.jpg"
+    },
+    {
+      "name": "سعید رضوی",
+      "team": ["کمیته برگزاری"],
+      "description": "ورودی ۹۸ مهندسی برق شریف",
+      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/razavi.jpg"
+    },
+    {
+      "name": "زهرا سادات بحرینی",
+      "team": ["کمیته برگزاری"],
+      "description": "ورودی ۹۹ مهندسی کامپیوتر دانشگاه اصفهان",
+      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/bahreini.jpg"
     },
     {
       "name": "علی تلاشان",
@@ -1207,7 +1225,7 @@
     },
     {
       "name": "امیرحسام جعفری راد",
-      "team": ["الگوریتم", "فنی"],
+      "team": ["الگوریتم", "تیم فنی"],
       "description": "برق دانشگاه تهران",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/JafariRad.jpg"
     },
@@ -1219,13 +1237,13 @@
     },
     {
       "name": "آیدین نیازمند",
-      "team": ["الگوریتم", "فنی"],
+      "team": ["الگوریتم", "تیم فنی"],
       "description": "مهندسی برق دانشگاه تهران",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/Niazmand.jpg"
     },
     {
       "name": "آرمیتا جلالیون",
-      "team": ["فنی", "الگوریتم"],
+      "team": ["تیم فنی", "الگوریتم"],
       "description": "ورودی ۹۸\r\n علوم کامپیوتر شریف",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/Jalalioon.jpg"
     },
@@ -1291,7 +1309,7 @@
     },
     {
       "name": "امیرحسین خوشنود",
-      "team": ["داده کاوی"],
+      "team": ["نظریه‌بازی"],
       "description": "",
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/Khoshnood.jpg"
     },
@@ -1386,12 +1404,6 @@
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/Sadeghi.jpg"
     },
     {
-      "name": "سید علیرضا هاشمی",
-      "team": ["فنی"],
-      "description": "ورودی ۹۷\r\nمهندسی کامپیوتر",
-      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/Hashemi.jpg"
-    },
-    {
       "name": "علی‌پاشا منتصری",
       "team": ["نظریه‌بازی"],
       "description": "ورودی ۹۹\r\nکامپیوتر شریف",
@@ -1434,6 +1446,12 @@
       "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/raoofi.jpg"
     },
     {
+      "name": "ایمان محمدی",
+      "team": ["کمیته برگزاری"],
+      "description": "ورودی ۹۹ مهندسی کامپیوتر شریف",
+      "picture": "https://main.summerschoollanding-7tt.pages.dev/staff/mohamadi.jpg"
+    },
+    {
       "name": "سیدسعید جزائری",
       "team": ["الگوریتم"],
       "description": "ورودی ۹۸\r\nمهندسی برق ",
@@ -1441,6 +1459,7 @@
     }
   ],
   "teams": [
+    "تیم فنی",
     "کمیته برگزاری",
     "داده کاوی",
     "کدینگ",
@@ -1448,7 +1467,6 @@
     "سیالات",
     "نظریه‌بازی",
     "هوش مصنوعی",
-    "فنی",
     "رسانه",
     "برندینگ",
     "مسابقه",
