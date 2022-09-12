@@ -1,10 +1,10 @@
-# Workshop Frontend
+# Summer School Landing
 
 ## نحوه‌ی راه‌اندازی پروژه
 دستورات زیر را به ترتیب در پوشه‌ای که می‌خواهید پروژه قرار گیرد، وارد کنید:
 
-- `git clone https://github.com/Rastaiha/rasta_workshop_frontend.git`
-- `cd workshop_frontend`
+- `git clone git@github.com:Rastaiha/summer_school_landing.git`
+- `cd summer_school_landing`
 - `yarn`
 - `yarn start`
 
