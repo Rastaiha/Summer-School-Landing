@@ -8,7 +8,7 @@ import Steps from "../components/steps";
 import FAQ from "../components/FAQ/index";
 import WhoAreWe from "../components/whoAreWe";
 import Footer2 from "../components/Footer2";
-import OurTeam from '../components/OurTeam';
+import OurTeam from "../components/OurTeam";
 import { baseURL } from "../configs/network/static";
 
 const Landing = () => {
@@ -16,20 +16,20 @@ const Landing = () => {
 
   useEffect(() => {
     fetch(`${baseURL}/data.json`)
-      .then(response => {
+      .then((response) => {
         if (!response.ok) {
           throw new Error("HTTP error " + response.status);
         }
         return response.json();
       })
-      .then(data => {
+      .then((data) => {
         setData(data);
         console.log(data);
-      })
-  }, [])
+      });
+  }, []);
 
   if (!data) {
-    return <></>
+    return <></>;
   }
 
   return (
