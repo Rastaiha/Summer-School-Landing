@@ -1046,7 +1046,7 @@
     {
       "name": "کوثر فدوی حسینی",
       "team": ["سیالات", "رسانه"],
-      "description": "۹۹ ورودی\r\nفیزیک صنعتی اصفهان",
+      "description": "ورودی ۹۹ فیزیک صنعتی اصفهان",
       "picture": "https://summerschoollanding-7tt.pages.dev/staff/40.jpg"
     },
     {
@@ -1176,9 +1176,9 @@
       "picture": "https://summerschoollanding-7tt.pages.dev/staff/62.jpg"
     },
     {
-      "name": "علیرضا تاجمیر",
+      "name": "علیرضا تاجمیر ریاحی",
       "team": ["هوش مصنوعی"],
-      "description": "۹۸ جوان، دانش‌جو، برنامه‌نویس، دبه و منتور کارگاه‌های برتر مدرسه از سال  ",
+      "description": "جوان، دانش‌جو، برنامه‌نویس، دبه و منتور کارگاه‌های برتر مدرسه تابستانه از سال ۹۸ تا کنون",
       "picture": "https://summerschoollanding-7tt.pages.dev/staff/63.jpg"
     },
     {
@@ -1533,7 +1533,7 @@
   "teams": [
     "کمیته برگزاری",
     "تیم فنی",
-    
+
     "داده کاوی",
     "کدینگ",
     "الگوریتم",
