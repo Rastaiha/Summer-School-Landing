@@ -1074,6 +1074,12 @@
       "picture": "https://summerschoollanding-7tt.pages.dev/staff/45.jpg"
     },
     {
+      "name": "نازنین واثقی",
+      "team": ["کدینگ"],
+      "description": "برق دانشگاه صنعتی اصفهان",
+      "picture": "https://summerschoollanding-7tt.pages.dev/staff/profile-image.png"
+    },
+    {
       "name": "زهرا معراجی",
       "team": ["برندینگ", "رسانه"],
       "description": "۱۴۰۰ ورودی\r\nبرق تهران مرکز",
@@ -1188,6 +1194,12 @@
       "picture": "https://summerschoollanding-7tt.pages.dev/staff/66.JPG"
     },
     {
+      "name": "مهشید میرانی",
+      "team": ["الگوریتم"],
+      "description": "۱۴۰۰ ورودی\r\nزیست شناسی سلولی و مولکولی شیراز",
+      "picture": "https://summerschoollanding-7tt.pages.dev/staff/profile-image.png"
+    },
+    {
       "name": "متین علی‌نژاد",
       "team": ["کدینگ"],
       "description": "ورودی ۹۹\r\nبرق شریف",
@@ -1266,7 +1278,7 @@
       "picture": "https://summerschoollanding-7tt.pages.dev/staff/Jamali.jpg"
     },
     {
-      "name": "نیما ریسمانچیان",
+      "name": "نینا ریسمانچیان",
       "team": ["الگوریتم", "مسابقه"],
       "description": "ملقب به ریسمانچیان ثانی! ورودی ۱۴۰۰ صنایع شریف",
       "picture": "https://summerschoollanding-7tt.pages.dev/staff/Rismanchian.jpg"
@@ -1372,6 +1384,12 @@
       "team": ["کدینگ"],
       "description": "ورودی ۱۴۰۰\r\nکامپیوتر صنعتی اصفهان",
       "picture": "https://summerschoollanding-7tt.pages.dev/staff/Danesh.jpg"
+    },
+    {
+      "name": "آیدا صابری",
+      "team": ["کدینگ"],
+      "description": "ورودی ۹۹ رشته ریاضیات و کاربردها دانشگاه شهید بهشتی",
+      "picture": "https://summerschoollanding-7tt.pages.dev/staff/profile-image.png"
     },
     {
       "name": "محمد جواد اسلامی بیگدلی",
