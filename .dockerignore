@@ -1,0 +1,16 @@
+.git
+.gitignore
+.DS_Store
+.vscode
+*.log
+*.lock
+.eslintrc.json
+tsconfig.json
+
+README.md
+
+build
+node_modules
+
+Dockerfile
+docker-compose.yml
