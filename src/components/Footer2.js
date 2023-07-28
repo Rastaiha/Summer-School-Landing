@@ -85,7 +85,7 @@ function Index() {
             </Stack>
             <Stack>
               <Typography variant='h5' align="center" sx={{ color: "#C3C3C3" }}>
-                دبیرخانه مدرسه تابستانه ۱۴۰۱
+                دبیرخانه مدرسه تابستانه ۱۴۰۲
               </Typography>
               <Typography variant='h5' align="center" sx={{ color: "#C3C3C3" }}>
                 سازمان ملی پرورش استعدادهای درخشان
