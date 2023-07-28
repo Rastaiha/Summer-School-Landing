@@ -39,8 +39,8 @@ const Landing = () => {
       <div
         style={{
           zIndex: -1,
-          backgroundImage: `url(${process.env.PUBLIC_URL}background_lines2.png)`,
-          backgroundColor: "#0F2E47",
+          backgroundImage: `url(${process.env.PUBLIC_URL}01.png)`,
+          backgroundColor: "#CFC7BC",
           backgroundSize: " 100% auto",
           backgroundRepeat: "repeat-y",
         }}
