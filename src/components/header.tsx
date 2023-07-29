@@ -23,6 +23,7 @@ const Header = () => {
           },
           backgroundSize: "cover !important",
           backgroundRepeat: "no-repeat",
+          backgroundPosition: 'center',
           zIndex: 1,
         }}
       />
