@@ -5,8 +5,8 @@ import { CssBaseline, LinearProgress } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import { CacheProvider } from "@emotion/react";
 import { useNavigate } from 'react-router-dom';
-import createEmotionCache from './configs/createEmotionCache'
-import selectTheme from './configs/themes';
+import CreateEmotionCache from './configs/CreateEmotionCache'
+import SelectTheme from './configs/themes';
 import Root from './routes';
 
 
@@ -18,8 +18,8 @@ const App = ({ dir = 'rtl' }) => {
   }, []);
 
   return (
-    <CacheProvider value={createEmotionCache('rtl')}>
-      <ThemeProvider theme={selectTheme('rtl')}>
+    <CacheProvider value={CreateEmotionCache('rtl')}>
+      <ThemeProvider theme={SelectTheme('rtl')}>
         <CssBaseline />
         <Root />
       </ThemeProvider>
