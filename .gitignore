@@ -28,7 +28,7 @@ yarn-error.log*
 .eslintcache
 react-app-env.d.ts
 
-*.lock
+# *.lock
 .eslintrc.json
 tsconfig.json
 rasta-summer.zip
