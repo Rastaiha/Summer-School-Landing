@@ -9,7 +9,7 @@ function OurTeam() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch(`${baseURL}/data.json`)
+    fetch('https://kamva-minio-storage.darkube.app/rasta/data.json')
       .then(response => {
         if (!response.ok) {
           throw new Error("HTTP error " + response.status);
