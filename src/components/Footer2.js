@@ -26,8 +26,8 @@ function Index() {
         color: "rgba(0, 0, 0, 0.87)",
       }}>
       <Container maxWidth="lg" sx={{ paddingTop: 4, paddingBottom: 2 }}>
-        <Stack container direction='row' justifyContent='space-evenly'>
-          <Stack container justifyContent="center" alignItems="center" spacing={2}>
+        <Stack direction='row' justifyContent='space-evenly'>
+          <Stack justifyContent="center" alignItems="center" spacing={2}>
             <Typography variant='h5' align="center" sx={{ color: "#C3C3C3" }}>
               حامیان و برگزارکنندگان:
             </Typography>
@@ -66,7 +66,7 @@ function Index() {
             </Stack>
           </Stack>
 
-          <Stack container justifyContent="center" alignItems="center" spacing={2}>
+          <Stack justifyContent="center" alignItems="center" spacing={2}>
             <Stack
               alignItems='center'
               justifyContent='center'
