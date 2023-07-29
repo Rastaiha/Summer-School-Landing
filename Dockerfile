@@ -1,11 +1,10 @@
 FROM node:latest as build
 WORKDIR /app
-COPY package.json yarn.lock ./
-RUN yarn --production
-ENV PATH="./node_modules/.bin:$PATH"
+COPY package.json .
+RUN yarn install
 COPY . .
 RUN yarn run build
 
 
-FROM nginx:latest as production
-COPY --from=build /app/build /var/www/public
+FROM nginx
+COPY --from=build /app/build /usr/share/nginx/html
