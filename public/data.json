@@ -3,7 +3,7 @@
   "news": [
     {
       "name": "مروری بر مدرسه تابستانه ۱۴۰۱ رستا",
-      "image": "https://summerschoollanding-7tt.pages.dev/hoozori.jpg",
+      "image": "https://kamva-minio-storage.darkube.app/rasta/hoozori.jpg",
       "place": "حضوری",
       "description": [
         "🌱 ششمین مدرسه‌ی تابستانه‌ی رستا، در شهریور سال ۱۴۰۱، به دو صورت مجازی(در پلتفرم تعاملی کاموا (https://kamva.academy/)) و حضوری(در دانشگاه شریف) توسط جمع علمی-ترویجی رستا و سازمان ملی پرورش استعدادهای درخشان برگزار شد.",
@@ -16,14 +16,14 @@
       "files": [
         {
           "text": "گزارش مدرسه تابستانه ۱۴۰۱",
-          "link": "https://summerschoollanding-7tt.pages.dev/gozaresh_madrese_tabestane_1401.pdf",
-          "image": "https://summerschoollanding-7tt.pages.dev/pdf.png"
+          "link": "https://kamva-minio-storage.darkube.app/rasta/gozaresh_madrese_tabestane_1401.pdf",
+          "image": "https://kamva-minio-storage.darkube.app/rasta/pdf.png"
         }
       ]
     },
     {
       "name": "مروری بر مدرسه‌ تابستانه ۱۴۰۰ رستا",
-      "image": "https://summerschoollanding-7tt.pages.dev/summer-1400.png",
+      "image": "https://kamva-minio-storage.darkube.app/rasta/summer-1400.png",
       "place": "مجازی",
       "description": [
         "📅  رستا در شهریور ماه ۱۴۰۰، مدرسه‌ تابستانه‌ رستا رو با کمک حدود ۱۰۰ نفر از دانشجوها به صورت آنلاین برگزار کرد و میزبان ۱۸۰ دانش‌آموز از ۴۶ شهر ایران بود.",
@@ -38,8 +38,8 @@
       "files": [
         {
           "text": "گزارش مدرسه تابستانه ۱۴۰۰",
-          "link": "https://summerschoollanding-7tt.pages.dev/gozaresh_madrese_tabestane_1400.pdf",
-          "image": "https://summerschoollanding-7tt.pages.dev/pdf.png"
+          "link": "https://kamva-minio-storage.darkube.app/rasta/gozaresh_madrese_tabestane_1400.pdf",
+          "image": "https://kamva-minio-storage.darkube.app/rasta/pdf.png"
         }
       ]
     },
