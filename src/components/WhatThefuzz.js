@@ -36,10 +36,7 @@ const WhatTheFuzz = () => {
         paddingRight: { md: "12%", sm: "10%", xs: "5%" },
       }}
     >
-      <Paper
-        className={classes.featuresSectionPaper}
-        sx={{ backgroundColor: "red" }}
-      >
+      <Paper className={classes.featuresSectionPaper}>
         <Grid
           container
           alignItems="flex-start"
