@@ -9,7 +9,7 @@ import FAQ from "../components/FAQ/index";
 import WhoAreWe from "../components/whoAreWe";
 import Footer2 from "../components/Footer2";
 import OurTeam from "../components/OurTeam";
-import { baseURL } from "../configs/network/static";
+import { Stack, Typography } from "@mui/material";
 
 const Landing = () => {
   const [data, setData] = useState(null);
@@ -29,7 +29,14 @@ const Landing = () => {
   }, []);
 
   if (!data) {
-    return <></>;
+    return (
+      <Stack
+        sx={{ height: "100vh" }}
+        direction='column'
+        display={'flex'}
+        justifyContent='center'>
+        <Typography variant="h3" align="center">در حال بارگذاری...</Typography>
+      </Stack>)
   }
 
   return (

@@ -26,7 +26,7 @@ const pages = [
 
 
 
-const NavBar = ({ loginLink = "https://summerschool.sampad.gov.ir/home/enter" }) => {
+const NavBar = ({ loginLink = "https://sum.sampad.gov.ir/home/enter/" }) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
