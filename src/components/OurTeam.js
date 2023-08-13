@@ -64,7 +64,7 @@ function OurTeam({ members = [], count = 4 }) {
           target="_blank"
           rel="noopener"
           //to="/our-team/"
-          href="https://summerschoollanding-7tt.pages.dev/our-team"
+          href="https://summerschool.rastaiha.ir/our-team/"
         >
           {"مشاهده بیشتر"}
         </Button>

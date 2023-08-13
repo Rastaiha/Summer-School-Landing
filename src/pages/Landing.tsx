@@ -10,12 +10,13 @@ import WhoAreWe from "../components/whoAreWe";
 import Footer2 from "../components/Footer2";
 import OurTeam from "../components/OurTeam";
 import { Stack, Typography } from "@mui/material";
+import { baseURL } from "configs/network/static";
 
 const Landing = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://summerschool.darkube.app/data.json')
+    fetch(`${baseURL}data.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("HTTP error " + response.status);

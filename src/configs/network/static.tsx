@@ -1,4 +1,4 @@
 export const baseURL =
   process.env.NODE_ENV === 'production'
-    ? 'https://summerschoollanding-7tt.pages.dev'
+    ? 'https://summerschool.rastaiha.ir/'
     : 'http://localhost:3000'

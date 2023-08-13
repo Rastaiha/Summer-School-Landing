@@ -9,7 +9,7 @@ function OurTeam() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch('https://summerschool.darkube.app/data.json')
+    fetch(`${baseURL}data.json`)
       .then(response => {
         if (!response.ok) {
           throw new Error("HTTP error " + response.status);
