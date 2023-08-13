@@ -7,4 +7,5 @@ COPY . .
 RUN yarn run build
 
 FROM nginx
-COPY --from=build /app/build /var/www/public
+COPY --from=build /app/build /usr/share/nginx/html
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
