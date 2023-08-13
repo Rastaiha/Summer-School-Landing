@@ -8,13 +8,13 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.14.2",
     "@mui/styles": "^5.8.7",
-    "axios": "^0.27.2",
+    "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "^5.0.1",
-    "stylis": "^4.1.1",
-    "stylis-plugin-rtl": "^2.1.1"
+    "stylis": "^4.3.0",
+    "stylis-plugin-rtl": "2.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,14 +38,11 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
-    "eslint": "^8.20.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.47.0",
     "eslint-plugin-react": "^7.30.1",
-    "redux-devtools": "^3.7.0",
-    "redux-devtools-dock-monitor": "^1.2.0",
-    "redux-devtools-log-monitor": "^2.1.0",
-    "redux-logger": "^3.0.6",
-    "typescript": "^4.7.4"
+    "typescript": "^5.1.6"
   }
 }
