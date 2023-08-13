@@ -1,7 +1,7 @@
 FROM node:18 as build
 WORKDIR /app
 COPY ./package.json ./yarn.lock ./
-RUN yarn --production
+RUN yarn
 ENV PATH="./node_modules/.bin:$PATH"
 COPY . .
 RUN yarn run build
