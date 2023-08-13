@@ -7,4 +7,4 @@ COPY . .
 RUN yarn run build
 
 FROM nginx
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/build /var/www/public
