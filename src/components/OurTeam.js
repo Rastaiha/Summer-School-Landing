@@ -60,11 +60,10 @@ function OurTeam({ members = [], count = 4 }) {
             textAlign: "center",
             display: "table",
           })}
-          //component={Link}
+          component={Link}
           target="_blank"
           rel="noopener"
-          //to="/our-team/"
-          href="https://summerschool.rastaiha.ir/our-team/"
+          to="/our-team/"
         >
           {"مشاهده بیشتر"}
         </Button>
