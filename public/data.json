@@ -2,6 +2,49 @@
   "loginLink": "https://sum.sampad.gov.ir/home/enter/",
   "news": [
     {
+      "name": "اتاق گفت‌و‌گو",
+      "image": "https://kamva-minio-storage.darkube.app/rasta/attelaie.jpg",
+      "place": "مجازی",
+      "description": [
+        "شرکت‌کنندگان گرامی رویداد مجازی!",
+        "صفحه‌ی مربوط به گام اول کارگاه را رفرش کنید، در این صفحه لینک گفت‌وگو قرار دارد.",
+        "به همراه هم‌گروه‌های خود وارد لینک شوید!"
+      ],
+      "teaserLink": "",
+      "kholase": [
+        "۱۴۰۲/۰۵/۲۴"
+      ],
+      "files": [
+        {
+          "text": "",
+          "link": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "ورود به پلتفرم کاموا",
+      "image": "https://kamva-minio-storage.darkube.app/rasta/attelaie.jpg",
+      "place": "مجازی",
+      "description": [
+        "شرکت‌کنندگان گرامی!",
+        "🔺 برای ورود به پلتفرم کاموا نیازی به ثبت‌نام نیست.",
+        "📱نام کاربری و رمز عبور خود را که ۵ رقم آخر شماره همراهی‌‌ست که با آن ثبت‌نام کرده‌اید، وارد کرده و گزینه ورود را بزنید.",
+        "چنانچه سمت چپ ۵ رقم آخر شماره همراه شما صفر دارد، صفر‌ها را وارد نکنید. "
+      ],
+      "teaserLink": "",
+      "kholase": [
+        "۱۴۰۲/۰۵/۲۴"
+      ],
+      "files": [
+        {
+          "text": "",
+          "link": "",
+          "image": ""
+        }
+      ]
+    },
+    {
       "name": "اعلام اسامی پذیرفته‌شدگان",
       "image": "https://kamva-minio-storage.darkube.app/rasta/pazirofte.jpg",
       "place": "حضوری و مجازی",
