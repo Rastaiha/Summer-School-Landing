@@ -2,14 +2,13 @@ import '../styles/OurTeam.css';
 import { Box, Container, Grid, Stack, Typography } from '@mui/material';
 import React, { useState, useEffect } from 'react';
 import PersonCard from '../components/Cards/PersonCard';
-import { baseURL } from "../configs/network/static";
 
 function OurTeam() {
   const [members, setMembers] = useState([]);
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch(`${baseURL}data.json`)
+    fetch('https://kamva-minio-storage.darkube.app/rasta/data.json')
       .then(response => {
         if (!response.ok) {
           throw new Error("HTTP error " + response.status);
