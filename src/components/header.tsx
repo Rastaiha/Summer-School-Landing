@@ -18,8 +18,8 @@ const Header = () => {
           top: 0,
           right: 0,
           backgroundImage: {
-            xs: `url(${process.env.PUBLIC_URL}background3.png)`,
-            md: `url(${process.env.PUBLIC_URL}background.png)`,
+            xs: `url(https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/background3.png)`,
+            md: `url(https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/background.png)`,
           },
           backgroundSize: "cover !important",
           backgroundRepeat: "no-repeat",

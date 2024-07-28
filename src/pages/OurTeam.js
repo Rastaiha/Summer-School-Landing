@@ -8,7 +8,7 @@ function OurTeam() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch('https://kamva-minio-storage.darkube.app/rasta/data.json')
+    fetch('https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/data.json')
       .then(response => {
         if (!response.ok) {
           throw new Error("HTTP error " + response.status);
@@ -25,7 +25,7 @@ function OurTeam() {
       sx={{
         paddingY: { xs: 2, sm: 0 },
         zIndex: -1,
-        backgroundImage: `url(${process.env.PUBLIC_URL}background_lines2.png)`,
+        backgroundImage: `url(https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/background_lines2.png)`,
         backgroundColor: "#0F2E47",
         backgroundSize: "cover",
       }}

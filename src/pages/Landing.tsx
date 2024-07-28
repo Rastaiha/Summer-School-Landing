@@ -15,7 +15,7 @@ const Landing = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://kamva-minio-storage.darkube.app/rasta/data.json')
+    fetch('https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/data.json')
       .then((response) => {
         if (!response.ok) {
           throw new Error("HTTP error " + response.status);
@@ -46,7 +46,7 @@ const Landing = () => {
       <div
         style={{
           zIndex: -1,
-          backgroundImage: `url(${process.env.PUBLIC_URL}01.png)`,
+          backgroundImage: `url(https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/01.png)`,
           backgroundColor: "#CFC7BC",
           backgroundSize: " 100% auto",
           backgroundRepeat: "repeat-y",
