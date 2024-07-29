@@ -35,7 +35,7 @@ function Index() {
               <Tooltip disabled title="دانشگاه اصفهان" arrow sx={{ padding: 1 }}>
                 <IconButton href="https://www.ui.ac.ir/">
                   <img
-                    src={"https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/isfahan.svg"}
+                    src={"https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/isfahan_uni_logo.png"}
                     alt=""
                     width={45}
                   />
