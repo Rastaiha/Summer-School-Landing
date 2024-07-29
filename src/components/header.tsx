@@ -43,7 +43,7 @@ const Header = () => {
             lineHeight: "140px",
             fontWeight: 1000,
             color: "#008bc5",
-            textShadow: "0px 0px 4px black",
+            // textShadow: "0px 0px 4px black",
             textAlign: "center",
             justifyContent: "center",
             [theme.breakpoints.down("md")]: {
