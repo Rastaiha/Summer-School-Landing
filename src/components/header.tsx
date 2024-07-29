@@ -42,7 +42,7 @@ const Header = () => {
             marginTop: 0,
             lineHeight: "140px",
             fontWeight: 1000,
-            color: "#ffffff",
+            color: "#008bc5",
             textShadow: "0px 0px 4px black",
             textAlign: "center",
             justifyContent: "center",
