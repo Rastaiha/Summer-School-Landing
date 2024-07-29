@@ -26,7 +26,7 @@ const pages = [
 
 
 
-const NavBar = ({ loginLink = "https://summerschool.rastaiha.ir/" }) => {
+const NavBar = ({ loginLink = "https://platform.kamva.academy/program/42" }) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
