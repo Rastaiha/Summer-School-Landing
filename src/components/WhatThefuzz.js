@@ -87,7 +87,7 @@ const WhatTheFuzz = () => {
             sm={3}
             sx={{ padding: { xs: "5%", md: "1px", sm: "1px" } }}
           >
-            <img src={process.env.PUBLIC_URL + "/behindWall.png"} alt="" />
+            <img src={"https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/behindWall.png"} alt="" />
           </Grid>
         </Grid>
       </Paper>
