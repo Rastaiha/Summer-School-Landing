@@ -35,7 +35,7 @@ function Index() {
               <Tooltip disabled title="دانشگاه اصفهان" arrow sx={{ padding: 1 }}>
                 <IconButton href="https://www.ui.ac.ir/">
                   <img
-                    src={process.env.PUBLIC_URL + "/sharif-white.png"}
+                    src={"https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/isfahan.svg"}
                     alt=""
                     width={45}
                   />
@@ -44,7 +44,7 @@ function Index() {
               <Tooltip disabled title="دانشگاه صنعتی شریف" arrow sx={{ padding: 1 }}>
                 <IconButton href="https://www.sharif.edu/">
                   <img
-                    src={"https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/staff/isfahan.svg"}
+                    src={process.env.PUBLIC_URL + "/sharif-white.png"}
                     alt=""
                     width={45}
                   />
