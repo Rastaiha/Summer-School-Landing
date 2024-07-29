@@ -47,7 +47,7 @@ const Landing = () => {
         style={{
           zIndex: -1,
           backgroundImage: `url(https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/01.png)`,
-          backgroundColor: "#CFC7BC",
+          backgroundColor: "#FBFAF8",
           backgroundSize: " 100% auto",
           backgroundRepeat: "repeat-y",
         }}
