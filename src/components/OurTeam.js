@@ -24,7 +24,7 @@ function OurTeam({ members = [], count = 4 }) {
             fontFamily: "IRANSansX",
             fontWeight: 700,
             fontSize: "40px",
-            backgroundColor: "#113754",
+            backgroundColor: "#00305d",
             color: "#C3C3C3",
             borderColor: "#C3C3C3",
             border: 2,

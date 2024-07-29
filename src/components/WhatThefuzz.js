@@ -42,7 +42,7 @@ const WhatTheFuzz = () => {
           alignItems="flex-start"
           justifyContent="right"
           sx={{
-            backgroundColor: "#113754",
+            backgroundColor: "#00305d",
             borderRadius: "8px",
             padding: "3%",
           }}

@@ -38,7 +38,7 @@ const WhoAreWe = () => {
           <Grid item xs={12} sm={10} md={8}>
             <Paper
               className={classes.featuresSectionPaper}
-              sx={{ backgroundColor: "#113754" }}
+              sx={{ backgroundColor: "#00305d" }}
             >
               <Grid
                 container

@@ -76,7 +76,7 @@ const FAQ = ({ questions }) => {
       expanded={expanded === "panel" + index}
       onChange={handleChange("panel" + index)}
       sx={{
-        backgroundColor: "#113754",
+        backgroundColor: "#00305d",
         borderRadius: "20px",
         marginBottom: .5,
         border: 2,
@@ -87,7 +87,7 @@ const FAQ = ({ questions }) => {
         aria-controls="panel1d-content"
         id="panel1d-header"
         sx={{
-          backgroundColor: "#113754",
+          backgroundColor: "#00305d",
           borderRadius: "20px",
           borderBottom: 2,
           borderColor: "#D6D5D5",

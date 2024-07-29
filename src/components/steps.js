@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     "& img": {
       width: "100%",
     },
-    backgroundColor: "#113754",
+    backgroundColor: "#00305d",
   },
 
   title: {
@@ -35,7 +35,7 @@ function Index() {
     <section className={classes.section}>
       <Container
         maxWidth="lg"
-        sx={{ backgroundColor: "#113754", borderRadius: "8px", padding: 5 }}
+        sx={{ backgroundColor: "#00305d", borderRadius: "8px", padding: 5 }}
       >
         <Typography
           className={classes.title}
@@ -62,14 +62,14 @@ function Index() {
             <Paper
               className={classes.featuresSectionPaper}
               elevation={3}
-              sx={{ backgroundColor: "#113754", boxShadow: "none" }}
+              sx={{ backgroundColor: "#00305d", boxShadow: "none" }}
             >
               <Grid
                 container
                 spacing={2}
                 alignItems="center"
                 justifyContent="center"
-                sx={{ backgroundColor: "#113754" }}
+                sx={{ backgroundColor: "#00305d" }}
               >
                 <Grid item xs={12} sm={4}>
                   <img
@@ -112,7 +112,7 @@ function Index() {
           <Grid item xs={12} sm={10} md={8}>
             <Paper
               className={classes.featuresSectionPaper}
-              sx={{ backgroundColor: "#113754", boxShadow: "none" }}
+              sx={{ backgroundColor: "#00305d", boxShadow: "none" }}
             >
               <Grid
                 container
@@ -164,7 +164,7 @@ function Index() {
           <Grid item xs={12} sm={10} md={8}>
             <Paper
               className={classes.featuresSectionPaper}
-              sx={{ backgroundColor: "#113754", boxShadow: "none" }}
+              sx={{ backgroundColor: "#00305d", boxShadow: "none" }}
             >
               <Grid
                 container
