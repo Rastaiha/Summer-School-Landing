@@ -103,13 +103,13 @@ const NavBar = ({ loginLink = "https://summerschool.rastaiha.ir/" }) => {
               </Menu>
             </Box> */}
 
-            <IconButton size='small' disabled>
+            {/* <IconButton size='small' disabled>
               <img
                 src={process.env.PUBLIC_URL + "/sampad-white.png"}
                 alt=""
                 width={75}
               />
-            </IconButton>
+            </IconButton> */}
 
             <Button
               variant="outlined"
