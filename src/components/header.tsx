@@ -37,7 +37,7 @@ const Header = () => {
           variant="h1"
           width={400}
           sx={(theme) => ({
-            fontFamily: "CactusCircleDots",
+            fontFamily: "PelakFontMainTitle",
             fontSize: 120,
             marginTop: 0,
             lineHeight: "140px",
