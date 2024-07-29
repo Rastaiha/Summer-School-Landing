@@ -54,7 +54,7 @@ const Header = () => {
             zIndex: 2,
           })}
         >
-          مدرسه تابستانه ۱۴۰۲
+          مدرسه تابستانه ۱۴۰۳
         </Typography>
         <Button
           variant="outlined"
