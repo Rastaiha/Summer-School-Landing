@@ -17,8 +17,8 @@
 }
 @font-face {
   font-family: "PelakFontMainTitle";
-  src: url("./Pelak-Black.woff.woff") format("woff"),
-    url("./Pelak-Black.woff.woff2") format("woff2");
+  src: url("./Pelak-Black.woff") format("woff"),
+    url("./Pelak-Black.woff2") format("woff2");
 }
 
 * {
