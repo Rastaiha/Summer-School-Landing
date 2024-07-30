@@ -3,8 +3,8 @@
 ## نحوه‌ی راه‌اندازی پروژه
 دستورات زیر را به ترتیب در پوشه‌ای که می‌خواهید پروژه قرار گیرد، وارد کنید:
 
-- `git clone git@github.com:Rastaiha/summer_school_landing.git`
-- `cd summer_school_landing`
+- `git clone git@github.com:Rastaiha/Summer-School-Landing.git`
+- `cd Summer-School-Landing`
 - `yarn`
 - `yarn start`
 
