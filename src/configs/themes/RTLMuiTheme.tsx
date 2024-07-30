@@ -11,6 +11,8 @@ import CactusCircleDots from "../fonts/CactusCircleDots.woff";
 import CactusCircleDots2 from "../fonts/CactusCircleDots.woff2";
 import IRANSansXRegular from "../fonts/IRANSansXRegular.woff";
 import IRANSansXRegular2 from "../fonts/IRANSansXRegular.woff2";
+import PelakBlack from "../fonts/Pelak-Black.woff";
+import PelakBlack2 from "../fonts/Pelak-Black.woff2";
 import VIPCartoon from "../fonts/VIPCartoon.woff";
 import VIPCartoon2 from "../fonts/VIPCartoon.woff2";
 
@@ -42,13 +44,17 @@ const RTLMuiTheme = createTheme({
         font-weight: 900;
       }
       @font-face {
-  font-family: IRANSansX;
-  src: url(${IRANSansXRegular}) format("woff"), url(${IRANSansXRegular2}) format("woff2");
-}
-@font-face {
-  font-family: CactusCircleDots;
-  src: url(${CactusCircleDots}) format("woff"), url(${CactusCircleDots2}) format("woff2");
-}`,
+        font-family: IRANSansX;
+        src: url(${IRANSansXRegular}) format("woff"), url(${IRANSansXRegular2}) format("woff2");
+      }
+      @font-face {
+        font-family: PelakFontMainTitle;
+        src: url(${PelakBlack}) format("woff"), url(${PelakBlack2}) format("woff2");
+      }
+      @font-face {
+        font-family: CactusCircleDots;
+        src: url(${CactusCircleDots}) format("woff"), url(${CactusCircleDots2}) format("woff2");
+      }`,
     },
   },
 });
