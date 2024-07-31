@@ -57,7 +57,7 @@ const NavBar = ({ loginLink = "https://platform.kamva.academy/program/42" }) => 
         <Toolbar sx={{ width: '100%' }}>
           <Stack
             direction='row'
-            justifyContent='space-between'
+            justifyContent={'space-between'}
             alignItems='center'
             sx={{ width: '100%' }}>
 
@@ -110,6 +110,14 @@ const NavBar = ({ loginLink = "https://platform.kamva.academy/program/42" }) => 
                 width={75}
               />
             </IconButton> */}
+            <IconButton href="https://www.rastaiha.ir/">
+              <img
+                src={process.env.PUBLIC_URL + "/white-rasta-logo.png"}
+                alt=""
+                width={50}
+                height={50}
+              />
+            </IconButton>
 
             <Button
               variant="outlined"

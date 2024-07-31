@@ -31,32 +31,28 @@ const Header = () => {
       <Stack
         sx={{ height: "100%", display: "flex" }}
         alignItems="center"
-        justifyContent="center"
-      >
+        justifyContent="center">
         <Typography
           variant="h1"
-          width={400}
+          textAlign={'center'}
           sx={(theme) => ({
+            width:'300px !important',
             fontFamily: "PelakFontMainTitle",
-            fontSize: 120,
+            fontSize: 100,
             marginTop: 0,
-            lineHeight: "140px",
+            lineHeight: "130px",
             fontWeight: 1000,
             color: "#008bc5",
             // textShadow: "0px 0px 4px black",
-            textAlign: "center",
-            justifyContent: "center",
             [theme.breakpoints.down("md")]: {
-              fontSize: 70,
+              fontSize: 75,
               lineHeight: "100px",
-              width: 200,
             },
             zIndex: 2,
-          })}
-        >
+          })}>
           مدرسه تابستانه ۱۴۰۳
         </Typography>
- 
+
         <img
           src={process.env.PUBLIC_URL + "/scroll.gif"}
           alt=""
