@@ -19,7 +19,8 @@ const Header = () => {
           right: 0,
           backgroundImage: {
             xs: `url(https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/background3.png)`,
-            md: `url(https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/background.png)`,
+            md: `url(https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/background2.png)`,
+            lg: `url(https://kamva-minio-storage.darkube.app/rasta/summerschool-1403/background.png)`,
           },
           backgroundSize: "cover !important",
           backgroundRepeat: "no-repeat",
